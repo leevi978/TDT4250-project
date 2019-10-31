@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studyPrograms:Department xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   	xmlns:studyPrograms="studyPrograms" 
+   	xsi:schemaLocation="studyPrograms ../../../model/studyprograms.ecore"
+    name="Institutt for Datateknologi og Informatikk"
+    shorthand="IDI">
+  <courses xsi:type="studyPrograms:Course"
+      name="Avansert programvaredesign"
+      code="TDT4250"
+      credits="7.5">
+  </courses>
+  <courses xsi:type="studyPrograms:Course"
+      name="Design av grafiske brukergrensesnitt"
+      code="IT3402"
+      credits="7.5">
+  </courses>
+  <courses xsi:type="studyPrograms:Course"
+      name="Introduksjon til kunstig intelligens"
+      code="TDT4136"
+      credits="7.5">
+  </courses>
+  <courses xsi:type="studyPrograms:Course"
+      name="Informasjonssystemer"
+      code="TDT4175"
+      credits="7.5">
+  </courses>
+  <programmes xsi:type="studyPrograms:Program"
+  	name="Datateknologi"
+  	degree="MASTER">
+  	<semesters xsi:type="studyPrograms:Semester">
+  		<courseGroups xsi:type="studyPrograms:Group">
+  			<courses xsi:type="studyPrograms:Group_Course"
+  				obligatory="true"
+  				collisionFree="true">
+  				<course xsi:type="studyPrograms:Course"
+      				name="Avansert programvaredesign"
+      				code="TDT4250"
+      				credits="7.5">
+  				</course>
+  			</courses>
+  		</courseGroups>
+  	</semesters>
+  	<specializations xsi:type="studyPrograms:Specialization"
+  		name="Programvareutvikling">
+	  	<semesters xsi:type="studyPrograms:Semester">
+	  		<courseGroups xsi:type="studyPrograms:Group">
+	  			<courses xsi:type="studyPrograms:Group_Course"
+	  				obligatory="true"
+	  				collisionFree="true">
+	  				<course xsi:type="studyPrograms:Course"
+	      				name="Avansert brogramvaredesign"
+	      				code="TDT4269"
+	      				credits="6.9">
+	  				</course>
+	  			</courses>
+	  		</courseGroups>
+	  	</semesters>
+  	</specializations>
+  </programmes>
+</studyPrograms:Department>

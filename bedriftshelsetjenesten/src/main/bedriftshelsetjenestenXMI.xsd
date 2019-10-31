@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/bedriftshelsetjenesten">
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/XMI.xsd"/>
+  <xsd:complexType name="Bedriftshelsetjeneste">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="Kontaktinformasjon" type="bedriftshelsetjenesten:Kontaktinformasjon"/>
+      <xsd:element name="Avdelinger" type="bedriftshelsetjenesten:Avdeling"/>
+      <xsd:element name="Godkjenningsstatus" type="bedriftshelsetjenesten:Godkjenningsstatus"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Orgnr" type="xsd:int"/>
+    <xsd:attribute name="Navn" type="xsd:string"/>
+    <xsd:attribute name="Kontaktinformasjon" type="xsd:string"/>
+    <xsd:attribute name="Avdelinger" type="xsd:string"/>
+    <xsd:attribute name="Godkjenningsstatus" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Bedriftshelsetjeneste" type="bedriftshelsetjenesten:Bedriftshelsetjeneste"/>
+  <xsd:complexType name="Kontaktinformasjon">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="Postadresse" type="bedriftshelsetjenesten:Postadresse"/>
+      <xsd:element name="Kontaktperson" type="bedriftshelsetjenesten:Kontaktperson"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Telefon" type="xsd:int"/>
+    <xsd:attribute name="EpostAdresse" type="xsd:string"/>
+    <xsd:attribute name="InternettAdresse" type="xsd:string"/>
+    <xsd:attribute name="Postadresse" type="xsd:string"/>
+    <xsd:attribute name="Kontaktperson" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Kontaktinformasjon" type="bedriftshelsetjenesten:Kontaktinformasjon"/>
+  <xsd:complexType name="Postadresse">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="Kommune" type="bedriftshelsetjenesten:Kommune"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Adresse" type="xsd:string"/>
+    <xsd:attribute name="Postnr" type="xsd:string"/>
+    <xsd:attribute name="Poststed" type="xsd:string"/>
+    <xsd:attribute name="Kommune" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Postadresse" type="bedriftshelsetjenesten:Postadresse"/>
+  <xsd:complexType name="Kommune">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="Fylke" type="bedriftshelsetjenesten:Fylke"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Kommunenr" type="xsd:int"/>
+    <xsd:attribute name="Kommunenavn" type="xsd:string"/>
+    <xsd:attribute name="Fylke" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Kommune" type="bedriftshelsetjenesten:Kommune"/>
+  <xsd:complexType name="Fylke">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Fylkenr" type="xsd:int"/>
+    <xsd:attribute name="Fylkenavn" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Fylke" type="bedriftshelsetjenesten:Fylke"/>
+  <xsd:complexType name="Kontaktperson">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Navn" type="xsd:string"/>
+    <xsd:attribute name="Rolle" type="xsd:string"/>
+    <xsd:attribute name="TelefonDir" type="xsd:string"/>
+    <xsd:attribute name="TelefonMob" type="xsd:string"/>
+    <xsd:attribute name="Epostadresse" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Kontaktperson" type="bedriftshelsetjenesten:Kontaktperson"/>
+  <xsd:complexType name="Avdeling">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="Postadresse" type="bedriftshelsetjenesten:Postadresse"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Navn" type="xsd:string"/>
+    <xsd:attribute name="Avdelingsleder" type="xsd:string"/>
+    <xsd:attribute name="Telefon" type="xsd:int"/>
+    <xsd:attribute name="Postadresse" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Avdeling" type="bedriftshelsetjenesten:Avdeling"/>
+  <xsd:complexType name="Godkjenningsstatus">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Status" type="xsd:string"/>
+    <xsd:attribute name="Søknadsdato" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Godkjenningsstatus" type="bedriftshelsetjenesten:Godkjenningsstatus"/>
+</xsd:schema>
