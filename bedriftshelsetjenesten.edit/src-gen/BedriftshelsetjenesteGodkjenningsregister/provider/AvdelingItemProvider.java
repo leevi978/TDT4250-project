@@ -3,6 +3,7 @@
 package BedriftshelsetjenesteGodkjenningsregister.provider;
 
 import BedriftshelsetjenesteGodkjenningsregister.Avdeling;
+import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenFactory;
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 
 import java.util.Collection;
@@ -13,6 +14,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -106,7 +108,7 @@ public class AvdelingItemProvider extends ItemProviderAdapter implements IEditin
 						getString("_UI_PropertyDescriptor_description", "_UI_Avdeling_Telefon_feature",
 								"_UI_Avdeling_type"),
 						BedriftshelsetjenestenPackage.Literals.AVDELING__TELEFON, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -123,6 +125,36 @@ public class AvdelingItemProvider extends ItemProviderAdapter implements IEditin
 								"_UI_Avdeling_type"),
 						BedriftshelsetjenestenPackage.Literals.AVDELING__POSTADRESSE, true, false, true, null, null,
 						null));
+	}
+
+	/**
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(BedriftshelsetjenestenPackage.Literals.AVDELING__POSTADRESSE);
+		}
+		return childrenFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
+
+		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -176,6 +208,9 @@ public class AvdelingItemProvider extends ItemProviderAdapter implements IEditin
 		case BedriftshelsetjenestenPackage.AVDELING__TELEFON:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
+		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
+			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -190,6 +225,9 @@ public class AvdelingItemProvider extends ItemProviderAdapter implements IEditin
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add(createChildParameter(BedriftshelsetjenestenPackage.Literals.AVDELING__POSTADRESSE,
+				BedriftshelsetjenestenFactory.eINSTANCE.createPostadresse()));
 	}
 
 	/**

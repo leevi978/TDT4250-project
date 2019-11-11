@@ -106,8 +106,6 @@ public class BedriftshelsetjenestenValidator extends EObjectValidator {
 			return validateGodkjenningsstatus((Godkjenningsstatus) value, diagnostics, context);
 		case BedriftshelsetjenestenPackage.UO_D:
 			return validateUoD((UoD) value, diagnostics, context);
-		case BedriftshelsetjenestenPackage.TELEFON8_SIFFER:
-			return validateTelefon8Siffer((BigDecimal) value, diagnostics, context);
 		default:
 			return true;
 		}
@@ -204,11 +202,6 @@ public class BedriftshelsetjenestenValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTelefon8Siffer(BigDecimal telefon8Siffer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		boolean result = validateTelefon8Siffer_TotalDigits(telefon8Siffer, diagnostics, context);
-		return result;
-	}
 
 	/**
 	 * Validates the TotalDigits constraint of '<em>Telefon8 Siffer</em>'.
@@ -216,16 +209,6 @@ public class BedriftshelsetjenestenValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTelefon8Siffer_TotalDigits(BigDecimal telefon8Siffer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		int scale = telefon8Siffer.scale();
-		int totalDigits = scale < 0 ? telefon8Siffer.precision() - scale : telefon8Siffer.precision();
-		boolean result = totalDigits <= 8;
-		if (!result && diagnostics != null)
-			reportTotalDigitsViolation(BedriftshelsetjenestenPackage.Literals.TELEFON8_SIFFER, telefon8Siffer, 8,
-					diagnostics, context);
-		return result;
-	}
 
 	/**
 	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.

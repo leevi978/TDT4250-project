@@ -69,44 +69,44 @@ public interface Kommune extends EObject {
 	void setKommunenavn(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Fylke</b></em>' reference.
+	 * Returns the value of the '<em><b>Fylke</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fylke</em>' reference.
+	 * @return the value of the '<em>Fylke</em>' containment reference.
 	 * @see #setFylke(Fylke)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKommune_Fylke()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Fylke getFylke();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}' reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fylke</em>' reference.
+	 * @param value the new value of the '<em>Fylke</em>' containment reference.
 	 * @see #getFylke()
 	 * @generated
 	 */
 	void setFylke(Fylke value);
 
 	/**
-	 * Returns the value of the '<em><b>Postadresse</b></em>' reference.
+	 * Returns the value of the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Postadresse</em>' reference.
+	 * @return the value of the '<em>Postadresse</em>' containment reference.
 	 * @see #setPostadresse(Postadresse)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKommune_Postadresse()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Postadresse getPostadresse();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}' reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Postadresse</em>' reference.
+	 * @param value the new value of the '<em>Postadresse</em>' containment reference.
 	 * @see #getPostadresse()
 	 * @generated
 	 */

@@ -4,7 +4,6 @@ package BedriftshelsetjenesteGodkjenningsregister;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -87,7 +86,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int BEDRIFTSHELSETJENESTE__NAVN = 1;
 
 	/**
-	 * The feature id for the '<em><b>Kontaktinformasjon</b></em>' reference.
+	 * The feature id for the '<em><b>Kontaktinformasjon</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -96,7 +95,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON = 2;
 
 	/**
-	 * The feature id for the '<em><b>Avdelinger</b></em>' reference list.
+	 * The feature id for the '<em><b>Avdelinger</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -105,7 +104,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int BEDRIFTSHELSETJENESTE__AVDELINGER = 3;
 
 	/**
-	 * The feature id for the '<em><b>Godkjenningsstatus</b></em>' reference.
+	 * The feature id for the '<em><b>Godkjenningsstatus</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -169,7 +168,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KONTAKTINFORMASJON__INTERNETT_ADRESSE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Postadresse</b></em>' reference.
+	 * The feature id for the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -178,7 +177,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KONTAKTINFORMASJON__POSTADRESSE = 3;
 
 	/**
-	 * The feature id for the '<em><b>Kontaktperson</b></em>' reference list.
+	 * The feature id for the '<em><b>Kontaktperson</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -288,7 +287,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KOMMUNE__KOMMUNENAVN = 1;
 
 	/**
-	 * The feature id for the '<em><b>Fylke</b></em>' reference.
+	 * The feature id for the '<em><b>Fylke</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -297,7 +296,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KOMMUNE__FYLKE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Postadresse</b></em>' reference.
+	 * The feature id for the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -480,7 +479,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int AVDELING__TELEFON = 2;
 
 	/**
-	 * The feature id for the '<em><b>Postadresse</b></em>' reference.
+	 * The feature id for the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -563,7 +562,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int UO_D = 8;
 
 	/**
-	 * The feature id for the '<em><b>Bedriftshelsetjeneste</b></em>' reference list.
+	 * The feature id for the '<em><b>Bedriftshelsetjeneste</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -572,7 +571,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int UO_D__BEDRIFTSHELSETJENESTE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Kommune</b></em>' reference list.
+	 * The feature id for the '<em><b>Kommune</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -597,16 +596,6 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	 * @ordered
 	 */
 	int UO_D_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '<em>Telefon8 Siffer</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see java.math.BigDecimal
-	 * @see BedriftshelsetjenesteGodkjenningsregister.impl.BedriftshelsetjenestenPackageImpl#getTelefon8Siffer()
-	 * @generated
-	 */
-	int TELEFON8_SIFFER = 9;
 
 	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}'.
@@ -641,10 +630,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getBedriftshelsetjeneste_Navn();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getKontaktinformasjon <em>Kontaktinformasjon</em>}'.
+	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getKontaktinformasjon <em>Kontaktinformasjon</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Kontaktinformasjon</em>'.
+	 * @return the meta object for the containment reference '<em>Kontaktinformasjon</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getKontaktinformasjon()
 	 * @see #getBedriftshelsetjeneste()
 	 * @generated
@@ -652,10 +641,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getBedriftshelsetjeneste_Kontaktinformasjon();
 
 	/**
-	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getAvdelinger <em>Avdelinger</em>}'.
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getAvdelinger <em>Avdelinger</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Avdelinger</em>'.
+	 * @return the meta object for the containment reference list '<em>Avdelinger</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getAvdelinger()
 	 * @see #getBedriftshelsetjeneste()
 	 * @generated
@@ -663,10 +652,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getBedriftshelsetjeneste_Avdelinger();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getGodkjenningsstatus <em>Godkjenningsstatus</em>}'.
+	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getGodkjenningsstatus <em>Godkjenningsstatus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Godkjenningsstatus</em>'.
+	 * @return the meta object for the containment reference '<em>Godkjenningsstatus</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getGodkjenningsstatus()
 	 * @see #getBedriftshelsetjeneste()
 	 * @generated
@@ -717,10 +706,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getKontaktinformasjon_InternettAdresse();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getPostadresse <em>Postadresse</em>}'.
+	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getPostadresse <em>Postadresse</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Postadresse</em>'.
+	 * @return the meta object for the containment reference '<em>Postadresse</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getPostadresse()
 	 * @see #getKontaktinformasjon()
 	 * @generated
@@ -728,10 +717,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getKontaktinformasjon_Postadresse();
 
 	/**
-	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson <em>Kontaktperson</em>}'.
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson <em>Kontaktperson</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Kontaktperson</em>'.
+	 * @return the meta object for the containment reference list '<em>Kontaktperson</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson()
 	 * @see #getKontaktinformasjon()
 	 * @generated
@@ -814,10 +803,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getKommune_Kommunenavn();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}'.
+	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fylke</em>'.
+	 * @return the meta object for the containment reference '<em>Fylke</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke()
 	 * @see #getKommune()
 	 * @generated
@@ -825,10 +814,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getKommune_Fylke();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}'.
+	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Postadresse</em>'.
+	 * @return the meta object for the containment reference '<em>Postadresse</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse()
 	 * @see #getKommune()
 	 * @generated
@@ -976,10 +965,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getAvdeling_Telefon();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Avdeling#getPostadresse <em>Postadresse</em>}'.
+	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Avdeling#getPostadresse <em>Postadresse</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Postadresse</em>'.
+	 * @return the meta object for the containment reference '<em>Postadresse</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Avdeling#getPostadresse()
 	 * @see #getAvdeling()
 	 * @generated
@@ -1029,10 +1018,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EClass getUoD();
 
 	/**
-	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}'.
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Bedriftshelsetjeneste</em>'.
+	 * @return the meta object for the containment reference list '<em>Bedriftshelsetjeneste</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD#getBedriftshelsetjeneste()
 	 * @see #getUoD()
 	 * @generated
@@ -1040,27 +1029,15 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getUoD_Bedriftshelsetjeneste();
 
 	/**
-	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune <em>Kommune</em>}'.
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune <em>Kommune</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Kommune</em>'.
+	 * @return the meta object for the containment reference list '<em>Kommune</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune()
 	 * @see #getUoD()
 	 * @generated
 	 */
 	EReference getUoD_Kommune();
-
-	/**
-	 * Returns the meta object for data type '{@link java.math.BigDecimal <em>Telefon8 Siffer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Telefon8 Siffer</em>'.
-	 * @see java.math.BigDecimal
-	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="totalDigits='8'"
-	 * @generated
-	 */
-	EDataType getTelefon8Siffer();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1112,7 +1089,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute BEDRIFTSHELSETJENESTE__NAVN = eINSTANCE.getBedriftshelsetjeneste_Navn();
 
 		/**
-		 * The meta object literal for the '<em><b>Kontaktinformasjon</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Kontaktinformasjon</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1120,7 +1097,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EReference BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON = eINSTANCE.getBedriftshelsetjeneste_Kontaktinformasjon();
 
 		/**
-		 * The meta object literal for the '<em><b>Avdelinger</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Avdelinger</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1128,7 +1105,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EReference BEDRIFTSHELSETJENESTE__AVDELINGER = eINSTANCE.getBedriftshelsetjeneste_Avdelinger();
 
 		/**
-		 * The meta object literal for the '<em><b>Godkjenningsstatus</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Godkjenningsstatus</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1170,7 +1147,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute KONTAKTINFORMASJON__INTERNETT_ADRESSE = eINSTANCE.getKontaktinformasjon_InternettAdresse();
 
 		/**
-		 * The meta object literal for the '<em><b>Postadresse</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Postadresse</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1178,7 +1155,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EReference KONTAKTINFORMASJON__POSTADRESSE = eINSTANCE.getKontaktinformasjon_Postadresse();
 
 		/**
-		 * The meta object literal for the '<em><b>Kontaktperson</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Kontaktperson</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1246,7 +1223,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute KOMMUNE__KOMMUNENAVN = eINSTANCE.getKommune_Kommunenavn();
 
 		/**
-		 * The meta object literal for the '<em><b>Fylke</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fylke</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1254,7 +1231,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EReference KOMMUNE__FYLKE = eINSTANCE.getKommune_Fylke();
 
 		/**
-		 * The meta object literal for the '<em><b>Postadresse</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Postadresse</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1372,7 +1349,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute AVDELING__TELEFON = eINSTANCE.getAvdeling_Telefon();
 
 		/**
-		 * The meta object literal for the '<em><b>Postadresse</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Postadresse</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1416,7 +1393,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EClass UO_D = eINSTANCE.getUoD();
 
 		/**
-		 * The meta object literal for the '<em><b>Bedriftshelsetjeneste</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Bedriftshelsetjeneste</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1424,22 +1401,12 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EReference UO_D__BEDRIFTSHELSETJENESTE = eINSTANCE.getUoD_Bedriftshelsetjeneste();
 
 		/**
-		 * The meta object literal for the '<em><b>Kommune</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Kommune</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference UO_D__KOMMUNE = eINSTANCE.getUoD_Kommune();
-
-		/**
-		 * The meta object literal for the '<em>Telefon8 Siffer</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see java.math.BigDecimal
-		 * @see BedriftshelsetjenesteGodkjenningsregister.impl.BedriftshelsetjenestenPackageImpl#getTelefon8Siffer()
-		 * @generated
-		 */
-		EDataType TELEFON8_SIFFER = eINSTANCE.getTelefon8Siffer();
 
 	}
 

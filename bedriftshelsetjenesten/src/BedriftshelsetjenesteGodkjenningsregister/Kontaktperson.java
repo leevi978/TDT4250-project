@@ -2,7 +2,6 @@
  */
 package BedriftshelsetjenesteGodkjenningsregister;
 
-import java.math.BigDecimal;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -75,12 +74,12 @@ public interface Kontaktperson extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon Dir</em>' attribute.
-	 * @see #setTelefonDir(BigDecimal)
+	 * @see #setTelefonDir(int)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktperson_TelefonDir()
-	 * @model dataType="BedriftshelsetjenesteGodkjenningsregister.Telefon8Siffer"
+	 * @model
 	 * @generated
 	 */
-	BigDecimal getTelefonDir();
+	int getTelefonDir();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson#getTelefonDir <em>Telefon Dir</em>}' attribute.
@@ -90,19 +89,19 @@ public interface Kontaktperson extends EObject {
 	 * @see #getTelefonDir()
 	 * @generated
 	 */
-	void setTelefonDir(BigDecimal value);
+	void setTelefonDir(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Telefon Mob</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon Mob</em>' attribute.
-	 * @see #setTelefonMob(BigDecimal)
+	 * @see #setTelefonMob(int)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktperson_TelefonMob()
-	 * @model dataType="BedriftshelsetjenesteGodkjenningsregister.Telefon8Siffer"
+	 * @model
 	 * @generated
 	 */
-	BigDecimal getTelefonMob();
+	int getTelefonMob();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson#getTelefonMob <em>Telefon Mob</em>}' attribute.
@@ -112,7 +111,7 @@ public interface Kontaktperson extends EObject {
 	 * @see #getTelefonMob()
 	 * @generated
 	 */
-	void setTelefonMob(BigDecimal value);
+	void setTelefonMob(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Epostadresse</b></em>' attribute.

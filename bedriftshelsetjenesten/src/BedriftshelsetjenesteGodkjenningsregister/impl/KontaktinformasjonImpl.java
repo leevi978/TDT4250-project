@@ -6,18 +6,18 @@ import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon;
 import BedriftshelsetjenesteGodkjenningsregister.Kontaktperson;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
-
-import java.math.BigDecimal;
 import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +45,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigDecimal TELEFON_EDEFAULT = null;
+	protected static final int TELEFON_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getTelefon() <em>Telefon</em>}' attribute.
@@ -55,7 +55,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected BigDecimal telefon = TELEFON_EDEFAULT;
+	protected int telefon = TELEFON_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEpostAdresse() <em>Epost Adresse</em>}' attribute.
@@ -98,7 +98,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	protected String internettAdresse = INTERNETT_ADRESSE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' reference.
+	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPostadresse()
@@ -108,7 +108,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	protected Postadresse postadresse;
 
 	/**
-	 * The cached value of the '{@link #getKontaktperson() <em>Kontaktperson</em>}' reference list.
+	 * The cached value of the '{@link #getKontaktperson() <em>Kontaktperson</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getKontaktperson()
@@ -142,7 +142,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public BigDecimal getTelefon() {
+	public int getTelefon() {
 		return telefon;
 	}
 
@@ -152,8 +152,8 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void setTelefon(BigDecimal newTelefon) {
-		BigDecimal oldTelefon = telefon;
+	public void setTelefon(int newTelefon) {
+		int oldTelefon = telefon;
 		telefon = newTelefon;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -216,16 +216,6 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@Override
 	public Postadresse getPostadresse() {
-		if (postadresse != null && postadresse.eIsProxy()) {
-			InternalEObject oldPostadresse = (InternalEObject) postadresse;
-			postadresse = (Postadresse) eResolveProxy(oldPostadresse);
-			if (postadresse != oldPostadresse) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE, oldPostadresse,
-							postadresse));
-			}
-		}
 		return postadresse;
 	}
 
@@ -234,8 +224,18 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Postadresse basicGetPostadresse() {
-		return postadresse;
+	public NotificationChain basicSetPostadresse(Postadresse newPostadresse, NotificationChain msgs) {
+		Postadresse oldPostadresse = postadresse;
+		postadresse = newPostadresse;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE, oldPostadresse, newPostadresse);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -245,11 +245,22 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@Override
 	public void setPostadresse(Postadresse newPostadresse) {
-		Postadresse oldPostadresse = postadresse;
-		postadresse = newPostadresse;
-		if (eNotificationRequired())
+		if (newPostadresse != postadresse) {
+			NotificationChain msgs = null;
+			if (postadresse != null)
+				msgs = ((InternalEObject) postadresse).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE, null,
+						msgs);
+			if (newPostadresse != null)
+				msgs = ((InternalEObject) newPostadresse).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE, null,
+						msgs);
+			msgs = basicSetPostadresse(newPostadresse, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE, oldPostadresse, postadresse));
+					BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE, newPostadresse, newPostadresse));
 	}
 
 	/**
@@ -260,10 +271,26 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	@Override
 	public EList<Kontaktperson> getKontaktperson() {
 		if (kontaktperson == null) {
-			kontaktperson = new EObjectResolvingEList<Kontaktperson>(Kontaktperson.class, this,
+			kontaktperson = new EObjectContainmentEList<Kontaktperson>(Kontaktperson.class, this,
 					BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__KONTAKTPERSON);
 		}
 		return kontaktperson;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE:
+			return basicSetPostadresse(null, msgs);
+		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__KONTAKTPERSON:
+			return ((InternalEList<?>) getKontaktperson()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -281,9 +308,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__INTERNETT_ADRESSE:
 			return getInternettAdresse();
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__POSTADRESSE:
-			if (resolve)
-				return getPostadresse();
-			return basicGetPostadresse();
+			return getPostadresse();
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__KONTAKTPERSON:
 			return getKontaktperson();
 		}
@@ -300,7 +325,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__TELEFON:
-			setTelefon((BigDecimal) newValue);
+			setTelefon((Integer) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__EPOST_ADRESSE:
 			setEpostAdresse((String) newValue);
@@ -355,7 +380,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__TELEFON:
-			return TELEFON_EDEFAULT == null ? telefon != null : !TELEFON_EDEFAULT.equals(telefon);
+			return telefon != TELEFON_EDEFAULT;
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__EPOST_ADRESSE:
 			return EPOST_ADRESSE_EDEFAULT == null ? epostAdresse != null : !EPOST_ADRESSE_EDEFAULT.equals(epostAdresse);
 		case BedriftshelsetjenestenPackage.KONTAKTINFORMASJON__INTERNETT_ADRESSE:

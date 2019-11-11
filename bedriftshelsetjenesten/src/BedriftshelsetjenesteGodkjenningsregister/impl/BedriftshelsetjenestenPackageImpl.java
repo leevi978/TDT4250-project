@@ -14,15 +14,10 @@ import BedriftshelsetjenesteGodkjenningsregister.Kontaktperson;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
 
 import BedriftshelsetjenesteGodkjenningsregister.UoD;
-import BedriftshelsetjenesteGodkjenningsregister.util.BedriftshelsetjenestenValidator;
-import java.math.BigDecimal;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
-import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -96,13 +91,6 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 	private EClass uoDEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType telefon8SifferEDataType = null;
-
-	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -158,14 +146,6 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 
 		// Initialize created meta-data
 		theBedriftshelsetjenestenPackage.initializePackageContents();
-
-		// Register package validator
-		EValidator.Registry.INSTANCE.put(theBedriftshelsetjenestenPackage, new EValidator.Descriptor() {
-			@Override
-			public EValidator getEValidator() {
-				return BedriftshelsetjenestenValidator.INSTANCE;
-			}
-		});
 
 		// Mark meta-data to indicate it can't be changed
 		theBedriftshelsetjenestenPackage.freeze();
@@ -591,16 +571,6 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 	 * @generated
 	 */
 	@Override
-	public EDataType getTelefon8Siffer() {
-		return telefon8SifferEDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BedriftshelsetjenestenFactory getBedriftshelsetjenestenFactory() {
 		return (BedriftshelsetjenestenFactory) getEFactoryInstance();
 	}
@@ -674,9 +644,6 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 		uoDEClass = createEClass(UO_D);
 		createEReference(uoDEClass, UO_D__BEDRIFTSHELSETJENESTE);
 		createEReference(uoDEClass, UO_D__KOMMUNE);
-
-		// Create data types
-		telefon8SifferEDataType = createEDataType(TELEFON8_SIFFER);
 	}
 
 	/**
@@ -720,17 +687,17 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBedriftshelsetjeneste_Kontaktinformasjon(), this.getKontaktinformasjon(), null,
 				"Kontaktinformasjon", null, 0, 1, Bedriftshelsetjeneste.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBedriftshelsetjeneste_Avdelinger(), this.getAvdeling(), null, "Avdelinger", null, 0, -1,
-				Bedriftshelsetjeneste.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				Bedriftshelsetjeneste.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBedriftshelsetjeneste_Godkjenningsstatus(), this.getGodkjenningsstatus(), null,
 				"Godkjenningsstatus", null, 0, 1, Bedriftshelsetjeneste.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kontaktinformasjonEClass, Kontaktinformasjon.class, "Kontaktinformasjon", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getKontaktinformasjon_Telefon(), this.getTelefon8Siffer(), "Telefon", null, 0, 1,
+		initEAttribute(getKontaktinformasjon_Telefon(), ecorePackage.getEInt(), "Telefon", null, 0, 1,
 				Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKontaktinformasjon_EpostAdresse(), ecorePackage.getEString(), "EpostAdresse", null, 0, 1,
@@ -740,11 +707,11 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 				1, Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getKontaktinformasjon_Postadresse(), this.getPostadresse(), null, "Postadresse", null, 0, 1,
-				Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getKontaktinformasjon_Kontaktperson(), this.getKontaktperson(), null, "Kontaktperson", null, 0,
-				-1, Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				-1, Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(postadresseEClass, Postadresse.class, "Postadresse", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -761,10 +728,10 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 		initEAttribute(getKommune_Kommunenavn(), ecorePackage.getEString(), "Kommunenavn", null, 0, 1, Kommune.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getKommune_Fylke(), this.getFylke(), null, "Fylke", null, 0, 1, Kommune.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 		initEReference(getKommune_Postadresse(), this.getPostadresse(), null, "postadresse", null, 0, 1, Kommune.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(fylkeEClass, Fylke.class, "Fylke", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -779,10 +746,10 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKontaktperson_Rolle(), ecorePackage.getEString(), "Rolle", null, 0, 1, Kontaktperson.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getKontaktperson_TelefonDir(), this.getTelefon8Siffer(), "TelefonDir", null, 0, 1,
+		initEAttribute(getKontaktperson_TelefonDir(), ecorePackage.getEInt(), "TelefonDir", null, 0, 1,
 				Kontaktperson.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getKontaktperson_TelefonMob(), this.getTelefon8Siffer(), "TelefonMob", null, 0, 1,
+		initEAttribute(getKontaktperson_TelefonMob(), ecorePackage.getEInt(), "TelefonMob", null, 0, 1,
 				Kontaktperson.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKontaktperson_Epostadresse(), ecorePackage.getEString(), "Epostadresse", null, 0, 1,
@@ -796,10 +763,10 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 		initEAttribute(getAvdeling_Avdelingsleder(), ecorePackage.getEString(), "Avdelingsleder", null, 0, 1,
 				Avdeling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAvdeling_Telefon(), this.getTelefon8Siffer(), "Telefon", null, 0, 1, Avdeling.class,
+		initEAttribute(getAvdeling_Telefon(), ecorePackage.getEInt(), "Telefon", null, 0, 1, Avdeling.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAvdeling_Postadresse(), this.getPostadresse(), null, "Postadresse", null, 0, 1,
-				Avdeling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				Avdeling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(godkjenningsstatusEClass, Godkjenningsstatus.class, "Godkjenningsstatus", !IS_ABSTRACT,
@@ -813,33 +780,14 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 
 		initEClass(uoDEClass, UoD.class, "UoD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUoD_Bedriftshelsetjeneste(), this.getBedriftshelsetjeneste(), null, "bedriftshelsetjeneste",
-				null, 0, -1, UoD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				null, 0, -1, UoD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUoD_Kommune(), this.getKommune(), null, "kommune", null, 0, -1, UoD.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
-
-		// Initialize data types
-		initEDataType(telefon8SifferEDataType, BigDecimal.class, "Telefon8Siffer", IS_SERIALIZABLE,
-				!IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
-
-		// Create annotations
-		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
-		createExtendedMetaDataAnnotations();
-	}
-
-	/**
-	 * Initializes the annotations for <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createExtendedMetaDataAnnotations() {
-		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
-		addAnnotation(telefon8SifferEDataType, source, new String[] { "totalDigits", "8" });
 	}
 
 } //BedriftshelsetjenestenPackageImpl

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/bht/src-gen" creationIcons="false" editDirectory="/bht.edit/src-gen"
+    editorDirectory="/bht.editor/src-gen" modelPluginID="bht" modelName="Bht" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>bht.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Bht" disposableProviderFactory="true" ecorePackage="bht.ecore#/">
+    <genClasses ecoreClass="bht.ecore#//Bedriftshelsetjeneste">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Bedriftshelsetjeneste/Orgnr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Bedriftshelsetjeneste/Navn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Bedriftshelsetjeneste/Kontaktinformasjon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Bedriftshelsetjeneste/Avdelinger"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Bedriftshelsetjeneste/Godkjenningsstatus"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Kontaktinformasjon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktinformasjon/Telefon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktinformasjon/EpostAdresse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktinformasjon/InternettAdresse"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Kontaktinformasjon/Postadresse"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Kontaktinformasjon/Kontaktperson"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Postadresse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Postadresse/Adresse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Postadresse/Postnr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Postadresse/Poststed"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Kommune">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kommune/Kommunenr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kommune/Kommunenavn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Kommune/Fylke"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Kommune/postadresse"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Fylke">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Fylke/Fylkenr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Fylke/Fylkenavn"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Kontaktperson">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/Navn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/Rolle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/TelefonDir"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/TelefonMob"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/Epostadresse"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Avdeling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Avdeling/Navn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Avdeling/Avdelingsleder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Avdeling/Telefon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Avdeling/Postadresse"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//Godkjenningsstatus">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Godkjenningsstatus/Status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Godkjenningsstatus/Soeknadsdato"/>
+    </genClasses>
+    <genClasses ecoreClass="bht.ecore#//UoD">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/bedriftshelsetjeneste"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/kommune"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

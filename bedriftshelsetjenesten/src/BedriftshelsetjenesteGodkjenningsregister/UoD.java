@@ -25,25 +25,25 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface UoD extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Bedriftshelsetjeneste</b></em>' reference list.
+	 * Returns the value of the '<em><b>Bedriftshelsetjeneste</b></em>' containment reference list.
 	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Bedriftshelsetjeneste</em>' reference list.
+	 * @return the value of the '<em>Bedriftshelsetjeneste</em>' containment reference list.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getUoD_Bedriftshelsetjeneste()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Bedriftshelsetjeneste> getBedriftshelsetjeneste();
 
 	/**
-	 * Returns the value of the '<em><b>Kommune</b></em>' reference list.
+	 * Returns the value of the '<em><b>Kommune</b></em>' containment reference list.
 	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Kommune}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kommune</em>' reference list.
+	 * @return the value of the '<em>Kommune</em>' containment reference list.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getUoD_Kommune()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Kommune> getKommune();

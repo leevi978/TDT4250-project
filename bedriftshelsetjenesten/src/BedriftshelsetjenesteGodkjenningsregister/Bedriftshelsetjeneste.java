@@ -72,56 +72,56 @@ public interface Bedriftshelsetjeneste extends EObject {
 	void setNavn(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Kontaktinformasjon</b></em>' reference.
+	 * Returns the value of the '<em><b>Kontaktinformasjon</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kontaktinformasjon</em>' reference.
+	 * @return the value of the '<em>Kontaktinformasjon</em>' containment reference.
 	 * @see #setKontaktinformasjon(Kontaktinformasjon)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getBedriftshelsetjeneste_Kontaktinformasjon()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Kontaktinformasjon getKontaktinformasjon();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getKontaktinformasjon <em>Kontaktinformasjon</em>}' reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getKontaktinformasjon <em>Kontaktinformasjon</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Kontaktinformasjon</em>' reference.
+	 * @param value the new value of the '<em>Kontaktinformasjon</em>' containment reference.
 	 * @see #getKontaktinformasjon()
 	 * @generated
 	 */
 	void setKontaktinformasjon(Kontaktinformasjon value);
 
 	/**
-	 * Returns the value of the '<em><b>Avdelinger</b></em>' reference list.
+	 * Returns the value of the '<em><b>Avdelinger</b></em>' containment reference list.
 	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Avdeling}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Avdelinger</em>' reference list.
+	 * @return the value of the '<em>Avdelinger</em>' containment reference list.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getBedriftshelsetjeneste_Avdelinger()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Avdeling> getAvdelinger();
 
 	/**
-	 * Returns the value of the '<em><b>Godkjenningsstatus</b></em>' reference.
+	 * Returns the value of the '<em><b>Godkjenningsstatus</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Godkjenningsstatus</em>' reference.
+	 * @return the value of the '<em>Godkjenningsstatus</em>' containment reference.
 	 * @see #setGodkjenningsstatus(Godkjenningsstatus)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getBedriftshelsetjeneste_Godkjenningsstatus()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Godkjenningsstatus getGodkjenningsstatus();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getGodkjenningsstatus <em>Godkjenningsstatus</em>}' reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getGodkjenningsstatus <em>Godkjenningsstatus</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Godkjenningsstatus</em>' reference.
+	 * @param value the new value of the '<em>Godkjenningsstatus</em>' containment reference.
 	 * @see #getGodkjenningsstatus()
 	 * @generated
 	 */

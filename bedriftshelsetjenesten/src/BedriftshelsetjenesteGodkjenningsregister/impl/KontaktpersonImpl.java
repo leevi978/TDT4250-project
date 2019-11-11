@@ -4,8 +4,6 @@ package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Kontaktperson;
-
-import java.math.BigDecimal;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -79,7 +77,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigDecimal TELEFON_DIR_EDEFAULT = null;
+	protected static final int TELEFON_DIR_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getTelefonDir() <em>Telefon Dir</em>}' attribute.
@@ -89,7 +87,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected BigDecimal telefonDir = TELEFON_DIR_EDEFAULT;
+	protected int telefonDir = TELEFON_DIR_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTelefonMob() <em>Telefon Mob</em>}' attribute.
@@ -99,7 +97,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigDecimal TELEFON_MOB_EDEFAULT = null;
+	protected static final int TELEFON_MOB_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getTelefonMob() <em>Telefon Mob</em>}' attribute.
@@ -109,7 +107,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected BigDecimal telefonMob = TELEFON_MOB_EDEFAULT;
+	protected int telefonMob = TELEFON_MOB_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEpostadresse() <em>Epostadresse</em>}' attribute.
@@ -204,7 +202,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public BigDecimal getTelefonDir() {
+	public int getTelefonDir() {
 		return telefonDir;
 	}
 
@@ -214,8 +212,8 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public void setTelefonDir(BigDecimal newTelefonDir) {
-		BigDecimal oldTelefonDir = telefonDir;
+	public void setTelefonDir(int newTelefonDir) {
+		int oldTelefonDir = telefonDir;
 		telefonDir = newTelefonDir;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -228,7 +226,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public BigDecimal getTelefonMob() {
+	public int getTelefonMob() {
 		return telefonMob;
 	}
 
@@ -238,8 +236,8 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public void setTelefonMob(BigDecimal newTelefonMob) {
-		BigDecimal oldTelefonMob = telefonMob;
+	public void setTelefonMob(int newTelefonMob) {
+		int oldTelefonMob = telefonMob;
 		telefonMob = newTelefonMob;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -307,10 +305,10 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 			setRolle((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_DIR:
-			setTelefonDir((BigDecimal) newValue);
+			setTelefonDir((Integer) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_MOB:
-			setTelefonMob((BigDecimal) newValue);
+			setTelefonMob((Integer) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__EPOSTADRESSE:
 			setEpostadresse((String) newValue);
@@ -359,9 +357,9 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__ROLLE:
 			return ROLLE_EDEFAULT == null ? rolle != null : !ROLLE_EDEFAULT.equals(rolle);
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_DIR:
-			return TELEFON_DIR_EDEFAULT == null ? telefonDir != null : !TELEFON_DIR_EDEFAULT.equals(telefonDir);
+			return telefonDir != TELEFON_DIR_EDEFAULT;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_MOB:
-			return TELEFON_MOB_EDEFAULT == null ? telefonMob != null : !TELEFON_MOB_EDEFAULT.equals(telefonMob);
+			return telefonMob != TELEFON_MOB_EDEFAULT;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__EPOSTADRESSE:
 			return EPOSTADRESSE_EDEFAULT == null ? epostadresse != null : !EPOSTADRESSE_EDEFAULT.equals(epostadresse);
 		}

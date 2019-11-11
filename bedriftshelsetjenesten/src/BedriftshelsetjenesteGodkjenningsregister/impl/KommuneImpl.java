@@ -9,6 +9,7 @@ import BedriftshelsetjenesteGodkjenningsregister.Kommune;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -73,7 +74,7 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	protected String kommunenavn = KOMMUNENAVN_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getFylke() <em>Fylke</em>}' reference.
+	 * The cached value of the '{@link #getFylke() <em>Fylke</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getFylke()
@@ -83,7 +84,7 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	protected Fylke fylke;
 
 	/**
-	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' reference.
+	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPostadresse()
@@ -166,15 +167,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 */
 	@Override
 	public Fylke getFylke() {
-		if (fylke != null && fylke.eIsProxy()) {
-			InternalEObject oldFylke = (InternalEObject) fylke;
-			fylke = (Fylke) eResolveProxy(oldFylke);
-			if (fylke != oldFylke) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							BedriftshelsetjenestenPackage.KOMMUNE__FYLKE, oldFylke, fylke));
-			}
-		}
 		return fylke;
 	}
 
@@ -183,8 +175,18 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Fylke basicGetFylke() {
-		return fylke;
+	public NotificationChain basicSetFylke(Fylke newFylke, NotificationChain msgs) {
+		Fylke oldFylke = fylke;
+		fylke = newFylke;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					BedriftshelsetjenestenPackage.KOMMUNE__FYLKE, oldFylke, newFylke);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -194,11 +196,20 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 */
 	@Override
 	public void setFylke(Fylke newFylke) {
-		Fylke oldFylke = fylke;
-		fylke = newFylke;
-		if (eNotificationRequired())
+		if (newFylke != fylke) {
+			NotificationChain msgs = null;
+			if (fylke != null)
+				msgs = ((InternalEObject) fylke).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.KOMMUNE__FYLKE, null, msgs);
+			if (newFylke != null)
+				msgs = ((InternalEObject) newFylke).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.KOMMUNE__FYLKE, null, msgs);
+			msgs = basicSetFylke(newFylke, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, BedriftshelsetjenestenPackage.KOMMUNE__FYLKE,
-					oldFylke, fylke));
+					newFylke, newFylke));
 	}
 
 	/**
@@ -208,15 +219,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 */
 	@Override
 	public Postadresse getPostadresse() {
-		if (postadresse != null && postadresse.eIsProxy()) {
-			InternalEObject oldPostadresse = (InternalEObject) postadresse;
-			postadresse = (Postadresse) eResolveProxy(oldPostadresse);
-			if (postadresse != oldPostadresse) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE, oldPostadresse, postadresse));
-			}
-		}
 		return postadresse;
 	}
 
@@ -225,8 +227,18 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Postadresse basicGetPostadresse() {
-		return postadresse;
+	public NotificationChain basicSetPostadresse(Postadresse newPostadresse, NotificationChain msgs) {
+		Postadresse oldPostadresse = postadresse;
+		postadresse = newPostadresse;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE, oldPostadresse, newPostadresse);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -236,11 +248,36 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 */
 	@Override
 	public void setPostadresse(Postadresse newPostadresse) {
-		Postadresse oldPostadresse = postadresse;
-		postadresse = newPostadresse;
-		if (eNotificationRequired())
+		if (newPostadresse != postadresse) {
+			NotificationChain msgs = null;
+			if (postadresse != null)
+				msgs = ((InternalEObject) postadresse).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE, null, msgs);
+			if (newPostadresse != null)
+				msgs = ((InternalEObject) newPostadresse).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE, null, msgs);
+			msgs = basicSetPostadresse(newPostadresse, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE,
-					oldPostadresse, postadresse));
+					newPostadresse, newPostadresse));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case BedriftshelsetjenestenPackage.KOMMUNE__FYLKE:
+			return basicSetFylke(null, msgs);
+		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
+			return basicSetPostadresse(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,13 +293,9 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 		case BedriftshelsetjenestenPackage.KOMMUNE__KOMMUNENAVN:
 			return getKommunenavn();
 		case BedriftshelsetjenestenPackage.KOMMUNE__FYLKE:
-			if (resolve)
-				return getFylke();
-			return basicGetFylke();
+			return getFylke();
 		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
-			if (resolve)
-				return getPostadresse();
-			return basicGetPostadresse();
+			return getPostadresse();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}

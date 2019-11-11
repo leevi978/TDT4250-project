@@ -5,10 +5,9 @@ package BedriftshelsetjenesteGodkjenningsregister.impl;
 import BedriftshelsetjenesteGodkjenningsregister.Avdeling;
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
-
-import java.math.BigDecimal;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -80,7 +79,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigDecimal TELEFON_EDEFAULT = null;
+	protected static final int TELEFON_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getTelefon() <em>Telefon</em>}' attribute.
@@ -90,10 +89,10 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 * @ordered
 	 */
-	protected BigDecimal telefon = TELEFON_EDEFAULT;
+	protected int telefon = TELEFON_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' reference.
+	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPostadresse()
@@ -175,7 +174,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 */
 	@Override
-	public BigDecimal getTelefon() {
+	public int getTelefon() {
 		return telefon;
 	}
 
@@ -185,8 +184,8 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 */
 	@Override
-	public void setTelefon(BigDecimal newTelefon) {
-		BigDecimal oldTelefon = telefon;
+	public void setTelefon(int newTelefon) {
+		int oldTelefon = telefon;
 		telefon = newTelefon;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, BedriftshelsetjenestenPackage.AVDELING__TELEFON,
@@ -200,15 +199,6 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 */
 	@Override
 	public Postadresse getPostadresse() {
-		if (postadresse != null && postadresse.eIsProxy()) {
-			InternalEObject oldPostadresse = (InternalEObject) postadresse;
-			postadresse = (Postadresse) eResolveProxy(oldPostadresse);
-			if (postadresse != oldPostadresse) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE, oldPostadresse, postadresse));
-			}
-		}
 		return postadresse;
 	}
 
@@ -217,8 +207,18 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Postadresse basicGetPostadresse() {
-		return postadresse;
+	public NotificationChain basicSetPostadresse(Postadresse newPostadresse, NotificationChain msgs) {
+		Postadresse oldPostadresse = postadresse;
+		postadresse = newPostadresse;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE, oldPostadresse, newPostadresse);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -228,11 +228,34 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 */
 	@Override
 	public void setPostadresse(Postadresse newPostadresse) {
-		Postadresse oldPostadresse = postadresse;
-		postadresse = newPostadresse;
-		if (eNotificationRequired())
+		if (newPostadresse != postadresse) {
+			NotificationChain msgs = null;
+			if (postadresse != null)
+				msgs = ((InternalEObject) postadresse).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE, null, msgs);
+			if (newPostadresse != null)
+				msgs = ((InternalEObject) newPostadresse).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE, null, msgs);
+			msgs = basicSetPostadresse(newPostadresse, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE,
-					oldPostadresse, postadresse));
+					newPostadresse, newPostadresse));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
+			return basicSetPostadresse(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -250,9 +273,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 		case BedriftshelsetjenestenPackage.AVDELING__TELEFON:
 			return getTelefon();
 		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
-			if (resolve)
-				return getPostadresse();
-			return basicGetPostadresse();
+			return getPostadresse();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -272,7 +293,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 			setAvdelingsleder((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.AVDELING__TELEFON:
-			setTelefon((BigDecimal) newValue);
+			setTelefon((Integer) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
 			setPostadresse((Postadresse) newValue);
@@ -319,7 +340,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 			return AVDELINGSLEDER_EDEFAULT == null ? avdelingsleder != null
 					: !AVDELINGSLEDER_EDEFAULT.equals(avdelingsleder);
 		case BedriftshelsetjenestenPackage.AVDELING__TELEFON:
-			return TELEFON_EDEFAULT == null ? telefon != null : !TELEFON_EDEFAULT.equals(telefon);
+			return telefon != TELEFON_EDEFAULT;
 		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
 			return postadresse != null;
 		}

@@ -9,13 +9,16 @@ import BedriftshelsetjenesteGodkjenningsregister.UoD;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +36,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  */
 public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	/**
-	 * The cached value of the '{@link #getBedriftshelsetjeneste() <em>Bedriftshelsetjeneste</em>}' reference list.
+	 * The cached value of the '{@link #getBedriftshelsetjeneste() <em>Bedriftshelsetjeneste</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBedriftshelsetjeneste()
@@ -43,7 +46,7 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	protected EList<Bedriftshelsetjeneste> bedriftshelsetjeneste;
 
 	/**
-	 * The cached value of the '{@link #getKommune() <em>Kommune</em>}' reference list.
+	 * The cached value of the '{@link #getKommune() <em>Kommune</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getKommune()
@@ -79,8 +82,8 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public EList<Bedriftshelsetjeneste> getBedriftshelsetjeneste() {
 		if (bedriftshelsetjeneste == null) {
-			bedriftshelsetjeneste = new EObjectResolvingEList<Bedriftshelsetjeneste>(Bedriftshelsetjeneste.class, this,
-					BedriftshelsetjenestenPackage.UO_D__BEDRIFTSHELSETJENESTE);
+			bedriftshelsetjeneste = new EObjectContainmentEList<Bedriftshelsetjeneste>(Bedriftshelsetjeneste.class,
+					this, BedriftshelsetjenestenPackage.UO_D__BEDRIFTSHELSETJENESTE);
 		}
 		return bedriftshelsetjeneste;
 	}
@@ -93,10 +96,26 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public EList<Kommune> getKommune() {
 		if (kommune == null) {
-			kommune = new EObjectResolvingEList<Kommune>(Kommune.class, this,
+			kommune = new EObjectContainmentEList<Kommune>(Kommune.class, this,
 					BedriftshelsetjenestenPackage.UO_D__KOMMUNE);
 		}
 		return kommune;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case BedriftshelsetjenestenPackage.UO_D__BEDRIFTSHELSETJENESTE:
+			return ((InternalEList<?>) getBedriftshelsetjeneste()).basicRemove(otherEnd, msgs);
+		case BedriftshelsetjenestenPackage.UO_D__KOMMUNE:
+			return ((InternalEList<?>) getKommune()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
