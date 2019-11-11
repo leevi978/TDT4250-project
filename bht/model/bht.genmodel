@@ -57,6 +57,7 @@
     <genClasses ecoreClass="bht.ecore#//UoD">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/bedriftshelsetjeneste"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/kommune"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/fylke"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

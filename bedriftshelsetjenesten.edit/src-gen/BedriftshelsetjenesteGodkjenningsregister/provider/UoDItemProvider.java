@@ -56,6 +56,7 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 
 			addBedriftshelsetjenestePropertyDescriptor(object);
 			addKommunePropertyDescriptor(object);
+			addFylkePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -91,6 +92,20 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 	}
 
 	/**
+	 * This adds a property descriptor for the Fylke feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFylkePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_UoD_fylke_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_UoD_fylke_feature", "_UI_UoD_type"),
+						BedriftshelsetjenestenPackage.Literals.UO_D__FYLKE, true, false, true, null, null, null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -104,6 +119,7 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(BedriftshelsetjenestenPackage.Literals.UO_D__BEDRIFTSHELSETJENESTE);
 			childrenFeatures.add(BedriftshelsetjenestenPackage.Literals.UO_D__KOMMUNE);
+			childrenFeatures.add(BedriftshelsetjenestenPackage.Literals.UO_D__FYLKE);
 		}
 		return childrenFeatures;
 	}
@@ -167,6 +183,7 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 		switch (notification.getFeatureID(UoD.class)) {
 		case BedriftshelsetjenestenPackage.UO_D__BEDRIFTSHELSETJENESTE:
 		case BedriftshelsetjenestenPackage.UO_D__KOMMUNE:
+		case BedriftshelsetjenestenPackage.UO_D__FYLKE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -189,6 +206,9 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 
 		newChildDescriptors.add(createChildParameter(BedriftshelsetjenestenPackage.Literals.UO_D__KOMMUNE,
 				BedriftshelsetjenestenFactory.eINSTANCE.createKommune()));
+
+		newChildDescriptors.add(createChildParameter(BedriftshelsetjenestenPackage.Literals.UO_D__FYLKE,
+				BedriftshelsetjenestenFactory.eINSTANCE.createFylke()));
 	}
 
 	/**

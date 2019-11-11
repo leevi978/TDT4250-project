@@ -61,5 +61,7 @@
         upperBound="-1" eType="#//Bedriftshelsetjeneste" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" upperBound="-1"
         eType="#//Kommune" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fylke" upperBound="-1"
+        eType="#//Fylke" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

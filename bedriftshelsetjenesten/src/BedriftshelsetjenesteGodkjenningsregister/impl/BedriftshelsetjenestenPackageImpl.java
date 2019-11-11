@@ -571,6 +571,16 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 	 * @generated
 	 */
 	@Override
+	public EReference getUoD_Fylke() {
+		return (EReference) uoDEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BedriftshelsetjenestenFactory getBedriftshelsetjenestenFactory() {
 		return (BedriftshelsetjenestenFactory) getEFactoryInstance();
 	}
@@ -644,6 +654,7 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 		uoDEClass = createEClass(UO_D);
 		createEReference(uoDEClass, UO_D__BEDRIFTSHELSETJENESTE);
 		createEReference(uoDEClass, UO_D__KOMMUNE);
+		createEReference(uoDEClass, UO_D__FYLKE);
 	}
 
 	/**
@@ -783,6 +794,9 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 				null, 0, -1, UoD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUoD_Kommune(), this.getKommune(), null, "kommune", null, 0, -1, UoD.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getUoD_Fylke(), this.getFylke(), null, "fylke", null, 0, -1, UoD.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 

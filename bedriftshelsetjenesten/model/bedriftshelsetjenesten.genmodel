@@ -58,6 +58,7 @@
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//UoD">
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//UoD/bedriftshelsetjeneste"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//UoD/kommune"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//UoD/fylke"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

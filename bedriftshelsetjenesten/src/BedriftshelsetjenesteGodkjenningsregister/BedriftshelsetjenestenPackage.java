@@ -580,13 +580,22 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int UO_D__KOMMUNE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Fylke</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UO_D__FYLKE = 2;
+
+	/**
 	 * The number of structural features of the '<em>Uo D</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UO_D_FEATURE_COUNT = 2;
+	int UO_D_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Uo D</em>' class.
@@ -1040,6 +1049,17 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getUoD_Kommune();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getFylke <em>Fylke</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Fylke</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD#getFylke()
+	 * @see #getUoD()
+	 * @generated
+	 */
+	EReference getUoD_Fylke();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1407,6 +1427,14 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		 * @generated
 		 */
 		EReference UO_D__KOMMUNE = eINSTANCE.getUoD_Kommune();
+
+		/**
+		 * The meta object literal for the '<em><b>Fylke</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UO_D__FYLKE = eINSTANCE.getUoD_Fylke();
 
 	}
 

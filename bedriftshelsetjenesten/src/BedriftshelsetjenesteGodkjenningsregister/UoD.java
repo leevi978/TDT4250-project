@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune <em>Kommune</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getFylke <em>Fylke</em>}</li>
  * </ul>
  *
  * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getUoD()
@@ -47,5 +48,17 @@ public interface UoD extends EObject {
 	 * @generated
 	 */
 	EList<Kommune> getKommune();
+
+	/**
+	 * Returns the value of the '<em><b>Fylke</b></em>' containment reference list.
+	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Fylke}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fylke</em>' containment reference list.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getUoD_Fylke()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Fylke> getFylke();
 
 } // UoD

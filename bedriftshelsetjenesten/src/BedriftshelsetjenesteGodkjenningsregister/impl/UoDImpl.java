@@ -4,6 +4,7 @@ package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste;
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
+import BedriftshelsetjenesteGodkjenningsregister.Fylke;
 import BedriftshelsetjenesteGodkjenningsregister.Kommune;
 import BedriftshelsetjenesteGodkjenningsregister.UoD;
 
@@ -30,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl#getKommune <em>Kommune</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl#getFylke <em>Fylke</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,6 +56,16 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	 * @ordered
 	 */
 	protected EList<Kommune> kommune;
+
+	/**
+	 * The cached value of the '{@link #getFylke() <em>Fylke</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFylke()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Fylke> fylke;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,12 +120,27 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	 * @generated
 	 */
 	@Override
+	public EList<Fylke> getFylke() {
+		if (fylke == null) {
+			fylke = new EObjectContainmentEList<Fylke>(Fylke.class, this, BedriftshelsetjenestenPackage.UO_D__FYLKE);
+		}
+		return fylke;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.UO_D__BEDRIFTSHELSETJENESTE:
 			return ((InternalEList<?>) getBedriftshelsetjeneste()).basicRemove(otherEnd, msgs);
 		case BedriftshelsetjenestenPackage.UO_D__KOMMUNE:
 			return ((InternalEList<?>) getKommune()).basicRemove(otherEnd, msgs);
+		case BedriftshelsetjenestenPackage.UO_D__FYLKE:
+			return ((InternalEList<?>) getFylke()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -130,6 +157,8 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 			return getBedriftshelsetjeneste();
 		case BedriftshelsetjenestenPackage.UO_D__KOMMUNE:
 			return getKommune();
+		case BedriftshelsetjenestenPackage.UO_D__FYLKE:
+			return getFylke();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -151,6 +180,10 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 			getKommune().clear();
 			getKommune().addAll((Collection<? extends Kommune>) newValue);
 			return;
+		case BedriftshelsetjenestenPackage.UO_D__FYLKE:
+			getFylke().clear();
+			getFylke().addAll((Collection<? extends Fylke>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -169,6 +202,9 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 		case BedriftshelsetjenestenPackage.UO_D__KOMMUNE:
 			getKommune().clear();
 			return;
+		case BedriftshelsetjenestenPackage.UO_D__FYLKE:
+			getFylke().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -185,6 +221,8 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 			return bedriftshelsetjeneste != null && !bedriftshelsetjeneste.isEmpty();
 		case BedriftshelsetjenestenPackage.UO_D__KOMMUNE:
 			return kommune != null && !kommune.isEmpty();
+		case BedriftshelsetjenestenPackage.UO_D__FYLKE:
+			return fylke != null && !fylke.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
