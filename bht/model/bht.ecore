@@ -29,14 +29,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="Kommune">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Kommunenr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Kommunenavn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Fylke" eType="#//Fylke"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="postadresse" eType="#//Postadresse"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Fylke">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Fylkenr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Fylkenavn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" upperBound="-1"
+        eType="#//Kommune" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kontaktperson">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Navn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

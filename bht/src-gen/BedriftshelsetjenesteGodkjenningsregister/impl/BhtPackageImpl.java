@@ -331,17 +331,8 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getKommune_Fylke() {
-		return (EReference) kommuneEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getKommune_Postadresse() {
-		return (EReference) kommuneEClass.getEStructuralFeatures().get(3);
+		return (EReference) kommuneEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -369,6 +360,15 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 	 */
 	public EAttribute getFylke_Fylkenavn() {
 		return (EAttribute) fylkeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFylke_Kommune() {
+		return (EReference) fylkeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -584,12 +584,12 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 		kommuneEClass = createEClass(KOMMUNE);
 		createEAttribute(kommuneEClass, KOMMUNE__KOMMUNENR);
 		createEAttribute(kommuneEClass, KOMMUNE__KOMMUNENAVN);
-		createEReference(kommuneEClass, KOMMUNE__FYLKE);
 		createEReference(kommuneEClass, KOMMUNE__POSTADRESSE);
 
 		fylkeEClass = createEClass(FYLKE);
 		createEAttribute(fylkeEClass, FYLKE__FYLKENR);
 		createEAttribute(fylkeEClass, FYLKE__FYLKENAVN);
+		createEReference(fylkeEClass, FYLKE__KOMMUNE);
 
 		kontaktpersonEClass = createEClass(KONTAKTPERSON);
 		createEAttribute(kontaktpersonEClass, KONTAKTPERSON__NAVN);
@@ -695,9 +695,6 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKommune_Kommunenavn(), ecorePackage.getEString(), "Kommunenavn", null, 0, 1, Kommune.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKommune_Fylke(), this.getFylke(), null, "Fylke", null, 0, 1, Kommune.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
 		initEReference(getKommune_Postadresse(), this.getPostadresse(), null, "postadresse", null, 0, 1, Kommune.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -707,6 +704,9 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFylke_Fylkenavn(), ecorePackage.getEString(), "Fylkenavn", null, 0, 1, Fylke.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFylke_Kommune(), this.getKommune(), null, "kommune", null, 0, -1, Fylke.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(kontaktpersonEClass, Kontaktperson.class, "Kontaktperson", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

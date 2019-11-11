@@ -30,12 +30,12 @@
     <genClasses ecoreClass="bht.ecore#//Kommune">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kommune/Kommunenr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kommune/Kommunenavn"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Kommune/Fylke"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Kommune/postadresse"/>
     </genClasses>
     <genClasses ecoreClass="bht.ecore#//Fylke">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Fylke/Fylkenr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Fylke/Fylkenavn"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bht.ecore#//Fylke/kommune"/>
     </genClasses>
     <genClasses ecoreClass="bht.ecore#//Kontaktperson">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/Navn"/>

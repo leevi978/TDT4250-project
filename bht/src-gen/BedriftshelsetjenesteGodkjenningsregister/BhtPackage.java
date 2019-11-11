@@ -286,22 +286,13 @@ public interface BhtPackage extends EPackage {
 	int KOMMUNE__KOMMUNENAVN = 1;
 
 	/**
-	 * The feature id for the '<em><b>Fylke</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KOMMUNE__FYLKE = 2;
-
-	/**
 	 * The feature id for the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KOMMUNE__POSTADRESSE = 3;
+	int KOMMUNE__POSTADRESSE = 2;
 
 	/**
 	 * The number of structural features of the '<em>Kommune</em>' class.
@@ -310,7 +301,7 @@ public interface BhtPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KOMMUNE_FEATURE_COUNT = 4;
+	int KOMMUNE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Kommune</em>' class.
@@ -350,13 +341,22 @@ public interface BhtPackage extends EPackage {
 	int FYLKE__FYLKENAVN = 1;
 
 	/**
+	 * The feature id for the '<em><b>Kommune</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FYLKE__KOMMUNE = 2;
+
+	/**
 	 * The number of structural features of the '<em>Fylke</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FYLKE_FEATURE_COUNT = 2;
+	int FYLKE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Fylke</em>' class.
@@ -811,17 +811,6 @@ public interface BhtPackage extends EPackage {
 	EAttribute getKommune_Kommunenavn();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Fylke</em>'.
-	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke()
-	 * @see #getKommune()
-	 * @generated
-	 */
-	EReference getKommune_Fylke();
-
-	/**
 	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -863,6 +852,17 @@ public interface BhtPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFylke_Fylkenavn();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Fylke#getKommune <em>Kommune</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Kommune</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.Fylke#getKommune()
+	 * @see #getFylke()
+	 * @generated
+	 */
+	EReference getFylke_Kommune();
 
 	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson <em>Kontaktperson</em>}'.
@@ -1242,14 +1242,6 @@ public interface BhtPackage extends EPackage {
 		EAttribute KOMMUNE__KOMMUNENAVN = eINSTANCE.getKommune_Kommunenavn();
 
 		/**
-		 * The meta object literal for the '<em><b>Fylke</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference KOMMUNE__FYLKE = eINSTANCE.getKommune_Fylke();
-
-		/**
 		 * The meta object literal for the '<em><b>Postadresse</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1282,6 +1274,14 @@ public interface BhtPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FYLKE__FYLKENAVN = eINSTANCE.getFylke_Fylkenavn();
+
+		/**
+		 * The meta object literal for the '<em><b>Kommune</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FYLKE__KOMMUNE = eINSTANCE.getFylke_Kommune();
 
 		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.KontaktpersonImpl <em>Kontaktperson</em>}' class.

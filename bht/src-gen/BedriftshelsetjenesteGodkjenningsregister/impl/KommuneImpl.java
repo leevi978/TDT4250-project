@@ -3,7 +3,6 @@
 package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.BhtPackage;
-import BedriftshelsetjenesteGodkjenningsregister.Fylke;
 import BedriftshelsetjenesteGodkjenningsregister.Kommune;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
 
@@ -26,7 +25,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getKommunenr <em>Kommunenr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getKommunenavn <em>Kommunenavn</em>}</li>
- *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getFylke <em>Fylke</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getPostadresse <em>Postadresse</em>}</li>
  * </ul>
  *
@@ -72,16 +70,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 * @ordered
 	 */
 	protected String kommunenavn = KOMMUNENAVN_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getFylke() <em>Fylke</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFylke()
-	 * @generated
-	 * @ordered
-	 */
-	protected Fylke fylke;
 
 	/**
 	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' containment reference.
@@ -161,55 +149,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Fylke getFylke() {
-		return fylke;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetFylke(Fylke newFylke, NotificationChain msgs) {
-		Fylke oldFylke = fylke;
-		fylke = newFylke;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BhtPackage.KOMMUNE__FYLKE,
-					oldFylke, newFylke);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFylke(Fylke newFylke) {
-		if (newFylke != fylke) {
-			NotificationChain msgs = null;
-			if (fylke != null)
-				msgs = ((InternalEObject) fylke).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - BhtPackage.KOMMUNE__FYLKE, null, msgs);
-			if (newFylke != null)
-				msgs = ((InternalEObject) newFylke).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - BhtPackage.KOMMUNE__FYLKE, null, msgs);
-			msgs = basicSetFylke(newFylke, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, BhtPackage.KOMMUNE__FYLKE, newFylke, newFylke));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Postadresse getPostadresse() {
 		return postadresse;
 	}
@@ -263,8 +202,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case BhtPackage.KOMMUNE__FYLKE:
-			return basicSetFylke(null, msgs);
 		case BhtPackage.KOMMUNE__POSTADRESSE:
 			return basicSetPostadresse(null, msgs);
 		}
@@ -283,8 +220,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 			return getKommunenr();
 		case BhtPackage.KOMMUNE__KOMMUNENAVN:
 			return getKommunenavn();
-		case BhtPackage.KOMMUNE__FYLKE:
-			return getFylke();
 		case BhtPackage.KOMMUNE__POSTADRESSE:
 			return getPostadresse();
 		}
@@ -304,9 +239,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 			return;
 		case BhtPackage.KOMMUNE__KOMMUNENAVN:
 			setKommunenavn((String) newValue);
-			return;
-		case BhtPackage.KOMMUNE__FYLKE:
-			setFylke((Fylke) newValue);
 			return;
 		case BhtPackage.KOMMUNE__POSTADRESSE:
 			setPostadresse((Postadresse) newValue);
@@ -329,9 +261,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 		case BhtPackage.KOMMUNE__KOMMUNENAVN:
 			setKommunenavn(KOMMUNENAVN_EDEFAULT);
 			return;
-		case BhtPackage.KOMMUNE__FYLKE:
-			setFylke((Fylke) null);
-			return;
 		case BhtPackage.KOMMUNE__POSTADRESSE:
 			setPostadresse((Postadresse) null);
 			return;
@@ -351,8 +280,6 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 			return kommunenr != KOMMUNENR_EDEFAULT;
 		case BhtPackage.KOMMUNE__KOMMUNENAVN:
 			return KOMMUNENAVN_EDEFAULT == null ? kommunenavn != null : !KOMMUNENAVN_EDEFAULT.equals(kommunenavn);
-		case BhtPackage.KOMMUNE__FYLKE:
-			return fylke != null;
 		case BhtPackage.KOMMUNE__POSTADRESSE:
 			return postadresse != null;
 		}

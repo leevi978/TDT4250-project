@@ -2,6 +2,7 @@
  */
 package BedriftshelsetjenesteGodkjenningsregister;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Fylke#getFylkenr <em>Fylkenr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Fylke#getFylkenavn <em>Fylkenavn</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Fylke#getKommune <em>Kommune</em>}</li>
  * </ul>
  *
  * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getFylke()
@@ -65,5 +67,17 @@ public interface Fylke extends EObject {
 	 * @generated
 	 */
 	void setFylkenavn(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Kommune</b></em>' containment reference list.
+	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Kommune}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Kommune</em>' containment reference list.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getFylke_Kommune()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Kommune> getKommune();
 
 } // Fylke

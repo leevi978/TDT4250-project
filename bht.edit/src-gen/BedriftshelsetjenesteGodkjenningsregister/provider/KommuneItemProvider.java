@@ -106,7 +106,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(BhtPackage.Literals.KOMMUNE__FYLKE);
 			childrenFeatures.add(BhtPackage.Literals.KOMMUNE__POSTADRESSE);
 		}
 		return childrenFeatures;
@@ -174,7 +173,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 		case BhtPackage.KOMMUNE__KOMMUNENAVN:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
-		case BhtPackage.KOMMUNE__FYLKE:
 		case BhtPackage.KOMMUNE__POSTADRESSE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
@@ -192,9 +190,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors
-				.add(createChildParameter(BhtPackage.Literals.KOMMUNE__FYLKE, BhtFactory.eINSTANCE.createFylke()));
 
 		newChildDescriptors.add(createChildParameter(BhtPackage.Literals.KOMMUNE__POSTADRESSE,
 				BhtFactory.eINSTANCE.createPostadresse()));
