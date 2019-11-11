@@ -2,6 +2,8 @@
  */
 package BedriftshelsetjenesteGodkjenningsregister;
 
+import java.math.BigDecimal;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -30,12 +32,12 @@ public interface Kontaktinformasjon extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon</em>' attribute.
-	 * @see #setTelefon(int)
+	 * @see #setTelefon(BigDecimal)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktinformasjon_Telefon()
-	 * @model
+	 * @model dataType="BedriftshelsetjenesteGodkjenningsregister.Telefon8Siffer"
 	 * @generated
 	 */
-	int getTelefon();
+	BigDecimal getTelefon();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getTelefon <em>Telefon</em>}' attribute.
@@ -45,7 +47,7 @@ public interface Kontaktinformasjon extends EObject {
 	 * @see #getTelefon()
 	 * @generated
 	 */
-	void setTelefon(int value);
+	void setTelefon(BigDecimal value);
 
 	/**
 	 * Returns the value of the '<em><b>Epost Adresse</b></em>' attribute.
@@ -114,25 +116,15 @@ public interface Kontaktinformasjon extends EObject {
 	void setPostadresse(Postadresse value);
 
 	/**
-	 * Returns the value of the '<em><b>Kontaktperson</b></em>' reference.
+	 * Returns the value of the '<em><b>Kontaktperson</b></em>' reference list.
+	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kontaktperson</em>' reference.
-	 * @see #setKontaktperson(Kontaktperson)
+	 * @return the value of the '<em>Kontaktperson</em>' reference list.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktinformasjon_Kontaktperson()
 	 * @model
 	 * @generated
 	 */
-	Kontaktperson getKontaktperson();
-
-	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson <em>Kontaktperson</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Kontaktperson</em>' reference.
-	 * @see #getKontaktperson()
-	 * @generated
-	 */
-	void setKontaktperson(Kontaktperson value);
+	EList<Kontaktperson> getKontaktperson();
 
 } // Kontaktinformasjon

@@ -9,6 +9,7 @@
   <foreignModel>bedriftshelsetjenesten.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Bedriftshelsetjenesten" disposableProviderFactory="true" ecorePackage="bedriftshelsetjenesten.ecore#/">
+    <genDataTypes ecoreDataType="bedriftshelsetjenesten.ecore#//Telefon8Siffer"/>
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//Bedriftshelsetjeneste">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Bedriftshelsetjeneste/Orgnr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Bedriftshelsetjeneste/Navn"/>
@@ -27,12 +28,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Postadresse/Adresse"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Postadresse/Postnr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Postadresse/Poststed"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//Postadresse/Kommune"/>
     </genClasses>
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//Kommune">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Kommune/Kommunenr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Kommune/Kommunenavn"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//Kommune/Fylke"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//Kommune/postadresse"/>
     </genClasses>
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//Fylke">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Fylke/Fylkenr"/>
@@ -53,7 +54,11 @@
     </genClasses>
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//Godkjenningsstatus">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Godkjenningsstatus/Status"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Godkjenningsstatus/Søknadsdato"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Godkjenningsstatus/Soeknadsdato"/>
+    </genClasses>
+    <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//UoD">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//UoD/bedriftshelsetjeneste"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//UoD/kommune"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

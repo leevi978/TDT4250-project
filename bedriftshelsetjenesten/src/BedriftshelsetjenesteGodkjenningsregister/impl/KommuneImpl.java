@@ -6,6 +6,7 @@ import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Fylke;
 import BedriftshelsetjenesteGodkjenningsregister.Kommune;
 
+import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -25,6 +26,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getKommunenr <em>Kommunenr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getKommunenavn <em>Kommunenavn</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getFylke <em>Fylke</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl#getPostadresse <em>Postadresse</em>}</li>
  * </ul>
  *
  * @generated
@@ -79,6 +81,16 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 * @ordered
 	 */
 	protected Fylke fylke;
+
+	/**
+	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPostadresse()
+	 * @generated
+	 * @ordered
+	 */
+	protected Postadresse postadresse;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,6 +207,48 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 	 * @generated
 	 */
 	@Override
+	public Postadresse getPostadresse() {
+		if (postadresse != null && postadresse.eIsProxy()) {
+			InternalEObject oldPostadresse = (InternalEObject) postadresse;
+			postadresse = (Postadresse) eResolveProxy(oldPostadresse);
+			if (postadresse != oldPostadresse) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+							BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE, oldPostadresse, postadresse));
+			}
+		}
+		return postadresse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Postadresse basicGetPostadresse() {
+		return postadresse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPostadresse(Postadresse newPostadresse) {
+		Postadresse oldPostadresse = postadresse;
+		postadresse = newPostadresse;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE,
+					oldPostadresse, postadresse));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.KOMMUNE__KOMMUNENR:
@@ -205,6 +259,10 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 			if (resolve)
 				return getFylke();
 			return basicGetFylke();
+		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
+			if (resolve)
+				return getPostadresse();
+			return basicGetPostadresse();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -225,6 +283,9 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 			return;
 		case BedriftshelsetjenestenPackage.KOMMUNE__FYLKE:
 			setFylke((Fylke) newValue);
+			return;
+		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
+			setPostadresse((Postadresse) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -247,6 +308,9 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 		case BedriftshelsetjenestenPackage.KOMMUNE__FYLKE:
 			setFylke((Fylke) null);
 			return;
+		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
+			setPostadresse((Postadresse) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -265,6 +329,8 @@ public class KommuneImpl extends MinimalEObjectImpl.Container implements Kommune
 			return KOMMUNENAVN_EDEFAULT == null ? kommunenavn != null : !KOMMUNENAVN_EDEFAULT.equals(kommunenavn);
 		case BedriftshelsetjenestenPackage.KOMMUNE__FYLKE:
 			return fylke != null;
+		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
+			return postadresse != null;
 		}
 		return super.eIsSet(featureID);
 	}

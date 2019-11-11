@@ -95,6 +95,15 @@ public interface BedriftshelsetjenestenFactory extends EFactory {
 	Godkjenningsstatus createGodkjenningsstatus();
 
 	/**
+	 * Returns a new object of class '<em>Uo D</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Uo D</em>'.
+	 * @generated
+	 */
+	UoD createUoD();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

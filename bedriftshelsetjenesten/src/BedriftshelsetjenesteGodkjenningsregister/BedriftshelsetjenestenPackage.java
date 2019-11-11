@@ -4,6 +4,7 @@ package BedriftshelsetjenesteGodkjenningsregister;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -177,7 +178,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KONTAKTINFORMASJON__POSTADRESSE = 3;
 
 	/**
-	 * The feature id for the '<em><b>Kontaktperson</b></em>' reference.
+	 * The feature id for the '<em><b>Kontaktperson</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -241,22 +242,13 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int POSTADRESSE__POSTSTED = 2;
 
 	/**
-	 * The feature id for the '<em><b>Kommune</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POSTADRESSE__KOMMUNE = 3;
-
-	/**
 	 * The number of structural features of the '<em>Postadresse</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int POSTADRESSE_FEATURE_COUNT = 4;
+	int POSTADRESSE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Postadresse</em>' class.
@@ -305,13 +297,22 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KOMMUNE__FYLKE = 2;
 
 	/**
+	 * The feature id for the '<em><b>Postadresse</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KOMMUNE__POSTADRESSE = 3;
+
+	/**
 	 * The number of structural features of the '<em>Kommune</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KOMMUNE_FEATURE_COUNT = 3;
+	int KOMMUNE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Kommune</em>' class.
@@ -525,13 +526,13 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int GODKJENNINGSSTATUS__STATUS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Søknadsdato</b></em>' attribute.
+	 * The feature id for the '<em><b>Soeknadsdato</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GODKJENNINGSSTATUS__SØKNADSDATO = 1;
+	int GODKJENNINGSSTATUS__SOEKNADSDATO = 1;
 
 	/**
 	 * The number of structural features of the '<em>Godkjenningsstatus</em>' class.
@@ -550,6 +551,62 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	 * @ordered
 	 */
 	int GODKJENNINGSSTATUS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl <em>Uo D</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl
+	 * @see BedriftshelsetjenesteGodkjenningsregister.impl.BedriftshelsetjenestenPackageImpl#getUoD()
+	 * @generated
+	 */
+	int UO_D = 8;
+
+	/**
+	 * The feature id for the '<em><b>Bedriftshelsetjeneste</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UO_D__BEDRIFTSHELSETJENESTE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Kommune</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UO_D__KOMMUNE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Uo D</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UO_D_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Uo D</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UO_D_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '<em>Telefon8 Siffer</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.math.BigDecimal
+	 * @see BedriftshelsetjenesteGodkjenningsregister.impl.BedriftshelsetjenestenPackageImpl#getTelefon8Siffer()
+	 * @generated
+	 */
+	int TELEFON8_SIFFER = 9;
 
 	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}'.
@@ -671,10 +728,10 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EReference getKontaktinformasjon_Postadresse();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson <em>Kontaktperson</em>}'.
+	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson <em>Kontaktperson</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Kontaktperson</em>'.
+	 * @return the meta object for the reference list '<em>Kontaktperson</em>'.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson()
 	 * @see #getKontaktinformasjon()
 	 * @generated
@@ -725,17 +782,6 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getPostadresse_Poststed();
 
 	/**
-	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune <em>Kommune</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Kommune</em>'.
-	 * @see BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune()
-	 * @see #getPostadresse()
-	 * @generated
-	 */
-	EReference getPostadresse_Kommune();
-
-	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune <em>Kommune</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -777,6 +823,17 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getKommune_Fylke();
+
+	/**
+	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Postadresse</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse()
+	 * @see #getKommune()
+	 * @generated
+	 */
+	EReference getKommune_Postadresse();
 
 	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Fylke <em>Fylke</em>}'.
@@ -951,15 +1008,59 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getGodkjenningsstatus_Status();
 
 	/**
-	 * Returns the meta object for the attribute '{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSøknadsdato <em>Søknadsdato</em>}'.
+	 * Returns the meta object for the attribute '{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSoeknadsdato <em>Soeknadsdato</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Søknadsdato</em>'.
-	 * @see BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSøknadsdato()
+	 * @return the meta object for the attribute '<em>Soeknadsdato</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSoeknadsdato()
 	 * @see #getGodkjenningsstatus()
 	 * @generated
 	 */
-	EAttribute getGodkjenningsstatus_Søknadsdato();
+	EAttribute getGodkjenningsstatus_Soeknadsdato();
+
+	/**
+	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.UoD <em>Uo D</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Uo D</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD
+	 * @generated
+	 */
+	EClass getUoD();
+
+	/**
+	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Bedriftshelsetjeneste</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD#getBedriftshelsetjeneste()
+	 * @see #getUoD()
+	 * @generated
+	 */
+	EReference getUoD_Bedriftshelsetjeneste();
+
+	/**
+	 * Returns the meta object for the reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune <em>Kommune</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Kommune</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune()
+	 * @see #getUoD()
+	 * @generated
+	 */
+	EReference getUoD_Kommune();
+
+	/**
+	 * Returns the meta object for data type '{@link java.math.BigDecimal <em>Telefon8 Siffer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Telefon8 Siffer</em>'.
+	 * @see java.math.BigDecimal
+	 * @model instanceClass="java.math.BigDecimal"
+	 *        extendedMetaData="totalDigits='8'"
+	 * @generated
+	 */
+	EDataType getTelefon8Siffer();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1077,7 +1178,7 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EReference KONTAKTINFORMASJON__POSTADRESSE = eINSTANCE.getKontaktinformasjon_Postadresse();
 
 		/**
-		 * The meta object literal for the '<em><b>Kontaktperson</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Kontaktperson</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1119,14 +1220,6 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute POSTADRESSE__POSTSTED = eINSTANCE.getPostadresse_Poststed();
 
 		/**
-		 * The meta object literal for the '<em><b>Kommune</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference POSTADRESSE__KOMMUNE = eINSTANCE.getPostadresse_Kommune();
-
-		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl <em>Kommune</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1159,6 +1252,14 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		 * @generated
 		 */
 		EReference KOMMUNE__FYLKE = eINSTANCE.getKommune_Fylke();
+
+		/**
+		 * The meta object literal for the '<em><b>Postadresse</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference KOMMUNE__POSTADRESSE = eINSTANCE.getKommune_Postadresse();
 
 		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.FylkeImpl <em>Fylke</em>}' class.
@@ -1297,12 +1398,48 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute GODKJENNINGSSTATUS__STATUS = eINSTANCE.getGodkjenningsstatus_Status();
 
 		/**
-		 * The meta object literal for the '<em><b>Søknadsdato</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Soeknadsdato</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GODKJENNINGSSTATUS__SØKNADSDATO = eINSTANCE.getGodkjenningsstatus_Søknadsdato();
+		EAttribute GODKJENNINGSSTATUS__SOEKNADSDATO = eINSTANCE.getGodkjenningsstatus_Soeknadsdato();
+
+		/**
+		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl <em>Uo D</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see BedriftshelsetjenesteGodkjenningsregister.impl.UoDImpl
+		 * @see BedriftshelsetjenesteGodkjenningsregister.impl.BedriftshelsetjenestenPackageImpl#getUoD()
+		 * @generated
+		 */
+		EClass UO_D = eINSTANCE.getUoD();
+
+		/**
+		 * The meta object literal for the '<em><b>Bedriftshelsetjeneste</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UO_D__BEDRIFTSHELSETJENESTE = eINSTANCE.getUoD_Bedriftshelsetjeneste();
+
+		/**
+		 * The meta object literal for the '<em><b>Kommune</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UO_D__KOMMUNE = eINSTANCE.getUoD_Kommune();
+
+		/**
+		 * The meta object literal for the '<em>Telefon8 Siffer</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.math.BigDecimal
+		 * @see BedriftshelsetjenesteGodkjenningsregister.impl.BedriftshelsetjenestenPackageImpl#getTelefon8Siffer()
+		 * @generated
+		 */
+		EDataType TELEFON8_SIFFER = eINSTANCE.getTelefon8Siffer();
 
 	}
 

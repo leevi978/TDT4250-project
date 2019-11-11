@@ -4,7 +4,9 @@ package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.*;
 
+import java.math.BigDecimal;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -72,8 +74,40 @@ public class BedriftshelsetjenestenFactoryImpl extends EFactoryImpl implements B
 			return createAvdeling();
 		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS:
 			return createGodkjenningsstatus();
+		case BedriftshelsetjenestenPackage.UO_D:
+			return createUoD();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+		case BedriftshelsetjenestenPackage.TELEFON8_SIFFER:
+			return createTelefon8SifferFromString(eDataType, initialValue);
+		default:
+			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+		case BedriftshelsetjenestenPackage.TELEFON8_SIFFER:
+			return convertTelefon8SifferToString(eDataType, instanceValue);
+		default:
+			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -163,6 +197,35 @@ public class BedriftshelsetjenestenFactoryImpl extends EFactoryImpl implements B
 	public Godkjenningsstatus createGodkjenningsstatus() {
 		GodkjenningsstatusImpl godkjenningsstatus = new GodkjenningsstatusImpl();
 		return godkjenningsstatus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UoD createUoD() {
+		UoDImpl uoD = new UoDImpl();
+		return uoD;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BigDecimal createTelefon8SifferFromString(EDataType eDataType, String initialValue) {
+		return (BigDecimal) super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertTelefon8SifferToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

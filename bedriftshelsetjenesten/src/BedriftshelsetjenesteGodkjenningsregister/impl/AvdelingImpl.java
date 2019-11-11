@@ -6,6 +6,7 @@ import BedriftshelsetjenesteGodkjenningsregister.Avdeling;
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
 
+import java.math.BigDecimal;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -79,7 +80,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TELEFON_EDEFAULT = 0;
+	protected static final BigDecimal TELEFON_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTelefon() <em>Telefon</em>}' attribute.
@@ -89,7 +90,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 * @ordered
 	 */
-	protected int telefon = TELEFON_EDEFAULT;
+	protected BigDecimal telefon = TELEFON_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getPostadresse() <em>Postadresse</em>}' reference.
@@ -174,7 +175,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 */
 	@Override
-	public int getTelefon() {
+	public BigDecimal getTelefon() {
 		return telefon;
 	}
 
@@ -184,8 +185,8 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 	 * @generated
 	 */
 	@Override
-	public void setTelefon(int newTelefon) {
-		int oldTelefon = telefon;
+	public void setTelefon(BigDecimal newTelefon) {
+		BigDecimal oldTelefon = telefon;
 		telefon = newTelefon;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, BedriftshelsetjenestenPackage.AVDELING__TELEFON,
@@ -271,7 +272,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 			setAvdelingsleder((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.AVDELING__TELEFON:
-			setTelefon((Integer) newValue);
+			setTelefon((BigDecimal) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
 			setPostadresse((Postadresse) newValue);
@@ -318,7 +319,7 @@ public class AvdelingImpl extends MinimalEObjectImpl.Container implements Avdeli
 			return AVDELINGSLEDER_EDEFAULT == null ? avdelingsleder != null
 					: !AVDELINGSLEDER_EDEFAULT.equals(avdelingsleder);
 		case BedriftshelsetjenestenPackage.AVDELING__TELEFON:
-			return telefon != TELEFON_EDEFAULT;
+			return TELEFON_EDEFAULT == null ? telefon != null : !TELEFON_EDEFAULT.equals(telefon);
 		case BedriftshelsetjenestenPackage.AVDELING__POSTADRESSE:
 			return postadresse != null;
 		}

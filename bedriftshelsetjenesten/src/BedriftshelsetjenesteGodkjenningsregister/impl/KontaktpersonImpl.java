@@ -5,6 +5,7 @@ package BedriftshelsetjenesteGodkjenningsregister.impl;
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Kontaktperson;
 
+import java.math.BigDecimal;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -78,7 +79,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TELEFON_DIR_EDEFAULT = null;
+	protected static final BigDecimal TELEFON_DIR_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTelefonDir() <em>Telefon Dir</em>}' attribute.
@@ -88,7 +89,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected String telefonDir = TELEFON_DIR_EDEFAULT;
+	protected BigDecimal telefonDir = TELEFON_DIR_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTelefonMob() <em>Telefon Mob</em>}' attribute.
@@ -98,7 +99,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TELEFON_MOB_EDEFAULT = null;
+	protected static final BigDecimal TELEFON_MOB_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTelefonMob() <em>Telefon Mob</em>}' attribute.
@@ -108,7 +109,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected String telefonMob = TELEFON_MOB_EDEFAULT;
+	protected BigDecimal telefonMob = TELEFON_MOB_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEpostadresse() <em>Epostadresse</em>}' attribute.
@@ -203,7 +204,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public String getTelefonDir() {
+	public BigDecimal getTelefonDir() {
 		return telefonDir;
 	}
 
@@ -213,8 +214,8 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public void setTelefonDir(String newTelefonDir) {
-		String oldTelefonDir = telefonDir;
+	public void setTelefonDir(BigDecimal newTelefonDir) {
+		BigDecimal oldTelefonDir = telefonDir;
 		telefonDir = newTelefonDir;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -227,7 +228,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public String getTelefonMob() {
+	public BigDecimal getTelefonMob() {
 		return telefonMob;
 	}
 
@@ -237,8 +238,8 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public void setTelefonMob(String newTelefonMob) {
-		String oldTelefonMob = telefonMob;
+	public void setTelefonMob(BigDecimal newTelefonMob) {
+		BigDecimal oldTelefonMob = telefonMob;
 		telefonMob = newTelefonMob;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -306,10 +307,10 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 			setRolle((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_DIR:
-			setTelefonDir((String) newValue);
+			setTelefonDir((BigDecimal) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_MOB:
-			setTelefonMob((String) newValue);
+			setTelefonMob((BigDecimal) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__EPOSTADRESSE:
 			setEpostadresse((String) newValue);
