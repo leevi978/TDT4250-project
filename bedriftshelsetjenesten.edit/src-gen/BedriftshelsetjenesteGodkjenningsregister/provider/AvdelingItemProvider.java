@@ -108,7 +108,7 @@ public class AvdelingItemProvider extends ItemProviderAdapter implements IEditin
 						getString("_UI_PropertyDescriptor_description", "_UI_Avdeling_Telefon_feature",
 								"_UI_Avdeling_type"),
 						BedriftshelsetjenestenPackage.Literals.AVDELING__TELEFON, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**

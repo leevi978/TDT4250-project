@@ -50,7 +50,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int ORGNR_EDEFAULT = 0;
+	protected static final String ORGNR_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getOrgnr() <em>Orgnr</em>}' attribute.
@@ -60,7 +60,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected int orgnr = ORGNR_EDEFAULT;
+	protected String orgnr = ORGNR_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getNavn() <em>Navn</em>}' attribute.
@@ -137,7 +137,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public int getOrgnr() {
+	public String getOrgnr() {
 		return orgnr;
 	}
 
@@ -147,8 +147,8 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void setOrgnr(int newOrgnr) {
-		int oldOrgnr = orgnr;
+	public void setOrgnr(String newOrgnr) {
+		String oldOrgnr = orgnr;
 		orgnr = newOrgnr;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -353,7 +353,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__ORGNR:
-			setOrgnr((Integer) newValue);
+			setOrgnr((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__NAVN:
 			setNavn((String) newValue);
@@ -408,7 +408,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__ORGNR:
-			return orgnr != ORGNR_EDEFAULT;
+			return ORGNR_EDEFAULT == null ? orgnr != null : !ORGNR_EDEFAULT.equals(orgnr);
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__NAVN:
 			return NAVN_EDEFAULT == null ? navn != null : !NAVN_EDEFAULT.equals(navn);
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON:

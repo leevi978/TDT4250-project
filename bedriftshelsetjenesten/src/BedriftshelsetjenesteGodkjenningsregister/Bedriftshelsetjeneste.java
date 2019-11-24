@@ -32,12 +32,12 @@ public interface Bedriftshelsetjeneste extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Orgnr</em>' attribute.
-	 * @see #setOrgnr(int)
+	 * @see #setOrgnr(String)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getBedriftshelsetjeneste_Orgnr()
 	 * @model
 	 * @generated
 	 */
-	int getOrgnr();
+	String getOrgnr();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Bedriftshelsetjeneste#getOrgnr <em>Orgnr</em>}' attribute.
@@ -47,7 +47,7 @@ public interface Bedriftshelsetjeneste extends EObject {
 	 * @see #getOrgnr()
 	 * @generated
 	 */
-	void setOrgnr(int value);
+	void setOrgnr(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Navn</b></em>' attribute.
