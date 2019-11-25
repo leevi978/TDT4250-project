@@ -4,7 +4,6 @@ package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Kontaktperson;
-
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;

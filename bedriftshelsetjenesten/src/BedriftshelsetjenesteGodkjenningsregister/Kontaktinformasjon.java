@@ -2,6 +2,7 @@
  */
 package BedriftshelsetjenesteGodkjenningsregister;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -30,12 +31,12 @@ public interface Kontaktinformasjon extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon</em>' attribute.
-	 * @see #setTelefon(int)
+	 * @see #setTelefon(String)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktinformasjon_Telefon()
 	 * @model
 	 * @generated
 	 */
-	int getTelefon();
+	String getTelefon();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getTelefon <em>Telefon</em>}' attribute.
@@ -45,7 +46,7 @@ public interface Kontaktinformasjon extends EObject {
 	 * @see #getTelefon()
 	 * @generated
 	 */
-	void setTelefon(int value);
+	void setTelefon(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Epost Adresse</b></em>' attribute.
@@ -92,47 +93,37 @@ public interface Kontaktinformasjon extends EObject {
 	void setInternettAdresse(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Postadresse</b></em>' reference.
+	 * Returns the value of the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Postadresse</em>' reference.
+	 * @return the value of the '<em>Postadresse</em>' containment reference.
 	 * @see #setPostadresse(Postadresse)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktinformasjon_Postadresse()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Postadresse getPostadresse();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getPostadresse <em>Postadresse</em>}' reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getPostadresse <em>Postadresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Postadresse</em>' reference.
+	 * @param value the new value of the '<em>Postadresse</em>' containment reference.
 	 * @see #getPostadresse()
 	 * @generated
 	 */
 	void setPostadresse(Postadresse value);
 
 	/**
-	 * Returns the value of the '<em><b>Kontaktperson</b></em>' reference.
+	 * Returns the value of the '<em><b>Kontaktperson</b></em>' containment reference list.
+	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kontaktperson</em>' reference.
-	 * @see #setKontaktperson(Kontaktperson)
+	 * @return the value of the '<em>Kontaktperson</em>' containment reference list.
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktinformasjon_Kontaktperson()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
-	Kontaktperson getKontaktperson();
-
-	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktinformasjon#getKontaktperson <em>Kontaktperson</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Kontaktperson</em>' reference.
-	 * @see #getKontaktperson()
-	 * @generated
-	 */
-	void setKontaktperson(Kontaktperson value);
+	EList<Kontaktperson> getKontaktperson();
 
 } // Kontaktinformasjon

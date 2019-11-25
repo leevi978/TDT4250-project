@@ -73,12 +73,12 @@ public interface Avdeling extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon</em>' attribute.
-	 * @see #setTelefon(int)
+	 * @see #setTelefon(String)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getAvdeling_Telefon()
 	 * @model
 	 * @generated
 	 */
-	int getTelefon();
+	String getTelefon();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Avdeling#getTelefon <em>Telefon</em>}' attribute.
@@ -88,25 +88,25 @@ public interface Avdeling extends EObject {
 	 * @see #getTelefon()
 	 * @generated
 	 */
-	void setTelefon(int value);
+	void setTelefon(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Postadresse</b></em>' reference.
+	 * Returns the value of the '<em><b>Postadresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Postadresse</em>' reference.
+	 * @return the value of the '<em>Postadresse</em>' containment reference.
 	 * @see #setPostadresse(Postadresse)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getAvdeling_Postadresse()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Postadresse getPostadresse();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Avdeling#getPostadresse <em>Postadresse</em>}' reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Avdeling#getPostadresse <em>Postadresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Postadresse</em>' reference.
+	 * @param value the new value of the '<em>Postadresse</em>' containment reference.
 	 * @see #getPostadresse()
 	 * @generated
 	 */

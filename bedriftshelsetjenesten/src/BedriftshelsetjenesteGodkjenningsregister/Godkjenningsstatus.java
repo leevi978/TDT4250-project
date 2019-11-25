@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getStatus <em>Status</em>}</li>
- *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSøknadsdato <em>Søknadsdato</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSoeknadsdato <em>Soeknadsdato</em>}</li>
  * </ul>
  *
  * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getGodkjenningsstatus()
@@ -47,25 +47,25 @@ public interface Godkjenningsstatus extends EObject {
 	void setStatus(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Søknadsdato</b></em>' attribute.
+	 * Returns the value of the '<em><b>Soeknadsdato</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Søknadsdato</em>' attribute.
-	 * @see #setSøknadsdato(Date)
-	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getGodkjenningsstatus_Søknadsdato()
+	 * @return the value of the '<em>Soeknadsdato</em>' attribute.
+	 * @see #setSoeknadsdato(Date)
+	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getGodkjenningsstatus_Soeknadsdato()
 	 * @model
 	 * @generated
 	 */
-	Date getSøknadsdato();
+	Date getSoeknadsdato();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSøknadsdato <em>Søknadsdato</em>}' attribute.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Godkjenningsstatus#getSoeknadsdato <em>Soeknadsdato</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Søknadsdato</em>' attribute.
-	 * @see #getSøknadsdato()
+	 * @param value the new value of the '<em>Soeknadsdato</em>' attribute.
+	 * @see #getSoeknadsdato()
 	 * @generated
 	 */
-	void setSøknadsdato(Date value);
+	void setSoeknadsdato(Date value);
 
 } // Godkjenningsstatus

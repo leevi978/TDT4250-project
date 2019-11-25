@@ -12,6 +12,7 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -20,7 +21,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +50,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int ORGNR_EDEFAULT = 0;
+	protected static final String ORGNR_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getOrgnr() <em>Orgnr</em>}' attribute.
@@ -58,7 +60,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected int orgnr = ORGNR_EDEFAULT;
+	protected String orgnr = ORGNR_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getNavn() <em>Navn</em>}' attribute.
@@ -81,7 +83,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	protected String navn = NAVN_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getKontaktinformasjon() <em>Kontaktinformasjon</em>}' reference.
+	 * The cached value of the '{@link #getKontaktinformasjon() <em>Kontaktinformasjon</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getKontaktinformasjon()
@@ -91,7 +93,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	protected Kontaktinformasjon kontaktinformasjon;
 
 	/**
-	 * The cached value of the '{@link #getAvdelinger() <em>Avdelinger</em>}' reference list.
+	 * The cached value of the '{@link #getAvdelinger() <em>Avdelinger</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAvdelinger()
@@ -101,7 +103,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	protected EList<Avdeling> avdelinger;
 
 	/**
-	 * The cached value of the '{@link #getGodkjenningsstatus() <em>Godkjenningsstatus</em>}' reference.
+	 * The cached value of the '{@link #getGodkjenningsstatus() <em>Godkjenningsstatus</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getGodkjenningsstatus()
@@ -135,7 +137,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public int getOrgnr() {
+	public String getOrgnr() {
 		return orgnr;
 	}
 
@@ -145,8 +147,8 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void setOrgnr(int newOrgnr) {
-		int oldOrgnr = orgnr;
+	public void setOrgnr(String newOrgnr) {
+		String oldOrgnr = orgnr;
 		orgnr = newOrgnr;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -184,16 +186,6 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	public Kontaktinformasjon getKontaktinformasjon() {
-		if (kontaktinformasjon != null && kontaktinformasjon.eIsProxy()) {
-			InternalEObject oldKontaktinformasjon = (InternalEObject) kontaktinformasjon;
-			kontaktinformasjon = (Kontaktinformasjon) eResolveProxy(oldKontaktinformasjon);
-			if (kontaktinformasjon != oldKontaktinformasjon) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON,
-							oldKontaktinformasjon, kontaktinformasjon));
-			}
-		}
 		return kontaktinformasjon;
 	}
 
@@ -202,8 +194,20 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Kontaktinformasjon basicGetKontaktinformasjon() {
-		return kontaktinformasjon;
+	public NotificationChain basicSetKontaktinformasjon(Kontaktinformasjon newKontaktinformasjon,
+			NotificationChain msgs) {
+		Kontaktinformasjon oldKontaktinformasjon = kontaktinformasjon;
+		kontaktinformasjon = newKontaktinformasjon;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON, oldKontaktinformasjon,
+					newKontaktinformasjon);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -213,12 +217,21 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	public void setKontaktinformasjon(Kontaktinformasjon newKontaktinformasjon) {
-		Kontaktinformasjon oldKontaktinformasjon = kontaktinformasjon;
-		kontaktinformasjon = newKontaktinformasjon;
-		if (eNotificationRequired())
+		if (newKontaktinformasjon != kontaktinformasjon) {
+			NotificationChain msgs = null;
+			if (kontaktinformasjon != null)
+				msgs = ((InternalEObject) kontaktinformasjon).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+						- BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON, null, msgs);
+			if (newKontaktinformasjon != null)
+				msgs = ((InternalEObject) newKontaktinformasjon).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+						- BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON, null, msgs);
+			msgs = basicSetKontaktinformasjon(newKontaktinformasjon, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON, oldKontaktinformasjon,
-					kontaktinformasjon));
+					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON, newKontaktinformasjon,
+					newKontaktinformasjon));
 	}
 
 	/**
@@ -229,7 +242,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public EList<Avdeling> getAvdelinger() {
 		if (avdelinger == null) {
-			avdelinger = new EObjectResolvingEList<Avdeling>(Avdeling.class, this,
+			avdelinger = new EObjectContainmentEList<Avdeling>(Avdeling.class, this,
 					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__AVDELINGER);
 		}
 		return avdelinger;
@@ -242,16 +255,6 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	public Godkjenningsstatus getGodkjenningsstatus() {
-		if (godkjenningsstatus != null && godkjenningsstatus.eIsProxy()) {
-			InternalEObject oldGodkjenningsstatus = (InternalEObject) godkjenningsstatus;
-			godkjenningsstatus = (Godkjenningsstatus) eResolveProxy(oldGodkjenningsstatus);
-			if (godkjenningsstatus != oldGodkjenningsstatus) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS,
-							oldGodkjenningsstatus, godkjenningsstatus));
-			}
-		}
 		return godkjenningsstatus;
 	}
 
@@ -260,8 +263,20 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Godkjenningsstatus basicGetGodkjenningsstatus() {
-		return godkjenningsstatus;
+	public NotificationChain basicSetGodkjenningsstatus(Godkjenningsstatus newGodkjenningsstatus,
+			NotificationChain msgs) {
+		Godkjenningsstatus oldGodkjenningsstatus = godkjenningsstatus;
+		godkjenningsstatus = newGodkjenningsstatus;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS, oldGodkjenningsstatus,
+					newGodkjenningsstatus);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -271,12 +286,39 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	public void setGodkjenningsstatus(Godkjenningsstatus newGodkjenningsstatus) {
-		Godkjenningsstatus oldGodkjenningsstatus = godkjenningsstatus;
-		godkjenningsstatus = newGodkjenningsstatus;
-		if (eNotificationRequired())
+		if (newGodkjenningsstatus != godkjenningsstatus) {
+			NotificationChain msgs = null;
+			if (godkjenningsstatus != null)
+				msgs = ((InternalEObject) godkjenningsstatus).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+						- BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS, null, msgs);
+			if (newGodkjenningsstatus != null)
+				msgs = ((InternalEObject) newGodkjenningsstatus).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+						- BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS, null, msgs);
+			msgs = basicSetGodkjenningsstatus(newGodkjenningsstatus, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS, oldGodkjenningsstatus,
-					godkjenningsstatus));
+					BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS, newGodkjenningsstatus,
+					newGodkjenningsstatus));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON:
+			return basicSetKontaktinformasjon(null, msgs);
+		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__AVDELINGER:
+			return ((InternalEList<?>) getAvdelinger()).basicRemove(otherEnd, msgs);
+		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS:
+			return basicSetGodkjenningsstatus(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -292,15 +334,11 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__NAVN:
 			return getNavn();
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON:
-			if (resolve)
-				return getKontaktinformasjon();
-			return basicGetKontaktinformasjon();
+			return getKontaktinformasjon();
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__AVDELINGER:
 			return getAvdelinger();
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__GODKJENNINGSSTATUS:
-			if (resolve)
-				return getGodkjenningsstatus();
-			return basicGetGodkjenningsstatus();
+			return getGodkjenningsstatus();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -315,7 +353,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__ORGNR:
-			setOrgnr((Integer) newValue);
+			setOrgnr((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__NAVN:
 			setNavn((String) newValue);
@@ -370,7 +408,7 @@ public class BedriftshelsetjenesteImpl extends MinimalEObjectImpl.Container impl
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__ORGNR:
-			return orgnr != ORGNR_EDEFAULT;
+			return ORGNR_EDEFAULT == null ? orgnr != null : !ORGNR_EDEFAULT.equals(orgnr);
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__NAVN:
 			return NAVN_EDEFAULT == null ? navn != null : !NAVN_EDEFAULT.equals(navn);
 		case BedriftshelsetjenestenPackage.BEDRIFTSHELSETJENESTE__KONTAKTINFORMASJON:

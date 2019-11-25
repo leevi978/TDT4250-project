@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getAdresse <em>Adresse</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getPostnr <em>Postnr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getPoststed <em>Poststed</em>}</li>
- *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune <em>Kommune</em>}</li>
  * </ul>
  *
  * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getPostadresse()
@@ -89,27 +88,5 @@ public interface Postadresse extends EObject {
 	 * @generated
 	 */
 	void setPoststed(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Kommune</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kommune</em>' reference.
-	 * @see #setKommune(Kommune)
-	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getPostadresse_Kommune()
-	 * @model
-	 * @generated
-	 */
-	Kommune getKommune();
-
-	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune <em>Kommune</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Kommune</em>' reference.
-	 * @see #getKommune()
-	 * @generated
-	 */
-	void setKommune(Kommune value);
 
 } // Postadresse

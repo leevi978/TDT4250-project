@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * </p>
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.GodkjenningsstatusImpl#getStatus <em>Status</em>}</li>
- *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.GodkjenningsstatusImpl#getSøknadsdato <em>Søknadsdato</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.GodkjenningsstatusImpl#getSoeknadsdato <em>Soeknadsdato</em>}</li>
  * </ul>
  *
  * @generated
@@ -50,24 +50,24 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 	protected String status = STATUS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getSøknadsdato() <em>Søknadsdato</em>}' attribute.
+	 * The default value of the '{@link #getSoeknadsdato() <em>Soeknadsdato</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSøknadsdato()
+	 * @see #getSoeknadsdato()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Date SØKNADSDATO_EDEFAULT = null;
+	protected static final Date SOEKNADSDATO_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getSøknadsdato() <em>Søknadsdato</em>}' attribute.
+	 * The cached value of the '{@link #getSoeknadsdato() <em>Soeknadsdato</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSøknadsdato()
+	 * @see #getSoeknadsdato()
 	 * @generated
 	 * @ordered
 	 */
-	protected Date søknadsdato = SØKNADSDATO_EDEFAULT;
+	protected Date soeknadsdato = SOEKNADSDATO_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -118,8 +118,8 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Date getSøknadsdato() {
-		return søknadsdato;
+	public Date getSoeknadsdato() {
+		return soeknadsdato;
 	}
 
 	/**
@@ -128,12 +128,12 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void setSøknadsdato(Date newSøknadsdato) {
-		Date oldSøknadsdato = søknadsdato;
-		søknadsdato = newSøknadsdato;
+	public void setSoeknadsdato(Date newSoeknadsdato) {
+		Date oldSoeknadsdato = soeknadsdato;
+		soeknadsdato = newSoeknadsdato;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SØKNADSDATO, oldSøknadsdato, søknadsdato));
+					BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SOEKNADSDATO, oldSoeknadsdato, soeknadsdato));
 	}
 
 	/**
@@ -146,8 +146,8 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__STATUS:
 			return getStatus();
-		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SØKNADSDATO:
-			return getSøknadsdato();
+		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SOEKNADSDATO:
+			return getSoeknadsdato();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -163,8 +163,8 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__STATUS:
 			setStatus((String) newValue);
 			return;
-		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SØKNADSDATO:
-			setSøknadsdato((Date) newValue);
+		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SOEKNADSDATO:
+			setSoeknadsdato((Date) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -181,8 +181,8 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__STATUS:
 			setStatus(STATUS_EDEFAULT);
 			return;
-		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SØKNADSDATO:
-			setSøknadsdato(SØKNADSDATO_EDEFAULT);
+		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SOEKNADSDATO:
+			setSoeknadsdato(SOEKNADSDATO_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -198,8 +198,8 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 		switch (featureID) {
 		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__STATUS:
 			return STATUS_EDEFAULT == null ? status != null : !STATUS_EDEFAULT.equals(status);
-		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SØKNADSDATO:
-			return SØKNADSDATO_EDEFAULT == null ? søknadsdato != null : !SØKNADSDATO_EDEFAULT.equals(søknadsdato);
+		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS__SOEKNADSDATO:
+			return SOEKNADSDATO_EDEFAULT == null ? soeknadsdato != null : !SOEKNADSDATO_EDEFAULT.equals(soeknadsdato);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -217,8 +217,8 @@ public class GodkjenningsstatusImpl extends MinimalEObjectImpl.Container impleme
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (Status: ");
 		result.append(status);
-		result.append(", Søknadsdato: ");
-		result.append(søknadsdato);
+		result.append(", Soeknadsdato: ");
+		result.append(soeknadsdato);
 		result.append(')');
 		return result.toString();
 	}

@@ -3,7 +3,6 @@
 package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.*;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -72,6 +71,8 @@ public class BedriftshelsetjenestenFactoryImpl extends EFactoryImpl implements B
 			return createAvdeling();
 		case BedriftshelsetjenestenPackage.GODKJENNINGSSTATUS:
 			return createGodkjenningsstatus();
+		case BedriftshelsetjenestenPackage.UO_D:
+			return createUoD();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -163,6 +164,17 @@ public class BedriftshelsetjenestenFactoryImpl extends EFactoryImpl implements B
 	public Godkjenningsstatus createGodkjenningsstatus() {
 		GodkjenningsstatusImpl godkjenningsstatus = new GodkjenningsstatusImpl();
 		return godkjenningsstatus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UoD createUoD() {
+		UoDImpl uoD = new UoDImpl();
+		return uoD;
 	}
 
 	/**
