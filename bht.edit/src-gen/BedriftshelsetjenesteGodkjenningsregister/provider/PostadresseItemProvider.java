@@ -2,6 +2,7 @@
  */
 package BedriftshelsetjenesteGodkjenningsregister.provider;
 
+import BedriftshelsetjenesteGodkjenningsregister.BhtFactory;
 import BedriftshelsetjenesteGodkjenningsregister.BhtPackage;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
 
@@ -13,6 +14,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -56,6 +58,7 @@ public class PostadresseItemProvider extends ItemProviderAdapter implements IEdi
 			addAdressePropertyDescriptor(object);
 			addPostnrPropertyDescriptor(object);
 			addPoststedPropertyDescriptor(object);
+			addKommunePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -109,6 +112,51 @@ public class PostadresseItemProvider extends ItemProviderAdapter implements IEdi
 	}
 
 	/**
+	 * This adds a property descriptor for the Kommune feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addKommunePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Postadresse_kommune_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Postadresse_kommune_feature",
+								"_UI_Postadresse_type"),
+						BhtPackage.Literals.POSTADRESSE__KOMMUNE, true, false, true, null, null, null));
+	}
+
+	/**
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(BhtPackage.Literals.POSTADRESSE__KOMMUNE);
+		}
+		return childrenFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
+
+		return super.getChildFeature(object, child);
+	}
+
+	/**
 	 * This returns Postadresse.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -159,6 +207,9 @@ public class PostadresseItemProvider extends ItemProviderAdapter implements IEdi
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
+		case BhtPackage.POSTADRESSE__KOMMUNE:
+			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -173,6 +224,9 @@ public class PostadresseItemProvider extends ItemProviderAdapter implements IEdi
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add(
+				createChildParameter(BhtPackage.Literals.POSTADRESSE__KOMMUNE, BhtFactory.eINSTANCE.createKommune()));
 	}
 
 	/**

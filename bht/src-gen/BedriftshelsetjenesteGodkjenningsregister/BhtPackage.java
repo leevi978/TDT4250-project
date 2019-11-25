@@ -240,13 +240,22 @@ public interface BhtPackage extends EPackage {
 	int POSTADRESSE__POSTSTED = 2;
 
 	/**
+	 * The feature id for the '<em><b>Kommune</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTADRESSE__KOMMUNE = 3;
+
+	/**
 	 * The number of structural features of the '<em>Postadresse</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int POSTADRESSE_FEATURE_COUNT = 3;
+	int POSTADRESSE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Postadresse</em>' class.
@@ -286,13 +295,13 @@ public interface BhtPackage extends EPackage {
 	int KOMMUNE__KOMMUNENAVN = 1;
 
 	/**
-	 * The feature id for the '<em><b>Postadresse</b></em>' containment reference.
+	 * The feature id for the '<em><b>Fylke</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KOMMUNE__POSTADRESSE = 2;
+	int KOMMUNE__FYLKE = 2;
 
 	/**
 	 * The number of structural features of the '<em>Kommune</em>' class.
@@ -570,22 +579,13 @@ public interface BhtPackage extends EPackage {
 	int UO_D__BEDRIFTSHELSETJENESTE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Kommune</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UO_D__KOMMUNE = 1;
-
-	/**
 	 * The feature id for the '<em><b>Fylke</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UO_D__FYLKE = 2;
+	int UO_D__FYLKE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Uo D</em>' class.
@@ -594,7 +594,7 @@ public interface BhtPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UO_D_FEATURE_COUNT = 3;
+	int UO_D_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Uo D</em>' class.
@@ -779,6 +779,17 @@ public interface BhtPackage extends EPackage {
 	EAttribute getPostadresse_Poststed();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune <em>Kommune</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Kommune</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune()
+	 * @see #getPostadresse()
+	 * @generated
+	 */
+	EReference getPostadresse_Kommune();
+
+	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune <em>Kommune</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -811,15 +822,15 @@ public interface BhtPackage extends EPackage {
 	EAttribute getKommune_Kommunenavn();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}'.
+	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Postadresse</em>'.
-	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse()
+	 * @return the meta object for the reference '<em>Fylke</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke()
 	 * @see #getKommune()
 	 * @generated
 	 */
-	EReference getKommune_Postadresse();
+	EReference getKommune_Fylke();
 
 	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Fylke <em>Fylke</em>}'.
@@ -1037,17 +1048,6 @@ public interface BhtPackage extends EPackage {
 	EReference getUoD_Bedriftshelsetjeneste();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune <em>Kommune</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Kommune</em>'.
-	 * @see BedriftshelsetjenesteGodkjenningsregister.UoD#getKommune()
-	 * @see #getUoD()
-	 * @generated
-	 */
-	EReference getUoD_Kommune();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link BedriftshelsetjenesteGodkjenningsregister.UoD#getFylke <em>Fylke</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1216,6 +1216,14 @@ public interface BhtPackage extends EPackage {
 		EAttribute POSTADRESSE__POSTSTED = eINSTANCE.getPostadresse_Poststed();
 
 		/**
+		 * The meta object literal for the '<em><b>Kommune</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POSTADRESSE__KOMMUNE = eINSTANCE.getPostadresse_Kommune();
+
+		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl <em>Kommune</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1242,12 +1250,12 @@ public interface BhtPackage extends EPackage {
 		EAttribute KOMMUNE__KOMMUNENAVN = eINSTANCE.getKommune_Kommunenavn();
 
 		/**
-		 * The meta object literal for the '<em><b>Postadresse</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Fylke</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KOMMUNE__POSTADRESSE = eINSTANCE.getKommune_Postadresse();
+		EReference KOMMUNE__FYLKE = eINSTANCE.getKommune_Fylke();
 
 		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.FylkeImpl <em>Fylke</em>}' class.
@@ -1418,14 +1426,6 @@ public interface BhtPackage extends EPackage {
 		 * @generated
 		 */
 		EReference UO_D__BEDRIFTSHELSETJENESTE = eINSTANCE.getUoD_Bedriftshelsetjeneste();
-
-		/**
-		 * The meta object literal for the '<em><b>Kommune</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference UO_D__KOMMUNE = eINSTANCE.getUoD_Kommune();
 
 		/**
 		 * The meta object literal for the '<em><b>Fylke</b></em>' containment reference list feature.

@@ -3,14 +3,20 @@
 package BedriftshelsetjenesteGodkjenningsregister.impl;
 
 import BedriftshelsetjenesteGodkjenningsregister.BhtPackage;
+import BedriftshelsetjenesteGodkjenningsregister.Kommune;
 import BedriftshelsetjenesteGodkjenningsregister.Postadresse;
-
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,6 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.PostadresseImpl#getAdresse <em>Adresse</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.PostadresseImpl#getPostnr <em>Postnr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.PostadresseImpl#getPoststed <em>Poststed</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.impl.PostadresseImpl#getKommune <em>Kommune</em>}</li>
  * </ul>
  *
  * @generated
@@ -87,6 +94,16 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 	 * @ordered
 	 */
 	protected String poststed = POSTSTED_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getKommune() <em>Kommune</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getKommune()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Kommune> kommune;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,6 +194,32 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Kommune> getKommune() {
+		if (kommune == null) {
+			kommune = new EObjectContainmentEList<Kommune>(Kommune.class, this, BhtPackage.POSTADRESSE__KOMMUNE);
+		}
+		return kommune;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case BhtPackage.POSTADRESSE__KOMMUNE:
+			return ((InternalEList<?>) getKommune()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -186,6 +229,8 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 			return getPostnr();
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			return getPoststed();
+		case BhtPackage.POSTADRESSE__KOMMUNE:
+			return getKommune();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -195,6 +240,7 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -206,6 +252,10 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 			return;
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			setPoststed((String) newValue);
+			return;
+		case BhtPackage.POSTADRESSE__KOMMUNE:
+			getKommune().clear();
+			getKommune().addAll((Collection<? extends Kommune>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -228,6 +278,9 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			setPoststed(POSTSTED_EDEFAULT);
 			return;
+		case BhtPackage.POSTADRESSE__KOMMUNE:
+			getKommune().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -246,6 +299,8 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 			return POSTNR_EDEFAULT == null ? postnr != null : !POSTNR_EDEFAULT.equals(postnr);
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			return POSTSTED_EDEFAULT == null ? poststed != null : !POSTSTED_EDEFAULT.equals(poststed);
+		case BhtPackage.POSTADRESSE__KOMMUNE:
+			return kommune != null && !kommune.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

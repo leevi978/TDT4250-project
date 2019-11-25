@@ -25,12 +25,13 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Adresse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Postnr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Poststed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" upperBound="-1"
+        eType="#//Kommune" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kommune">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Kommunenr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Kommunenavn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="postadresse" eType="#//Postadresse"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fylke" eType="#//Fylke"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Fylke">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Fylkenr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -59,8 +60,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="UoD">
     <eStructuralFeatures xsi:type="ecore:EReference" name="bedriftshelsetjeneste"
         upperBound="-1" eType="#//Bedriftshelsetjeneste" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" upperBound="-1"
-        eType="#//Kommune" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fylke" upperBound="-1"
         eType="#//Fylke" containment="true"/>
   </eClassifiers>

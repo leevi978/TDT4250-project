@@ -71,7 +71,6 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(BhtPackage.Literals.UO_D__BEDRIFTSHELSETJENESTE);
-			childrenFeatures.add(BhtPackage.Literals.UO_D__KOMMUNE);
 			childrenFeatures.add(BhtPackage.Literals.UO_D__FYLKE);
 		}
 		return childrenFeatures;
@@ -135,7 +134,6 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 
 		switch (notification.getFeatureID(UoD.class)) {
 		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTE:
-		case BhtPackage.UO_D__KOMMUNE:
 		case BhtPackage.UO_D__FYLKE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
@@ -156,9 +154,6 @@ public class UoDItemProvider extends ItemProviderAdapter implements IEditingDoma
 
 		newChildDescriptors.add(createChildParameter(BhtPackage.Literals.UO_D__BEDRIFTSHELSETJENESTE,
 				BhtFactory.eINSTANCE.createBedriftshelsetjeneste()));
-
-		newChildDescriptors
-				.add(createChildParameter(BhtPackage.Literals.UO_D__KOMMUNE, BhtFactory.eINSTANCE.createKommune()));
 
 		newChildDescriptors
 				.add(createChildParameter(BhtPackage.Literals.UO_D__FYLKE, BhtFactory.eINSTANCE.createFylke()));

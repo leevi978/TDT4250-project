@@ -2,6 +2,7 @@
  */
 package BedriftshelsetjenesteGodkjenningsregister;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -16,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getAdresse <em>Adresse</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getPostnr <em>Postnr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getPoststed <em>Poststed</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune <em>Kommune</em>}</li>
  * </ul>
  *
  * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getPostadresse()
@@ -88,5 +90,17 @@ public interface Postadresse extends EObject {
 	 * @generated
 	 */
 	void setPoststed(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Kommune</b></em>' containment reference list.
+	 * The list contents are of type {@link BedriftshelsetjenesteGodkjenningsregister.Kommune}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Kommune</em>' containment reference list.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getPostadresse_Kommune()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Kommune> getKommune();
 
 } // Postadresse

@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getKommunenr <em>Kommunenr</em>}</li>
  *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getKommunenavn <em>Kommunenavn</em>}</li>
- *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}</li>
+ *   <li>{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}</li>
  * </ul>
  *
  * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getKommune()
@@ -68,25 +68,25 @@ public interface Kommune extends EObject {
 	void setKommunenavn(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Postadresse</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Fylke</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Postadresse</em>' containment reference.
-	 * @see #setPostadresse(Postadresse)
-	 * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getKommune_Postadresse()
-	 * @model containment="true"
+	 * @return the value of the '<em>Fylke</em>' reference.
+	 * @see #setFylke(Fylke)
+	 * @see BedriftshelsetjenesteGodkjenningsregister.BhtPackage#getKommune_Fylke()
+	 * @model
 	 * @generated
 	 */
-	Postadresse getPostadresse();
+	Fylke getFylke();
 
 	/**
-	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}' containment reference.
+	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getFylke <em>Fylke</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Postadresse</em>' containment reference.
-	 * @see #getPostadresse()
+	 * @param value the new value of the '<em>Fylke</em>' reference.
+	 * @see #getFylke()
 	 * @generated
 	 */
-	void setPostadresse(Postadresse value);
+	void setFylke(Fylke value);
 
 } // Kommune
