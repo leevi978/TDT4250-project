@@ -321,6 +321,16 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 	 * @generated
 	 */
 	@Override
+	public EReference getPostadresse_Kommune() {
+		return (EReference) postadresseEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getKommune() {
 		return kommuneEClass;
 	}
@@ -353,16 +363,6 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 	@Override
 	public EReference getKommune_Fylke() {
 		return (EReference) kommuneEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getKommune_Postadresse() {
-		return (EReference) kommuneEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -623,12 +623,12 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 		createEAttribute(postadresseEClass, POSTADRESSE__ADRESSE);
 		createEAttribute(postadresseEClass, POSTADRESSE__POSTNR);
 		createEAttribute(postadresseEClass, POSTADRESSE__POSTSTED);
+		createEReference(postadresseEClass, POSTADRESSE__KOMMUNE);
 
 		kommuneEClass = createEClass(KOMMUNE);
 		createEAttribute(kommuneEClass, KOMMUNE__KOMMUNENR);
 		createEAttribute(kommuneEClass, KOMMUNE__KOMMUNENAVN);
 		createEReference(kommuneEClass, KOMMUNE__FYLKE);
-		createEReference(kommuneEClass, KOMMUNE__POSTADRESSE);
 
 		fylkeEClass = createEClass(FYLKE);
 		createEAttribute(fylkeEClass, FYLKE__FYLKENR);
@@ -732,6 +732,9 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostadresse_Poststed(), ecorePackage.getEString(), "Poststed", null, 0, 1, Postadresse.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPostadresse_Kommune(), this.getKommune(), null, "kommune", null, 0, 1, Postadresse.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kommuneEClass, Kommune.class, "Kommune", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getKommune_Kommunenr(), ecorePackage.getEInt(), "Kommunenr", null, 0, 1, Kommune.class,
@@ -741,9 +744,6 @@ public class BedriftshelsetjenestenPackageImpl extends EPackageImpl implements B
 		initEReference(getKommune_Fylke(), this.getFylke(), null, "Fylke", null, 0, 1, Kommune.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
-		initEReference(getKommune_Postadresse(), this.getPostadresse(), null, "postadresse", null, 0, 1, Kommune.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(fylkeEClass, Fylke.class, "Fylke", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFylke_Fylkenr(), ecorePackage.getEInt(), "Fylkenr", null, 0, 1, Fylke.class, !IS_TRANSIENT,

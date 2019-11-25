@@ -241,13 +241,22 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int POSTADRESSE__POSTSTED = 2;
 
 	/**
+	 * The feature id for the '<em><b>Kommune</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTADRESSE__KOMMUNE = 3;
+
+	/**
 	 * The number of structural features of the '<em>Postadresse</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int POSTADRESSE_FEATURE_COUNT = 3;
+	int POSTADRESSE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Postadresse</em>' class.
@@ -296,22 +305,13 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	int KOMMUNE__FYLKE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Postadresse</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KOMMUNE__POSTADRESSE = 3;
-
-	/**
 	 * The number of structural features of the '<em>Kommune</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KOMMUNE_FEATURE_COUNT = 4;
+	int KOMMUNE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Kommune</em>' class.
@@ -780,6 +780,17 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	EAttribute getPostadresse_Poststed();
 
 	/**
+	 * Returns the meta object for the reference '{@link BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune <em>Kommune</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Kommune</em>'.
+	 * @see BedriftshelsetjenesteGodkjenningsregister.Postadresse#getKommune()
+	 * @see #getPostadresse()
+	 * @generated
+	 */
+	EReference getPostadresse_Kommune();
+
+	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune <em>Kommune</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -821,17 +832,6 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getKommune_Fylke();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse <em>Postadresse</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Postadresse</em>'.
-	 * @see BedriftshelsetjenesteGodkjenningsregister.Kommune#getPostadresse()
-	 * @see #getKommune()
-	 * @generated
-	 */
-	EReference getKommune_Postadresse();
 
 	/**
 	 * Returns the meta object for class '{@link BedriftshelsetjenesteGodkjenningsregister.Fylke <em>Fylke</em>}'.
@@ -1217,6 +1217,14 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		EAttribute POSTADRESSE__POSTSTED = eINSTANCE.getPostadresse_Poststed();
 
 		/**
+		 * The meta object literal for the '<em><b>Kommune</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POSTADRESSE__KOMMUNE = eINSTANCE.getPostadresse_Kommune();
+
+		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.KommuneImpl <em>Kommune</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1249,14 +1257,6 @@ public interface BedriftshelsetjenestenPackage extends EPackage {
 		 * @generated
 		 */
 		EReference KOMMUNE__FYLKE = eINSTANCE.getKommune_Fylke();
-
-		/**
-		 * The meta object literal for the '<em><b>Postadresse</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference KOMMUNE__POSTADRESSE = eINSTANCE.getKommune_Postadresse();
 
 		/**
 		 * The meta object literal for the '{@link BedriftshelsetjenesteGodkjenningsregister.impl.FylkeImpl <em>Fylke</em>}' class.

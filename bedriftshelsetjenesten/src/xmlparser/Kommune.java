@@ -70,6 +70,13 @@ public class Kommune {
 			return false;
 		return true;
 	}
+	
+	public boolean dataEquals(String kommunenavn, int kommunenr, String fylkenavn, int fylkenr) {
+		return this.kommunenavn.equals(kommunenavn) 
+				&& this.kommunenr == kommunenr
+				&& this.fylke.getFylkenavn().equals(fylkenavn) 
+				&& this.fylke.getFylkenr() == fylkenr;
+	}
 
 	@Override
 	public String toString() {

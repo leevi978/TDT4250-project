@@ -56,6 +56,7 @@ public class PostadresseItemProvider extends ItemProviderAdapter implements IEdi
 			addAdressePropertyDescriptor(object);
 			addPostnrPropertyDescriptor(object);
 			addPoststedPropertyDescriptor(object);
+			addKommunePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -106,6 +107,22 @@ public class PostadresseItemProvider extends ItemProviderAdapter implements IEdi
 								"_UI_Postadresse_type"),
 						BedriftshelsetjenestenPackage.Literals.POSTADRESSE__POSTSTED, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Kommune feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addKommunePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Postadresse_kommune_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Postadresse_kommune_feature",
+								"_UI_Postadresse_type"),
+						BedriftshelsetjenestenPackage.Literals.POSTADRESSE__KOMMUNE, true, false, true, null, null,
+						null));
 	}
 
 	/**
