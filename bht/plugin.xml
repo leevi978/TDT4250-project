@@ -10,7 +10,7 @@
       <!-- @generated bht -->
       <package
             uri="http://www.example.org/bedriftshelsetjenesten"
-            class="BedriftshelsetjenesteGodkjenningsregister.BhtPackage"
+            class="bedriftshelsetjenesten.BhtPackage"
             genModel="model/bht.genmodel"/>
    </extension>
 

@@ -4,6 +4,11 @@
     <semanticResources>bht.genmodel</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
     <semanticResources>bht.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.emf.ecore/model/XMI.xsd</semanticResources>
+    <semanticResources>bundleentry://865.fwk993343057/cache/www.w3.org/2001/XMLSchema-instance.xsd</semanticResources>
+    <semanticResources>bundleentry://865.fwk993343057/cache/www.w3.org/2001/XMLSchema.xsd</semanticResources>
+    <semanticResources>bundleentry://865.fwk993343057/cache/www.w3.org/2001/MagicXMLSchema.xsd</semanticResources>
+    <semanticResources>http://www.w3.org/2001/xml.xsd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_igpQIASDEeqPMNDhPVKz8A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ihLbowSDEeqPMNDhPVKz8A" name="bht" repPath="#_ihBqoASDEeqPMNDhPVKz8A">

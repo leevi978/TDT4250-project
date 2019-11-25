@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="BedriftshelsetjenesteGodkjenningsregister" nsURI="http://www.example.org/bedriftshelsetjenesten"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bedriftshelsetjenesten" nsURI="http://www.example.org/bedriftshelsetjenesten"
     nsPrefix="bedriftshelsetjenesten">
   <eClassifiers xsi:type="ecore:EClass" name="Bedriftshelsetjeneste">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Orgnr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Orgnr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Navn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Kontaktinformasjon" eType="#//Kontaktinformasjon"
         containment="true"/>
@@ -13,7 +13,7 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kontaktinformasjon">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Telefon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Telefon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="EpostAdresse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="InternettAdresse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Postadresse" eType="#//Postadresse"
@@ -25,8 +25,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Adresse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Postnr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Poststed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" upperBound="-1"
-        eType="#//Kommune" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" eType="#//Kommune"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kommune">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Kommunenr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -36,20 +35,20 @@
   <eClassifiers xsi:type="ecore:EClass" name="Fylke">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Fylkenr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Fylkenavn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="kommune" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kommuner" upperBound="-1"
         eType="#//Kommune" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kontaktperson">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Navn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Rolle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="TelefonDir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="TelefonMob" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="TelefonDir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="TelefonMob" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Epostadresse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Avdeling">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Navn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Avdelingsleder" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Telefon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Telefon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Postadresse" eType="#//Postadresse"
         containment="true"/>
   </eClassifiers>
@@ -58,9 +57,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Soeknadsdato" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UoD">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="bedriftshelsetjeneste"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedriftshelsetjenester"
         upperBound="-1" eType="#//Bedriftshelsetjeneste" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fylke" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fylker" upperBound="-1"
         eType="#//Fylke" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

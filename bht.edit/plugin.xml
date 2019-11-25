@@ -10,7 +10,7 @@
       <!-- @generated bht -->
       <factory
             uri="http://www.example.org/bedriftshelsetjenesten"
-            class="BedriftshelsetjenesteGodkjenningsregister.provider.BhtItemProviderAdapterFactory"
+            class="bedriftshelsetjenesten.provider.BhtItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
