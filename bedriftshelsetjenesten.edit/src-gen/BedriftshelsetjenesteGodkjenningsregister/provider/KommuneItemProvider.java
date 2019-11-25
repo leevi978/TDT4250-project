@@ -58,7 +58,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 			addKommunenrPropertyDescriptor(object);
 			addKommunenavnPropertyDescriptor(object);
 			addFylkePropertyDescriptor(object);
-			addPostadressePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -111,22 +110,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 	}
 
 	/**
-	 * This adds a property descriptor for the Postadresse feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPostadressePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Kommune_postadresse_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Kommune_postadresse_feature",
-								"_UI_Kommune_type"),
-						BedriftshelsetjenestenPackage.Literals.KOMMUNE__POSTADRESSE, true, false, true, null, null,
-						null));
-	}
-
-	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -139,7 +122,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(BedriftshelsetjenestenPackage.Literals.KOMMUNE__FYLKE);
-			childrenFeatures.add(BedriftshelsetjenestenPackage.Literals.KOMMUNE__POSTADRESSE);
 		}
 		return childrenFeatures;
 	}
@@ -207,7 +189,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case BedriftshelsetjenestenPackage.KOMMUNE__FYLKE:
-		case BedriftshelsetjenestenPackage.KOMMUNE__POSTADRESSE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -227,9 +208,6 @@ public class KommuneItemProvider extends ItemProviderAdapter implements IEditing
 
 		newChildDescriptors.add(createChildParameter(BedriftshelsetjenestenPackage.Literals.KOMMUNE__FYLKE,
 				BedriftshelsetjenestenFactory.eINSTANCE.createFylke()));
-
-		newChildDescriptors.add(createChildParameter(BedriftshelsetjenestenPackage.Literals.KOMMUNE__POSTADRESSE,
-				BedriftshelsetjenestenFactory.eINSTANCE.createPostadresse()));
 	}
 
 	/**

@@ -32,7 +32,6 @@ public class MainProgram {
 		UoD uod = XmlModelToEcoreModelConverter.convertToEcore(b);
 		uod.getFylke();
 		//System.out.println(uod);
-		
 	}
 	
 	

@@ -27,12 +27,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Postadresse/Adresse"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Postadresse/Postnr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Postadresse/Poststed"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//Postadresse/kommune"/>
     </genClasses>
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//Kommune">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Kommune/Kommunenr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Kommune/Kommunenavn"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//Kommune/Fylke"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bedriftshelsetjenesten.ecore#//Kommune/postadresse"/>
     </genClasses>
     <genClasses ecoreClass="bedriftshelsetjenesten.ecore#//Fylke">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bedriftshelsetjenesten.ecore#//Fylke/Fylkenr"/>
