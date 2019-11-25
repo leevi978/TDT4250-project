@@ -77,7 +77,7 @@ public class BedriftshelsetjenesteItemProvider extends ItemProviderAdapter imple
 						getString("_UI_PropertyDescriptor_description", "_UI_Bedriftshelsetjeneste_Orgnr_feature",
 								"_UI_Bedriftshelsetjeneste_type"),
 						BedriftshelsetjenestenPackage.Literals.BEDRIFTSHELSETJENESTE__ORGNR, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -205,8 +205,9 @@ public class BedriftshelsetjenesteItemProvider extends ItemProviderAdapter imple
 	 */
 	@Override
 	public String getText(Object object) {
-		Bedriftshelsetjeneste bedriftshelsetjeneste = (Bedriftshelsetjeneste) object;
-		return getString("_UI_Bedriftshelsetjeneste_type") + " " + bedriftshelsetjeneste.getOrgnr();
+		String label = ((Bedriftshelsetjeneste) object).getOrgnr();
+		return label == null || label.length() == 0 ? getString("_UI_Bedriftshelsetjeneste_type")
+				: getString("_UI_Bedriftshelsetjeneste_type") + " " + label;
 	}
 
 	/**

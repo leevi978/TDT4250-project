@@ -77,7 +77,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TELEFON_DIR_EDEFAULT = 0;
+	protected static final String TELEFON_DIR_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTelefonDir() <em>Telefon Dir</em>}' attribute.
@@ -87,7 +87,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected int telefonDir = TELEFON_DIR_EDEFAULT;
+	protected String telefonDir = TELEFON_DIR_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTelefonMob() <em>Telefon Mob</em>}' attribute.
@@ -97,7 +97,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TELEFON_MOB_EDEFAULT = 0;
+	protected static final String TELEFON_MOB_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTelefonMob() <em>Telefon Mob</em>}' attribute.
@@ -107,7 +107,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 * @ordered
 	 */
-	protected int telefonMob = TELEFON_MOB_EDEFAULT;
+	protected String telefonMob = TELEFON_MOB_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEpostadresse() <em>Epostadresse</em>}' attribute.
@@ -202,7 +202,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public int getTelefonDir() {
+	public String getTelefonDir() {
 		return telefonDir;
 	}
 
@@ -212,8 +212,8 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public void setTelefonDir(int newTelefonDir) {
-		int oldTelefonDir = telefonDir;
+	public void setTelefonDir(String newTelefonDir) {
+		String oldTelefonDir = telefonDir;
 		telefonDir = newTelefonDir;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -226,7 +226,7 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public int getTelefonMob() {
+	public String getTelefonMob() {
 		return telefonMob;
 	}
 
@@ -236,8 +236,8 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 	 * @generated
 	 */
 	@Override
-	public void setTelefonMob(int newTelefonMob) {
-		int oldTelefonMob = telefonMob;
+	public void setTelefonMob(String newTelefonMob) {
+		String oldTelefonMob = telefonMob;
 		telefonMob = newTelefonMob;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -305,10 +305,10 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 			setRolle((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_DIR:
-			setTelefonDir((Integer) newValue);
+			setTelefonDir((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_MOB:
-			setTelefonMob((Integer) newValue);
+			setTelefonMob((String) newValue);
 			return;
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__EPOSTADRESSE:
 			setEpostadresse((String) newValue);
@@ -357,9 +357,9 @@ public class KontaktpersonImpl extends MinimalEObjectImpl.Container implements K
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__ROLLE:
 			return ROLLE_EDEFAULT == null ? rolle != null : !ROLLE_EDEFAULT.equals(rolle);
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_DIR:
-			return telefonDir != TELEFON_DIR_EDEFAULT;
+			return TELEFON_DIR_EDEFAULT == null ? telefonDir != null : !TELEFON_DIR_EDEFAULT.equals(telefonDir);
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__TELEFON_MOB:
-			return telefonMob != TELEFON_MOB_EDEFAULT;
+			return TELEFON_MOB_EDEFAULT == null ? telefonMob != null : !TELEFON_MOB_EDEFAULT.equals(telefonMob);
 		case BedriftshelsetjenestenPackage.KONTAKTPERSON__EPOSTADRESSE:
 			return EPOSTADRESSE_EDEFAULT == null ? epostadresse != null : !EPOSTADRESSE_EDEFAULT.equals(epostadresse);
 		}

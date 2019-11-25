@@ -74,12 +74,12 @@ public interface Kontaktperson extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon Dir</em>' attribute.
-	 * @see #setTelefonDir(int)
+	 * @see #setTelefonDir(String)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktperson_TelefonDir()
 	 * @model
 	 * @generated
 	 */
-	int getTelefonDir();
+	String getTelefonDir();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson#getTelefonDir <em>Telefon Dir</em>}' attribute.
@@ -89,19 +89,19 @@ public interface Kontaktperson extends EObject {
 	 * @see #getTelefonDir()
 	 * @generated
 	 */
-	void setTelefonDir(int value);
+	void setTelefonDir(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Telefon Mob</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon Mob</em>' attribute.
-	 * @see #setTelefonMob(int)
+	 * @see #setTelefonMob(String)
 	 * @see BedriftshelsetjenesteGodkjenningsregister.BedriftshelsetjenestenPackage#getKontaktperson_TelefonMob()
 	 * @model
 	 * @generated
 	 */
-	int getTelefonMob();
+	String getTelefonMob();
 
 	/**
 	 * Sets the value of the '{@link BedriftshelsetjenesteGodkjenningsregister.Kontaktperson#getTelefonMob <em>Telefon Mob</em>}' attribute.
@@ -111,7 +111,7 @@ public interface Kontaktperson extends EObject {
 	 * @see #getTelefonMob()
 	 * @generated
 	 */
-	void setTelefonMob(int value);
+	void setTelefonMob(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Epostadresse</b></em>' attribute.
