@@ -76,7 +76,7 @@ public class KontaktinformasjonItemProvider extends ItemProviderAdapter implemen
 						getString("_UI_PropertyDescriptor_description", "_UI_Kontaktinformasjon_Telefon_feature",
 								"_UI_Kontaktinformasjon_type"),
 						BhtPackage.Literals.KONTAKTINFORMASJON__TELEFON, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -171,8 +171,9 @@ public class KontaktinformasjonItemProvider extends ItemProviderAdapter implemen
 	 */
 	@Override
 	public String getText(Object object) {
-		Kontaktinformasjon kontaktinformasjon = (Kontaktinformasjon) object;
-		return getString("_UI_Kontaktinformasjon_type") + " " + kontaktinformasjon.getTelefon();
+		String label = ((Kontaktinformasjon) object).getTelefon();
+		return label == null || label.length() == 0 ? getString("_UI_Kontaktinformasjon_type")
+				: getString("_UI_Kontaktinformasjon_type") + " " + label;
 	}
 
 	/**

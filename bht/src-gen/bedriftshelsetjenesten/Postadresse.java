@@ -2,8 +2,6 @@
  */
 package bedriftshelsetjenesten;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -93,15 +91,25 @@ public interface Postadresse extends EObject {
 	void setPoststed(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Kommune</b></em>' containment reference list.
-	 * The list contents are of type {@link bedriftshelsetjenesten.Kommune}.
+	 * Returns the value of the '<em><b>Kommune</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kommune</em>' containment reference list.
+	 * @return the value of the '<em>Kommune</em>' reference.
+	 * @see #setKommune(Kommune)
 	 * @see bedriftshelsetjenesten.BhtPackage#getPostadresse_Kommune()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
-	EList<Kommune> getKommune();
+	Kommune getKommune();
+
+	/**
+	 * Sets the value of the '{@link bedriftshelsetjenesten.Postadresse#getKommune <em>Kommune</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Kommune</em>' reference.
+	 * @see #getKommune()
+	 * @generated
+	 */
+	void setKommune(Kommune value);
 
 } // Postadresse

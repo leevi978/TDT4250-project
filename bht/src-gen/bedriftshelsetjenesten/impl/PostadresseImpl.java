@@ -5,22 +5,12 @@ package bedriftshelsetjenesten.impl;
 import bedriftshelsetjenesten.BhtPackage;
 import bedriftshelsetjenesten.Kommune;
 import bedriftshelsetjenesten.Postadresse;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,14 +90,14 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 	protected String poststed = POSTSTED_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getKommune() <em>Kommune</em>}' containment reference list.
+	 * The cached value of the '{@link #getKommune() <em>Kommune</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getKommune()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Kommune> kommune;
+	protected Kommune kommune;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,9 +188,15 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Kommune> getKommune() {
-		if (kommune == null) {
-			kommune = new EObjectContainmentEList<Kommune>(Kommune.class, this, BhtPackage.POSTADRESSE__KOMMUNE);
+	public Kommune getKommune() {
+		if (kommune != null && kommune.eIsProxy()) {
+			InternalEObject oldKommune = (InternalEObject) kommune;
+			kommune = (Kommune) eResolveProxy(oldKommune);
+			if (kommune != oldKommune) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, BhtPackage.POSTADRESSE__KOMMUNE,
+							oldKommune, kommune));
+			}
 		}
 		return kommune;
 	}
@@ -210,13 +206,21 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case BhtPackage.POSTADRESSE__KOMMUNE:
-			return ((InternalEList<?>) getKommune()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public Kommune basicGetKommune() {
+		return kommune;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setKommune(Kommune newKommune) {
+		Kommune oldKommune = kommune;
+		kommune = newKommune;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BhtPackage.POSTADRESSE__KOMMUNE, oldKommune,
+					kommune));
 	}
 
 	/**
@@ -234,7 +238,9 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			return getPoststed();
 		case BhtPackage.POSTADRESSE__KOMMUNE:
-			return getKommune();
+			if (resolve)
+				return getKommune();
+			return basicGetKommune();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -258,8 +264,7 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 			setPoststed((String) newValue);
 			return;
 		case BhtPackage.POSTADRESSE__KOMMUNE:
-			getKommune().clear();
-			getKommune().addAll((Collection<? extends Kommune>) newValue);
+			setKommune((Kommune) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -283,7 +288,7 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 			setPoststed(POSTSTED_EDEFAULT);
 			return;
 		case BhtPackage.POSTADRESSE__KOMMUNE:
-			getKommune().clear();
+			setKommune((Kommune) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -304,7 +309,7 @@ public class PostadresseImpl extends MinimalEObjectImpl.Container implements Pos
 		case BhtPackage.POSTADRESSE__POSTSTED:
 			return POSTSTED_EDEFAULT == null ? poststed != null : !POSTSTED_EDEFAULT.equals(poststed);
 		case BhtPackage.POSTADRESSE__KOMMUNE:
-			return kommune != null && !kommune.isEmpty();
+			return kommune != null;
 		}
 		return super.eIsSet(featureID);
 	}

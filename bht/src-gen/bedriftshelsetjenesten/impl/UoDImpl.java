@@ -29,32 +29,32 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link bedriftshelsetjenesten.impl.UoDImpl#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}</li>
- *   <li>{@link bedriftshelsetjenesten.impl.UoDImpl#getFylke <em>Fylke</em>}</li>
+ *   <li>{@link bedriftshelsetjenesten.impl.UoDImpl#getBedriftshelsetjenester <em>Bedriftshelsetjenester</em>}</li>
+ *   <li>{@link bedriftshelsetjenesten.impl.UoDImpl#getFylker <em>Fylker</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	/**
-	 * The cached value of the '{@link #getBedriftshelsetjeneste() <em>Bedriftshelsetjeneste</em>}' containment reference list.
+	 * The cached value of the '{@link #getBedriftshelsetjenester() <em>Bedriftshelsetjenester</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBedriftshelsetjeneste()
+	 * @see #getBedriftshelsetjenester()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Bedriftshelsetjeneste> bedriftshelsetjeneste;
+	protected EList<Bedriftshelsetjeneste> bedriftshelsetjenester;
 
 	/**
-	 * The cached value of the '{@link #getFylke() <em>Fylke</em>}' containment reference list.
+	 * The cached value of the '{@link #getFylker() <em>Fylker</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFylke()
+	 * @see #getFylker()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Fylke> fylke;
+	protected EList<Fylke> fylker;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,12 +80,12 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Bedriftshelsetjeneste> getBedriftshelsetjeneste() {
-		if (bedriftshelsetjeneste == null) {
-			bedriftshelsetjeneste = new EObjectContainmentEList<Bedriftshelsetjeneste>(Bedriftshelsetjeneste.class,
-					this, BhtPackage.UO_D__BEDRIFTSHELSETJENESTE);
+	public EList<Bedriftshelsetjeneste> getBedriftshelsetjenester() {
+		if (bedriftshelsetjenester == null) {
+			bedriftshelsetjenester = new EObjectContainmentEList<Bedriftshelsetjeneste>(Bedriftshelsetjeneste.class,
+					this, BhtPackage.UO_D__BEDRIFTSHELSETJENESTER);
 		}
-		return bedriftshelsetjeneste;
+		return bedriftshelsetjenester;
 	}
 
 	/**
@@ -93,11 +93,11 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Fylke> getFylke() {
-		if (fylke == null) {
-			fylke = new EObjectContainmentEList<Fylke>(Fylke.class, this, BhtPackage.UO_D__FYLKE);
+	public EList<Fylke> getFylker() {
+		if (fylker == null) {
+			fylker = new EObjectContainmentEList<Fylke>(Fylke.class, this, BhtPackage.UO_D__FYLKER);
 		}
-		return fylke;
+		return fylker;
 	}
 
 	/**
@@ -108,10 +108,10 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTE:
-			return ((InternalEList<?>) getBedriftshelsetjeneste()).basicRemove(otherEnd, msgs);
-		case BhtPackage.UO_D__FYLKE:
-			return ((InternalEList<?>) getFylke()).basicRemove(otherEnd, msgs);
+		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTER:
+			return ((InternalEList<?>) getBedriftshelsetjenester()).basicRemove(otherEnd, msgs);
+		case BhtPackage.UO_D__FYLKER:
+			return ((InternalEList<?>) getFylker()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -124,10 +124,10 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTE:
-			return getBedriftshelsetjeneste();
-		case BhtPackage.UO_D__FYLKE:
-			return getFylke();
+		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTER:
+			return getBedriftshelsetjenester();
+		case BhtPackage.UO_D__FYLKER:
+			return getFylker();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -141,13 +141,13 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTE:
-			getBedriftshelsetjeneste().clear();
-			getBedriftshelsetjeneste().addAll((Collection<? extends Bedriftshelsetjeneste>) newValue);
+		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTER:
+			getBedriftshelsetjenester().clear();
+			getBedriftshelsetjenester().addAll((Collection<? extends Bedriftshelsetjeneste>) newValue);
 			return;
-		case BhtPackage.UO_D__FYLKE:
-			getFylke().clear();
-			getFylke().addAll((Collection<? extends Fylke>) newValue);
+		case BhtPackage.UO_D__FYLKER:
+			getFylker().clear();
+			getFylker().addAll((Collection<? extends Fylke>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -161,11 +161,11 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTE:
-			getBedriftshelsetjeneste().clear();
+		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTER:
+			getBedriftshelsetjenester().clear();
 			return;
-		case BhtPackage.UO_D__FYLKE:
-			getFylke().clear();
+		case BhtPackage.UO_D__FYLKER:
+			getFylker().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -179,10 +179,10 @@ public class UoDImpl extends MinimalEObjectImpl.Container implements UoD {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTE:
-			return bedriftshelsetjeneste != null && !bedriftshelsetjeneste.isEmpty();
-		case BhtPackage.UO_D__FYLKE:
-			return fylke != null && !fylke.isEmpty();
+		case BhtPackage.UO_D__BEDRIFTSHELSETJENESTER:
+			return bedriftshelsetjenester != null && !bedriftshelsetjenester.isEmpty();
+		case BhtPackage.UO_D__FYLKER:
+			return fylker != null && !fylker.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

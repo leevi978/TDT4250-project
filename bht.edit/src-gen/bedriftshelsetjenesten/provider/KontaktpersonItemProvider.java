@@ -107,7 +107,7 @@ public class KontaktpersonItemProvider extends ItemProviderAdapter implements IE
 						getString("_UI_PropertyDescriptor_description", "_UI_Kontaktperson_TelefonDir_feature",
 								"_UI_Kontaktperson_type"),
 						BhtPackage.Literals.KONTAKTPERSON__TELEFON_DIR, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -123,7 +123,7 @@ public class KontaktpersonItemProvider extends ItemProviderAdapter implements IE
 						getString("_UI_PropertyDescriptor_description", "_UI_Kontaktperson_TelefonMob_feature",
 								"_UI_Kontaktperson_type"),
 						BhtPackage.Literals.KONTAKTPERSON__TELEFON_MOB, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**

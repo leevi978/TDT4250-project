@@ -49,7 +49,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TELEFON_EDEFAULT = 0;
+	protected static final String TELEFON_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTelefon() <em>Telefon</em>}' attribute.
@@ -59,7 +59,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected int telefon = TELEFON_EDEFAULT;
+	protected String telefon = TELEFON_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEpostAdresse() <em>Epost Adresse</em>}' attribute.
@@ -145,7 +145,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getTelefon() {
+	public String getTelefon() {
 		return telefon;
 	}
 
@@ -154,8 +154,8 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTelefon(int newTelefon) {
-		int oldTelefon = telefon;
+	public void setTelefon(String newTelefon) {
+		String oldTelefon = telefon;
 		telefon = newTelefon;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, BhtPackage.KONTAKTINFORMASJON__TELEFON, oldTelefon,
@@ -317,7 +317,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case BhtPackage.KONTAKTINFORMASJON__TELEFON:
-			setTelefon((Integer) newValue);
+			setTelefon((String) newValue);
 			return;
 		case BhtPackage.KONTAKTINFORMASJON__EPOST_ADRESSE:
 			setEpostAdresse((String) newValue);
@@ -372,7 +372,7 @@ public class KontaktinformasjonImpl extends MinimalEObjectImpl.Container impleme
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case BhtPackage.KONTAKTINFORMASJON__TELEFON:
-			return telefon != TELEFON_EDEFAULT;
+			return TELEFON_EDEFAULT == null ? telefon != null : !TELEFON_EDEFAULT.equals(telefon);
 		case BhtPackage.KONTAKTINFORMASJON__EPOST_ADRESSE:
 			return EPOST_ADRESSE_EDEFAULT == null ? epostAdresse != null : !EPOST_ADRESSE_EDEFAULT.equals(epostAdresse);
 		case BhtPackage.KONTAKTINFORMASJON__INTERNETT_ADRESSE:

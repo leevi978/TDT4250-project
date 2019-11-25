@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link bedriftshelsetjenesten.impl.FylkeImpl#getFylkenr <em>Fylkenr</em>}</li>
  *   <li>{@link bedriftshelsetjenesten.impl.FylkeImpl#getFylkenavn <em>Fylkenavn</em>}</li>
- *   <li>{@link bedriftshelsetjenesten.impl.FylkeImpl#getKommune <em>Kommune</em>}</li>
+ *   <li>{@link bedriftshelsetjenesten.impl.FylkeImpl#getKommuner <em>Kommuner</em>}</li>
  * </ul>
  *
  * @generated
@@ -79,14 +79,14 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 	protected String fylkenavn = FYLKENAVN_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getKommune() <em>Kommune</em>}' containment reference list.
+	 * The cached value of the '{@link #getKommuner() <em>Kommuner</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getKommune()
+	 * @see #getKommuner()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Kommune> kommune;
+	protected EList<Kommune> kommuner;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,11 +155,11 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Kommune> getKommune() {
-		if (kommune == null) {
-			kommune = new EObjectContainmentEList<Kommune>(Kommune.class, this, BhtPackage.FYLKE__KOMMUNE);
+	public EList<Kommune> getKommuner() {
+		if (kommuner == null) {
+			kommuner = new EObjectContainmentEList<Kommune>(Kommune.class, this, BhtPackage.FYLKE__KOMMUNER);
 		}
-		return kommune;
+		return kommuner;
 	}
 
 	/**
@@ -170,8 +170,8 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case BhtPackage.FYLKE__KOMMUNE:
-			return ((InternalEList<?>) getKommune()).basicRemove(otherEnd, msgs);
+		case BhtPackage.FYLKE__KOMMUNER:
+			return ((InternalEList<?>) getKommuner()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -188,8 +188,8 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 			return getFylkenr();
 		case BhtPackage.FYLKE__FYLKENAVN:
 			return getFylkenavn();
-		case BhtPackage.FYLKE__KOMMUNE:
-			return getKommune();
+		case BhtPackage.FYLKE__KOMMUNER:
+			return getKommuner();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -209,9 +209,9 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 		case BhtPackage.FYLKE__FYLKENAVN:
 			setFylkenavn((String) newValue);
 			return;
-		case BhtPackage.FYLKE__KOMMUNE:
-			getKommune().clear();
-			getKommune().addAll((Collection<? extends Kommune>) newValue);
+		case BhtPackage.FYLKE__KOMMUNER:
+			getKommuner().clear();
+			getKommuner().addAll((Collection<? extends Kommune>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -231,8 +231,8 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 		case BhtPackage.FYLKE__FYLKENAVN:
 			setFylkenavn(FYLKENAVN_EDEFAULT);
 			return;
-		case BhtPackage.FYLKE__KOMMUNE:
-			getKommune().clear();
+		case BhtPackage.FYLKE__KOMMUNER:
+			getKommuner().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -250,8 +250,8 @@ public class FylkeImpl extends MinimalEObjectImpl.Container implements Fylke {
 			return fylkenr != FYLKENR_EDEFAULT;
 		case BhtPackage.FYLKE__FYLKENAVN:
 			return FYLKENAVN_EDEFAULT == null ? fylkenavn != null : !FYLKENAVN_EDEFAULT.equals(fylkenavn);
-		case BhtPackage.FYLKE__KOMMUNE:
-			return kommune != null && !kommune.isEmpty();
+		case BhtPackage.FYLKE__KOMMUNER:
+			return kommuner != null && !kommuner.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

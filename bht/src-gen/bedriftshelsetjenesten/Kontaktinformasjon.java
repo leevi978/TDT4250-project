@@ -32,12 +32,12 @@ public interface Kontaktinformasjon extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Telefon</em>' attribute.
-	 * @see #setTelefon(int)
+	 * @see #setTelefon(String)
 	 * @see bedriftshelsetjenesten.BhtPackage#getKontaktinformasjon_Telefon()
 	 * @model
 	 * @generated
 	 */
-	int getTelefon();
+	String getTelefon();
 
 	/**
 	 * Sets the value of the '{@link bedriftshelsetjenesten.Kontaktinformasjon#getTelefon <em>Telefon</em>}' attribute.
@@ -47,7 +47,7 @@ public interface Kontaktinformasjon extends EObject {
 	 * @see #getTelefon()
 	 * @generated
 	 */
-	void setTelefon(int value);
+	void setTelefon(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Epost Adresse</b></em>' attribute.

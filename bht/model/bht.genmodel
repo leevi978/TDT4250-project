@@ -36,7 +36,7 @@
     <genClasses ecoreClass="bht.ecore#//Fylke">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Fylke/Fylkenr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Fylke/Fylkenavn"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference bht.ecore#//Fylke/kommune"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//Fylke/kommuner"/>
     </genClasses>
     <genClasses ecoreClass="bht.ecore#//Kontaktperson">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Kontaktperson/Navn"/>
@@ -56,8 +56,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bht.ecore#//Godkjenningsstatus/Soeknadsdato"/>
     </genClasses>
     <genClasses ecoreClass="bht.ecore#//UoD">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/bedriftshelsetjeneste"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/fylke"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/bedriftshelsetjenester"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bht.ecore#//UoD/fylker"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

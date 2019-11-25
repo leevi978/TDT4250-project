@@ -376,7 +376,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFylke_Kommune() {
+	public EReference getFylke_Kommuner() {
 		return (EReference) fylkeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -520,7 +520,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUoD_Bedriftshelsetjeneste() {
+	public EReference getUoD_Bedriftshelsetjenester() {
 		return (EReference) uoDEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -529,7 +529,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUoD_Fylke() {
+	public EReference getUoD_Fylker() {
 		return (EReference) uoDEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -590,7 +590,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 		fylkeEClass = createEClass(FYLKE);
 		createEAttribute(fylkeEClass, FYLKE__FYLKENR);
 		createEAttribute(fylkeEClass, FYLKE__FYLKENAVN);
-		createEReference(fylkeEClass, FYLKE__KOMMUNE);
+		createEReference(fylkeEClass, FYLKE__KOMMUNER);
 
 		kontaktpersonEClass = createEClass(KONTAKTPERSON);
 		createEAttribute(kontaktpersonEClass, KONTAKTPERSON__NAVN);
@@ -610,8 +610,8 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 		createEAttribute(godkjenningsstatusEClass, GODKJENNINGSSTATUS__SOEKNADSDATO);
 
 		uoDEClass = createEClass(UO_D);
-		createEReference(uoDEClass, UO_D__BEDRIFTSHELSETJENESTE);
-		createEReference(uoDEClass, UO_D__FYLKE);
+		createEReference(uoDEClass, UO_D__BEDRIFTSHELSETJENESTER);
+		createEReference(uoDEClass, UO_D__FYLKER);
 	}
 
 	/**
@@ -647,7 +647,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 		// Initialize classes, features, and operations; add parameters
 		initEClass(bedriftshelsetjenesteEClass, Bedriftshelsetjeneste.class, "Bedriftshelsetjeneste", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBedriftshelsetjeneste_Orgnr(), ecorePackage.getEInt(), "Orgnr", null, 0, 1,
+		initEAttribute(getBedriftshelsetjeneste_Orgnr(), ecorePackage.getEString(), "Orgnr", null, 0, 1,
 				Bedriftshelsetjeneste.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBedriftshelsetjeneste_Navn(), ecorePackage.getEString(), "Navn", null, 0, 1,
@@ -665,7 +665,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 
 		initEClass(kontaktinformasjonEClass, Kontaktinformasjon.class, "Kontaktinformasjon", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getKontaktinformasjon_Telefon(), ecorePackage.getEInt(), "Telefon", null, 0, 1,
+		initEAttribute(getKontaktinformasjon_Telefon(), ecorePackage.getEString(), "Telefon", null, 0, 1,
 				Kontaktinformasjon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKontaktinformasjon_EpostAdresse(), ecorePackage.getEString(), "EpostAdresse", null, 0, 1,
@@ -689,8 +689,8 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostadresse_Poststed(), ecorePackage.getEString(), "Poststed", null, 0, 1, Postadresse.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPostadresse_Kommune(), this.getKommune(), null, "kommune", null, 0, -1, Postadresse.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+		initEReference(getPostadresse_Kommune(), this.getKommune(), null, "kommune", null, 0, 1, Postadresse.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kommuneEClass, Kommune.class, "Kommune", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -707,9 +707,9 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFylke_Fylkenavn(), ecorePackage.getEString(), "Fylkenavn", null, 0, 1, Fylke.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFylke_Kommune(), this.getKommune(), null, "kommune", null, 0, -1, Fylke.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
+		initEReference(getFylke_Kommuner(), this.getKommune(), null, "kommuner", null, 0, -1, Fylke.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kontaktpersonEClass, Kontaktperson.class, "Kontaktperson", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -717,10 +717,10 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKontaktperson_Rolle(), ecorePackage.getEString(), "Rolle", null, 0, 1, Kontaktperson.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getKontaktperson_TelefonDir(), ecorePackage.getEInt(), "TelefonDir", null, 0, 1,
+		initEAttribute(getKontaktperson_TelefonDir(), ecorePackage.getEString(), "TelefonDir", null, 0, 1,
 				Kontaktperson.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getKontaktperson_TelefonMob(), ecorePackage.getEInt(), "TelefonMob", null, 0, 1,
+		initEAttribute(getKontaktperson_TelefonMob(), ecorePackage.getEString(), "TelefonMob", null, 0, 1,
 				Kontaktperson.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKontaktperson_Epostadresse(), ecorePackage.getEString(), "Epostadresse", null, 0, 1,
@@ -734,7 +734,7 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 		initEAttribute(getAvdeling_Avdelingsleder(), ecorePackage.getEString(), "Avdelingsleder", null, 0, 1,
 				Avdeling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAvdeling_Telefon(), ecorePackage.getEInt(), "Telefon", null, 0, 1, Avdeling.class,
+		initEAttribute(getAvdeling_Telefon(), ecorePackage.getEString(), "Telefon", null, 0, 1, Avdeling.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAvdeling_Postadresse(), this.getPostadresse(), null, "Postadresse", null, 0, 1,
 				Avdeling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
@@ -750,10 +750,10 @@ public class BhtPackageImpl extends EPackageImpl implements BhtPackage {
 				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(uoDEClass, UoD.class, "UoD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getUoD_Bedriftshelsetjeneste(), this.getBedriftshelsetjeneste(), null, "bedriftshelsetjeneste",
+		initEReference(getUoD_Bedriftshelsetjenester(), this.getBedriftshelsetjeneste(), null, "bedriftshelsetjenester",
 				null, 0, -1, UoD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUoD_Fylke(), this.getFylke(), null, "fylke", null, 0, -1, UoD.class, !IS_TRANSIENT,
+		initEReference(getUoD_Fylker(), this.getFylke(), null, "fylker", null, 0, -1, UoD.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 

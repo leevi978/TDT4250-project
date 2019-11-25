@@ -240,7 +240,7 @@ public interface BhtPackage extends EPackage {
 	int POSTADRESSE__POSTSTED = 2;
 
 	/**
-	 * The feature id for the '<em><b>Kommune</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Kommune</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -350,13 +350,13 @@ public interface BhtPackage extends EPackage {
 	int FYLKE__FYLKENAVN = 1;
 
 	/**
-	 * The feature id for the '<em><b>Kommune</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Kommuner</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FYLKE__KOMMUNE = 2;
+	int FYLKE__KOMMUNER = 2;
 
 	/**
 	 * The number of structural features of the '<em>Fylke</em>' class.
@@ -570,22 +570,22 @@ public interface BhtPackage extends EPackage {
 	int UO_D = 8;
 
 	/**
-	 * The feature id for the '<em><b>Bedriftshelsetjeneste</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Bedriftshelsetjenester</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UO_D__BEDRIFTSHELSETJENESTE = 0;
+	int UO_D__BEDRIFTSHELSETJENESTER = 0;
 
 	/**
-	 * The feature id for the '<em><b>Fylke</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Fylker</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UO_D__FYLKE = 1;
+	int UO_D__FYLKER = 1;
 
 	/**
 	 * The number of structural features of the '<em>Uo D</em>' class.
@@ -779,10 +779,10 @@ public interface BhtPackage extends EPackage {
 	EAttribute getPostadresse_Poststed();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.Postadresse#getKommune <em>Kommune</em>}'.
+	 * Returns the meta object for the reference '{@link bedriftshelsetjenesten.Postadresse#getKommune <em>Kommune</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Kommune</em>'.
+	 * @return the meta object for the reference '<em>Kommune</em>'.
 	 * @see bedriftshelsetjenesten.Postadresse#getKommune()
 	 * @see #getPostadresse()
 	 * @generated
@@ -865,15 +865,15 @@ public interface BhtPackage extends EPackage {
 	EAttribute getFylke_Fylkenavn();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.Fylke#getKommune <em>Kommune</em>}'.
+	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.Fylke#getKommuner <em>Kommuner</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Kommune</em>'.
-	 * @see bedriftshelsetjenesten.Fylke#getKommune()
+	 * @return the meta object for the containment reference list '<em>Kommuner</em>'.
+	 * @see bedriftshelsetjenesten.Fylke#getKommuner()
 	 * @see #getFylke()
 	 * @generated
 	 */
-	EReference getFylke_Kommune();
+	EReference getFylke_Kommuner();
 
 	/**
 	 * Returns the meta object for class '{@link bedriftshelsetjenesten.Kontaktperson <em>Kontaktperson</em>}'.
@@ -1037,26 +1037,26 @@ public interface BhtPackage extends EPackage {
 	EClass getUoD();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.UoD#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}'.
+	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.UoD#getBedriftshelsetjenester <em>Bedriftshelsetjenester</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Bedriftshelsetjeneste</em>'.
-	 * @see bedriftshelsetjenesten.UoD#getBedriftshelsetjeneste()
+	 * @return the meta object for the containment reference list '<em>Bedriftshelsetjenester</em>'.
+	 * @see bedriftshelsetjenesten.UoD#getBedriftshelsetjenester()
 	 * @see #getUoD()
 	 * @generated
 	 */
-	EReference getUoD_Bedriftshelsetjeneste();
+	EReference getUoD_Bedriftshelsetjenester();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.UoD#getFylke <em>Fylke</em>}'.
+	 * Returns the meta object for the containment reference list '{@link bedriftshelsetjenesten.UoD#getFylker <em>Fylker</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Fylke</em>'.
-	 * @see bedriftshelsetjenesten.UoD#getFylke()
+	 * @return the meta object for the containment reference list '<em>Fylker</em>'.
+	 * @see bedriftshelsetjenesten.UoD#getFylker()
 	 * @see #getUoD()
 	 * @generated
 	 */
-	EReference getUoD_Fylke();
+	EReference getUoD_Fylker();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1216,7 +1216,7 @@ public interface BhtPackage extends EPackage {
 		EAttribute POSTADRESSE__POSTSTED = eINSTANCE.getPostadresse_Poststed();
 
 		/**
-		 * The meta object literal for the '<em><b>Kommune</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Kommune</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1284,12 +1284,12 @@ public interface BhtPackage extends EPackage {
 		EAttribute FYLKE__FYLKENAVN = eINSTANCE.getFylke_Fylkenavn();
 
 		/**
-		 * The meta object literal for the '<em><b>Kommune</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Kommuner</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FYLKE__KOMMUNE = eINSTANCE.getFylke_Kommune();
+		EReference FYLKE__KOMMUNER = eINSTANCE.getFylke_Kommuner();
 
 		/**
 		 * The meta object literal for the '{@link bedriftshelsetjenesten.impl.KontaktpersonImpl <em>Kontaktperson</em>}' class.
@@ -1420,20 +1420,20 @@ public interface BhtPackage extends EPackage {
 		EClass UO_D = eINSTANCE.getUoD();
 
 		/**
-		 * The meta object literal for the '<em><b>Bedriftshelsetjeneste</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Bedriftshelsetjenester</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UO_D__BEDRIFTSHELSETJENESTE = eINSTANCE.getUoD_Bedriftshelsetjeneste();
+		EReference UO_D__BEDRIFTSHELSETJENESTER = eINSTANCE.getUoD_Bedriftshelsetjenester();
 
 		/**
-		 * The meta object literal for the '<em><b>Fylke</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Fylker</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UO_D__FYLKE = eINSTANCE.getUoD_Fylke();
+		EReference UO_D__FYLKER = eINSTANCE.getUoD_Fylker();
 
 	}
 

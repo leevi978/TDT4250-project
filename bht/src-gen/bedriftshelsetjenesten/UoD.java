@@ -15,8 +15,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link bedriftshelsetjenesten.UoD#getBedriftshelsetjeneste <em>Bedriftshelsetjeneste</em>}</li>
- *   <li>{@link bedriftshelsetjenesten.UoD#getFylke <em>Fylke</em>}</li>
+ *   <li>{@link bedriftshelsetjenesten.UoD#getBedriftshelsetjenester <em>Bedriftshelsetjenester</em>}</li>
+ *   <li>{@link bedriftshelsetjenesten.UoD#getFylker <em>Fylker</em>}</li>
  * </ul>
  *
  * @see bedriftshelsetjenesten.BhtPackage#getUoD()
@@ -25,27 +25,27 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface UoD extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Bedriftshelsetjeneste</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Bedriftshelsetjenester</b></em>' containment reference list.
 	 * The list contents are of type {@link bedriftshelsetjenesten.Bedriftshelsetjeneste}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Bedriftshelsetjeneste</em>' containment reference list.
-	 * @see bedriftshelsetjenesten.BhtPackage#getUoD_Bedriftshelsetjeneste()
+	 * @return the value of the '<em>Bedriftshelsetjenester</em>' containment reference list.
+	 * @see bedriftshelsetjenesten.BhtPackage#getUoD_Bedriftshelsetjenester()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Bedriftshelsetjeneste> getBedriftshelsetjeneste();
+	EList<Bedriftshelsetjeneste> getBedriftshelsetjenester();
 
 	/**
-	 * Returns the value of the '<em><b>Fylke</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Fylker</b></em>' containment reference list.
 	 * The list contents are of type {@link bedriftshelsetjenesten.Fylke}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fylke</em>' containment reference list.
-	 * @see bedriftshelsetjenesten.BhtPackage#getUoD_Fylke()
+	 * @return the value of the '<em>Fylker</em>' containment reference list.
+	 * @see bedriftshelsetjenesten.BhtPackage#getUoD_Fylker()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Fylke> getFylke();
+	EList<Fylke> getFylker();
 
 } // UoD

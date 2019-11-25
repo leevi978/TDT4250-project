@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link bedriftshelsetjenesten.Fylke#getFylkenr <em>Fylkenr</em>}</li>
  *   <li>{@link bedriftshelsetjenesten.Fylke#getFylkenavn <em>Fylkenavn</em>}</li>
- *   <li>{@link bedriftshelsetjenesten.Fylke#getKommune <em>Kommune</em>}</li>
+ *   <li>{@link bedriftshelsetjenesten.Fylke#getKommuner <em>Kommuner</em>}</li>
  * </ul>
  *
  * @see bedriftshelsetjenesten.BhtPackage#getFylke()
@@ -70,15 +70,15 @@ public interface Fylke extends EObject {
 	void setFylkenavn(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Kommune</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Kommuner</b></em>' containment reference list.
 	 * The list contents are of type {@link bedriftshelsetjenesten.Kommune}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kommune</em>' containment reference list.
-	 * @see bedriftshelsetjenesten.BhtPackage#getFylke_Kommune()
+	 * @return the value of the '<em>Kommuner</em>' containment reference list.
+	 * @see bedriftshelsetjenesten.BhtPackage#getFylke_Kommuner()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Kommune> getKommune();
+	EList<Kommune> getKommuner();
 
 } // Fylke
