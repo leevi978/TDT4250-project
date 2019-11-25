@@ -10,7 +10,10 @@ Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: BedriftshelsetjenesteGodkjenningsregister,
  BedriftshelsetjenesteGodkjenningsregister.impl,
- BedriftshelsetjenesteGodkjenningsregister.util
+ BedriftshelsetjenesteGodkjenningsregister.util,
+ bedriftshelsetjenesten,
+ bedriftshelsetjenesten.impl,
+ bedriftshelsetjenesten.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
