@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bedriftshelsetjenesten:UoD xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten">
+  <bedriftshelsetjenester>
+    <Kontaktinformasjon>
+      <Postadresse/>
+      <Kontaktperson/>
+    </Kontaktinformasjon>
+    <Avdelinger>
+      <Postadresse/>
+    </Avdelinger>
+    <Godkjenningsstatus/>
+  </bedriftshelsetjenester>
+  <fylker Fylkenavn="Finnmark">
+    <kommuner Kommunenavn="Tana" fylke="//@fylker.0"/>
+    <kommuner Kommunenr="1" Kommunenavn="Øksfjord" fylke="//@fylker.0"/>
+  </fylker>
+</bedriftshelsetjenesten:UoD>

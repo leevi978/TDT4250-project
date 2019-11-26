@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated bht2 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="bedriftshelsetjenesten.presentation.Bht2ModelWizardID"
+            name="%_UI_Bht2ModelWizard_label"
+            class="bedriftshelsetjenesten.presentation.Bht2ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Bht2ModelFile.gif">
+         <description>%_UI_Bht2ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated bht2 -->
+      <editor
+            id="bedriftshelsetjenesten.presentation.Bht2EditorID"
+            name="%_UI_Bht2Editor_label"
+            icon="icons/full/obj16/Bht2ModelFile.gif"
+            extensions="bht2"
+            class="bedriftshelsetjenesten.presentation.Bht2Editor"
+            contributorClass="bedriftshelsetjenesten.presentation.Bht2ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

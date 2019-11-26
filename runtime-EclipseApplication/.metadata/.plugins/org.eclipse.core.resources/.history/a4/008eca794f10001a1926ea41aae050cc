@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_gAiGcBBNEeqytp7NuFDYRA" selectedViews="_PjBgQBBPEeqytp7NuFDYRA" version="14.1.0.201810161215">
+    <semanticResources>My.bht2</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_PjBgQBBPEeqytp7NuFDYRA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_P7Ez4BBPEeqytp7NuFDYRA" name="new UoD diagram" repPath="#_P6flEBBPEeqytp7NuFDYRA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']"/>
+        <target xmi:type="bedriftshelsetjenesten:UoD" href="My.bht2#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_P6flEBBPEeqytp7NuFDYRA" name="new UoD diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_P7CXoBBPEeqytp7NuFDYRA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_P7CXoRBPEeqytp7NuFDYRA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_P7cnUBBPEeqytp7NuFDYRA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_P7cnURBPEeqytp7NuFDYRA" type="Sirius" element="_P6flEBBPEeqytp7NuFDYRA" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_P7cnUhBPEeqytp7NuFDYRA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_P6pWEBBPEeqytp7NuFDYRA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer"/>
+    <target xmi:type="bedriftshelsetjenesten:UoD" href="My.bht2#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

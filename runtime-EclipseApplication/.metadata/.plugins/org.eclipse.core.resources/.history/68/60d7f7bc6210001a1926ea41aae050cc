@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bedriftshelsetjenesten:UoD xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten">
+  <bedriftshelsetjenester Orgnr="5313423" Navn="Bedr helsetjeneste">
+    <Kontaktinformasjon Telefon="12345678" EpostAdresse="epost@adresse.com" InternettAdresse="www.internettadresse.com">
+      <Postadresse Adresse="Bakkeveien 1" Postnr="6432" Poststed="Tromsø" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Navn Navnesen" Rolle="Rolle" TelefonDir="57402456" Epostadresse="navn@epost.com"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Avdeling" Avdelingsleder="Navn Navnesen" Telefon="12345678">
+      <Postadresse Adresse="Adresseveien 2" Postnr="1234" Poststed="Sted" kommune="//@fylker.0/@kommuner.1"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Navn="Bedriftshelsetjeneste 2"/>
+  <fylker Fylkenavn="Finnmark">
+    <kommuner Kommunenavn="Tana" fylke="//@fylker.0"/>
+    <kommuner Kommunenr="1" Kommunenavn="Øksfjord" fylke="//@fylker.0"/>
+  </fylker>
+  <fylker Fylkenr="1" Fylkenavn="Troms">
+    <kommuner Kommunenr="2" Kommunenavn="Tromsø" fylke="//@fylker.1"/>
+  </fylker>
+</bedriftshelsetjenesten:UoD>

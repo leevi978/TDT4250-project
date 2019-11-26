@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_gAiGcBBNEeqytp7NuFDYRA" selectedViews="_PjBgQBBPEeqytp7NuFDYRA" version="14.1.0.201810161215">
+    <semanticResources>My.bht2</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_PjBgQBBPEeqytp7NuFDYRA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_P7Ez4BBPEeqytp7NuFDYRA" name="new UoD diagram" repPath="#_P6flEBBPEeqytp7NuFDYRA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']"/>
+        <target xmi:type="bedriftshelsetjenesten:UoD" href="My.bht2#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_P6flEBBPEeqytp7NuFDYRA" name="new UoD diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_P7CXoBBPEeqytp7NuFDYRA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_P7CXoRBPEeqytp7NuFDYRA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_P7cnUBBPEeqytp7NuFDYRA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_P7cnURBPEeqytp7NuFDYRA" type="Sirius" element="_P6flEBBPEeqytp7NuFDYRA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_UvHxsBBPEeqytp7NuFDYRA" type="2001" element="_UuXjwBBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_UvK1ABBPEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UvK1ARBPEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UvN4UBBPEeqytp7NuFDYRA" type="3003" element="_UujxABBPEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UvN4URBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UvN4UhBPEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UvIYwBBPEeqytp7NuFDYRA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UvIYwRBPEeqytp7NuFDYRA" x="684" y="96" width="150" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dDajIBBPEeqytp7NuFDYRA" type="2001" element="_dDHBIRBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_dDajIxBPEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dDajJBBPEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dDbKMBBPEeqytp7NuFDYRA" type="3003" element="_dDHBIhBPEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_dDbKMRBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDbKMhBPEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_dDajIRBPEeqytp7NuFDYRA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDajIhBPEeqytp7NuFDYRA" x="252" y="114" width="150" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_iEFnsBBPEeqytp7NuFDYRA" type="2001" element="_iDgY4hBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_iEGOwBBPEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iEGOwRBPEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nkNoYBBPEeqytp7NuFDYRA" type="3003" element="_njNi0BBPEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_nkNoYRBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nkNoYhBPEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_iEFnsRBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iEFnshBPEeqytp7NuFDYRA" x="157" y="396" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_iEGOwhBPEeqytp7NuFDYRA" type="2001" element="_iDg_8BBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_iEG10BBPEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iEG10RBPEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nkOPcBBPEeqytp7NuFDYRA" type="3003" element="_njOw8BBPEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_nkOPcRBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nkOPchBPEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_iEGOwxBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iEGOxBBPEeqytp7NuFDYRA" x="72" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_iEG10hBPEeqytp7NuFDYRA" type="2001" element="_iDg_8RBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_iEG11RBPEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iEG11hBPEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nkOPcxBPEeqytp7NuFDYRA" type="3003" element="_njP_EBBPEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_nkOPdBBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nkOPdRBPEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_iEG10xBPEeqytp7NuFDYRA" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iEG11BBPEeqytp7NuFDYRA" x="84" y="204" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_asi88BBQEeqytp7NuFDYRA" type="2001" element="_arw50BBQEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_asjkABBQEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_asjkARBQEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d5L4EBBQEeqytp7NuFDYRA" type="3003" element="_d4UVYBBQEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d5L4ERBQEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d5L4EhBQEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_asi88RBQEeqytp7NuFDYRA" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_asi88hBQEeqytp7NuFDYRA" x="564" y="468" width="20" height="20"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_asjkAhBQEeqytp7NuFDYRA" type="2001" element="_aryH8BBQEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_asjkBRBQEeqytp7NuFDYRA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_asjkBhBQEeqytp7NuFDYRA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d5L4ExBQEeqytp7NuFDYRA" type="3003" element="_d4X_wBBQEeqytp7NuFDYRA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d5L4FBBQEeqytp7NuFDYRA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d5L4FRBQEeqytp7NuFDYRA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_asjkAxBQEeqytp7NuFDYRA" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_asjkBBBQEeqytp7NuFDYRA" x="30" y="-48" width="20" height="20"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_P7cnUhBPEeqytp7NuFDYRA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_JMuQEBBQEeqytp7NuFDYRA" type="4001" element="_JL6XwBBQEeqytp7NuFDYRA" source="_iEFnsBBPEeqytp7NuFDYRA" target="_UvHxsBBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_JMu3IBBQEeqytp7NuFDYRA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JMu3IRBQEeqytp7NuFDYRA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JMveMBBQEeqytp7NuFDYRA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JMveMRBQEeqytp7NuFDYRA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JMveMhBQEeqytp7NuFDYRA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JMveMxBQEeqytp7NuFDYRA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JMuQERBQEeqytp7NuFDYRA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JMuQEhBQEeqytp7NuFDYRA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JMuQExBQEeqytp7NuFDYRA" points="[50, -25, -502, 250]$[477, -238, -75, 37]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JM2y8BBQEeqytp7NuFDYRA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JM2y8RBQEeqytp7NuFDYRA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JM3aABBQEeqytp7NuFDYRA" type="4001" element="_JMBFcBBQEeqytp7NuFDYRA" source="_iEGOwhBPEeqytp7NuFDYRA" target="_UvHxsBBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_JM3aBBBQEeqytp7NuFDYRA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JM3aBRBQEeqytp7NuFDYRA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JM3aBhBQEeqytp7NuFDYRA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JM3aBxBQEeqytp7NuFDYRA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JM3aCBBQEeqytp7NuFDYRA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JM3aCRBQEeqytp7NuFDYRA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JM3aARBQEeqytp7NuFDYRA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JM3aAhBQEeqytp7NuFDYRA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JM3aAxBQEeqytp7NuFDYRA" points="[50, 9, -587, -112]$[562, 106, -75, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JM3aChBQEeqytp7NuFDYRA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JM3aCxBQEeqytp7NuFDYRA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JM3aDBBQEeqytp7NuFDYRA" type="4001" element="_JMBsghBQEeqytp7NuFDYRA" source="_iEG10hBPEeqytp7NuFDYRA" target="_dDajIBBPEeqytp7NuFDYRA">
+          <children xmi:type="notation:Node" xmi:id="_JM4BEBBQEeqytp7NuFDYRA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JM4BERBQEeqytp7NuFDYRA" x="4" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JM4BEhBQEeqytp7NuFDYRA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JM4BExBQEeqytp7NuFDYRA" x="-3" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JM4BFBBQEeqytp7NuFDYRA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JM4BFRBQEeqytp7NuFDYRA" x="-4" y="-9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JM3aDRBQEeqytp7NuFDYRA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JM3aDhBQEeqytp7NuFDYRA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JM3aDxBQEeqytp7NuFDYRA" points="[50, -17, -143, 48]$[118, -40, -75, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JM4BFhBQEeqytp7NuFDYRA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JM4BFxBQEeqytp7NuFDYRA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_UuXjwBBPEeqytp7NuFDYRA" name="Finnmark" incomingEdges="_JL6XwBBQEeqytp7NuFDYRA _JMBFcBBQEeqytp7NuFDYRA" width="15" height="10" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Fylke" href="My.bht2#//@fylker.0"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Fylke" href="My.bht2#//@fylker.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_UujxABBPEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="15" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dDHBIRBPEeqytp7NuFDYRA" name="Troms" incomingEdges="_JMBsghBQEeqytp7NuFDYRA" width="15" height="10" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Fylke" href="My.bht2#//@fylker.1"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Fylke" href="My.bht2#//@fylker.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_dDHBIhBPEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="15" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iDgY4hBPEeqytp7NuFDYRA" name="Tana" outgoingEdges="_JL6XwBBQEeqytp7NuFDYRA" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.0/@kommuner.0"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.0/@kommuner.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_njNi0BBPEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iDg_8BBPEeqytp7NuFDYRA" name="Øksfjord" outgoingEdges="_JMBFcBBQEeqytp7NuFDYRA" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.0/@kommuner.1"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.0/@kommuner.1"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_njOw8BBPEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iDg_8RBPEeqytp7NuFDYRA" name="Tromsø" outgoingEdges="_JMBsghBQEeqytp7NuFDYRA" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.1/@kommuner.0"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.1/@kommuner.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_njP_EBBPEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JL6XwBBQEeqytp7NuFDYRA" sourceNode="_iDgY4hBPEeqytp7NuFDYRA" targetNode="_UuXjwBBPEeqytp7NuFDYRA">
+      <target xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.0/@kommuner.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JL-CIBBQEeqytp7NuFDYRA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='KommuneToFylkeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JL-pMBBQEeqytp7NuFDYRA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='KommuneToFylkeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JMBFcBBQEeqytp7NuFDYRA" sourceNode="_iDg_8BBPEeqytp7NuFDYRA" targetNode="_UuXjwBBPEeqytp7NuFDYRA">
+      <target xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.0/@kommuner.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JMBFcRBQEeqytp7NuFDYRA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='KommuneToFylkeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JMBFchBQEeqytp7NuFDYRA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='KommuneToFylkeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JMBsghBQEeqytp7NuFDYRA" sourceNode="_iDg_8RBPEeqytp7NuFDYRA" targetNode="_dDHBIRBPEeqytp7NuFDYRA">
+      <target xmi:type="bedriftshelsetjenesten:Kommune" href="My.bht2#//@fylker.1/@kommuner.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JMCTkBBQEeqytp7NuFDYRA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='KommuneToFylkeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JMCTkRBQEeqytp7NuFDYRA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='KommuneToFylkeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_arw50BBQEeqytp7NuFDYRA" name="Invalid feature as name" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Postadresse" href="My.bht2#//@bedriftshelsetjenester.0/@Kontaktinformasjon/@Postadresse"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Postadresse" href="My.bht2#//@bedriftshelsetjenester.0/@Kontaktinformasjon/@Postadresse"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_d4UVYBBQEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="10" height="5" color="39,76,114">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_aryH8BBQEeqytp7NuFDYRA" name="Invalid feature as name" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="bedriftshelsetjenesten:Postadresse" href="My.bht2#//@bedriftshelsetjenester.0/@Avdelinger.0/@Postadresse"/>
+      <semanticElements xmi:type="bedriftshelsetjenesten:Postadresse" href="My.bht2#//@bedriftshelsetjenester.0/@Avdelinger.0/@Postadresse"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_d4X_wBBQEeqytp7NuFDYRA" labelSize="12" labelPosition="node" width="10" height="5" color="39,76,114">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_P6pWEBBPEeqytp7NuFDYRA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.example.bedriftshelsetjenesten.design/description/bedriftshelsetjenesten.odesign#//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer"/>
+    <target xmi:type="bedriftshelsetjenesten:UoD" href="My.bht2#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
