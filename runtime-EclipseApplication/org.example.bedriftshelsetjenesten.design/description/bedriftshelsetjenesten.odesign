@@ -4,151 +4,168 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="UoD diagram" domainClass="bedriftshelsetjenesten::UoD" enablePopupBars="true">
       <metamodel href="http://www.example.org/bedriftshelsetjenesten#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="FylkeNode" domainClass="bedriftshelsetjenesten::Fylke">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:Fylkenavn" labelPosition="node" resizeKind="NSEW" width="15" height="10">
+        <nodeMappings name="FylkeNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteFylke']" domainClass="bedriftshelsetjenesten::Fylke" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='kommuneFylke']">
+          <borderedNodeMappings name="KommuneNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteKommune']" semanticCandidatesExpression="feature:kommuner" domainClass="bedriftshelsetjenesten::Kommune" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='adresseKommune']">
+            <borderedNodeMappings name="PostadresseNode" preconditionExpression="aql:self.kommune.Kommunenavn=container.Kommunenavn" domainClass="bedriftshelsetjenesten::Postadresse">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:Adresse" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="15" height="5">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:Kommunenavn" sizeComputationExpression="" labelPosition="node" width="30" height="5">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="16" labelExpression="feature:Fylkenavn" sizeComputationExpression="" width="15" height="10">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="KommuneNode" domainClass="bedriftshelsetjenesten::Kommune">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:Kommunenavn" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+        <containerMappings name="BedriftshelsetjenesteContainer" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteBedriftshelsetjeneste']" domainClass="bedriftshelsetjenesten::Bedriftshelsetjeneste">
+          <borderedNodeMappings name="AvdelingNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteAvdeling']" semanticCandidatesExpression="feature:Avdelinger" domainClass="bedriftshelsetjenesten::Avdeling">
+            <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:Navn" sizeComputationExpression="" labelPosition="node" width="20" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" labelExpression="feature:Navn" widthComputationExpression="15" heightComputationExpression="20">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
-        </nodeMappings>
-        <nodeMappings name="PostadresseNode" domainClass="bedriftshelsetjenesten::Postadresse">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:Adresse" labelPosition="node" resizeKind="NSEW" width="15" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="KontaktpersonNode" domainClass="bedriftshelsetjenesten::Kontaktperson">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelExpression="feature:Navn" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="15" verticalDiameterComputationExpression="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="KontaktinformasjonNode" domainClass="bedriftshelsetjenesten::Kontaktinformasjon">
-          <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelExpression="Kontaktinfo" labelPosition="node" resizeKind="NSEW" widthComputationExpression="15" heightComputationExpression="10">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="AvdelingNode" domainClass="bedriftshelsetjenesten::Avdeling">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:Navn" labelPosition="node" resizeKind="NSEW" width="15" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="GodkjenningsstatusNode" domainClass="bedriftshelsetjenesten::Godkjenningsstatus">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="10" labelExpression="feature:Status" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="10" verticalDiameterComputationExpression="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="BedriftshelsetjenesteNode" domainClass="bedriftshelsetjenesten::Bedriftshelsetjeneste">
-          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="3" labelSize="12" labelExpression="feature:Navn" labelPosition="node" resizeKind="NSEW" width="20" height="10">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
-          </style>
-        </nodeMappings>
-        <edgeMappings name="KommuneToFylkeEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" targetFinderExpression="feature:fylke">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="PostadresseToKommuneEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KommuneNode']" targetFinderExpression="feature:kommune">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="KontaktinformasjonToKontaktpersonEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KontaktinformasjonNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KontaktpersonNode']" targetFinderExpression="feature:Kontaktperson">
-          <style sizeComputationExpression="3">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="KontaktinfoToPostadresseEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KontaktinformasjonNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']" targetFinderExpression="feature:Postadresse">
-          <style sizeComputationExpression="4">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="AvdelingToPostadresseEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='AvdelingNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseNode']" targetFinderExpression="feature:Postadresse">
-          <style sizeComputationExpression="4">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="BedriftshelsetjenesteToKontaktinformasjonEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='BedriftshelsetjenesteNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='KontaktinformasjonNode']" targetFinderExpression="feature:Kontaktinformasjon">
-          <style sizeComputationExpression="5">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="BedriftshelsetjenesteToAveldingEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='BedriftshelsetjenesteNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='AvdelingNode']" targetFinderExpression="feature:Avdelinger">
-          <style sizeComputationExpression="5">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="BedriftshelsetjenesteToGodkjenningsstatusEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='BedriftshelsetjenesteNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='GodkjenningsstatusNode']" targetFinderExpression="feature:Godkjenningsstatus">
-          <style sizeComputationExpression="5">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
+        </containerMappings>
         <toolSections>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="createBedriftshelsetjeneste" label="Create Bedriftshelsetjeneste" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='BedriftshelsetjenesteNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createFylke" label="Create Fylke" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="bedriftshelsetjenesten::Bedriftshelsetjeneste" referenceName="bedriftshelsetjenester">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Navn" valueExpression="aql:'Bedriftshelsetjeneste '+container.bedriftshelsetjenester->filter(bedriftshelsetjenesten::Bedriftshelsetjeneste)->size()"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Orgnr" valueExpression="aql:''+container.bedriftshelsetjenester->filter(bedriftshelsetjenesten::Bedriftshelsetjeneste)->size()"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="bedriftshelsetjenesten::Fylke" referenceName="fylker">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Fylkenavn" valueExpression="aql:'Fylke '+container.fylker->filter(bedriftshelsetjenesten::Fylke)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Fylkenr" valueExpression="aql:''+container.fylker->filter(bedriftshelsetjenesten::Fylke)->size()"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setAvdeling" edgeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='BedriftshelsetjenesteToAveldingEdge']">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createKommune" label="Create Kommune" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="Avdelinger" valueExpression="var:target"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="bedriftshelsetjenesten::Kommune" referenceName="kommuner">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Kommunenavn" valueExpression="aql:container.Fylkenavn+' kommune '+container.kommuner->filter(bedriftshelsetjenesten::Kommune)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Kommunenr" valueExpression="aql:container.kommuner->filter(bedriftshelsetjenesten::Kommune)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="fylke" valueExpression="aql:container"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteKommune" label="Delete Kommune" elementsToSelect="var:element">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteFylke" label="Delete Fylke" elementsToSelect="var:element">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="kommuneFylke" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']">
+            <oldContainer name="oldSemanticContainer"/>
+            <newContainer name="newSemanticContainer"/>
+            <element name="element"/>
+            <newViewContainer name="newContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="fylke" valueExpression="var:newSemanticContainer"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:oldSemanticContainer">
+                  <subModelOperations xsi:type="tool_1:Unset" featureName="kommuner" elementExpression="var:element"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:newSemanticContainer">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="kommuner" valueExpression="var:element"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="adresseKommune" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode']" dragSource="BOTH">
+            <oldContainer name="oldSemanticContainer"/>
+            <newContainer name="newSemanticContainer"/>
+            <element name="element"/>
+            <newViewContainer name="newContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="kommune" elementExpression="var:oldSemanticContainer"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="kommune" valueExpression="var:newSemanticContainer"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteBedriftshelsetjeneste" elementsToSelect="var:element">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvdeling" label="Create Avdeling" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="bedriftshelsetjenesten::Avdeling" referenceName="Avdelinger">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Navn" valueExpression="aql:'Avdeling '+container.Avdelinger->filter(bedriftshelsetjenesten::Avdeling)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteAvdeling" elementsToSelect="var:element">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Fylke).kommuner->size()>0">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@style" attributeName="height" value="aql:(self.kommuner->size() * 5) + (self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.fylke.Fylkenr = self.Fylkenr)->size() * 5) + 2"/>
+          </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size()>1">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@style" attributeName="height" value="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size() * 5 + 1"/>
+          </vsmElementCustomizations>
+        </customization>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="org.example.bedriftshelsetjenesten.design.Services"/>
