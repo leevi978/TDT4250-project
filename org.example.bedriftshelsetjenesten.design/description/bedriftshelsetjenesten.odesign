@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="bedriftshelsetjenesten" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="bedriftshelsetjenesten" version="12.0.0.2017041100">
   <ownedViewpoints name="UoD" modelFileExtension="bht2">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="UoD diagram" domainClass="bedriftshelsetjenesten::UoD" enablePopupBars="true">
       <metamodel href="http://www.example.org/bedriftshelsetjenesten#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="FylkeNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteFylke']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editFylkenavn']" domainClass="bedriftshelsetjenesten::Fylke" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='kommuneFylke']">
           <borderedNodeMappings name="KommuneNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteKommune']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editKommunenavn']" semanticCandidatesExpression="feature:kommuner" domainClass="bedriftshelsetjenesten::Kommune" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='adresseKommune']">
-            <borderedNodeMappings name="PostadresseNode" preconditionExpression="aql:self.kommune.Kommunenavn=container.Kommunenavn" domainClass="bedriftshelsetjenesten::Postadresse">
+            <borderedNodeMappings name="PostadresseNode" preconditionExpression="aql:self.kommune.Kommunenavn=container.Kommunenavn" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editPostadresse']" domainClass="bedriftshelsetjenesten::Postadresse">
               <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:Adresse" sizeComputationExpression="" labelPosition="node" width="15" height="5">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -32,21 +32,13 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="PostadresseWithoutKommuneNode" preconditionExpression="aql:not self.kommune" domainClass="bedriftshelsetjenesten::Postadresse">
+        <nodeMappings name="PostadresseWithoutKommuneNode" preconditionExpression="aql:self.kommune=null" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editPostadresse']" domainClass="bedriftshelsetjenesten::Postadresse">
           <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:Adresse" sizeComputationExpression="" labelPosition="node" width="15" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="AvdelingPostadresseEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingerNode']/@borderedNodeMappings[name='AvdelingNode']/@borderedNodeMappings[name='AvdelingPostadresse']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode']" targetFinderExpression="aql:self">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
         <edgeMappings name="PostadresseKommuneEdge" preconditionExpression="aql:false" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']" targetFinderExpression="feature:kommune">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -55,29 +47,27 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
+        <edgeMappings name="AvdelingPostadresseEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']/@borderedNodeMappings[name='AvdelingPostadresse']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode']" targetFinderExpression="aql:self">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <containerMappings name="BedriftshelsetjenesteContainer" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteBedriftshelsetjeneste']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editNavn']" domainClass="bedriftshelsetjenesten::Bedriftshelsetjeneste">
-          <borderedNodeMappings name="AvdelingerNode" label="Avdelinger" semanticCandidatesExpression="aql:self.Avdelinger->first()" domainClass="bedriftshelsetjenesten::Avdeling">
-            <borderedNodeMappings name="AvdelingNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteAvdeling']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editNavn']" domainClass="bedriftshelsetjenesten::Avdeling">
-              <borderedNodeMappings name="AvdelingPostadresse" semanticCandidatesExpression="feature:Postadresse" domainClass="bedriftshelsetjenesten::Postadresse">
-                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="Adresse" sizeComputationExpression="" labelPosition="node" width="10" height="5">
-                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <forbiddenSides>SOUTH</forbiddenSides>
-                  <forbiddenSides>EAST</forbiddenSides>
-                  <forbiddenSides>NORTH</forbiddenSides>
-                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-                </style>
-              </borderedNodeMappings>
-              <style xsi:type="style:SquareDescription" labelSize="14" showIcon="false" labelExpression="feature:Navn" sizeComputationExpression="" labelPosition="node" width="20" height="10">
+          <borderedNodeMappings name="AvdelingNode" semanticCandidatesExpression="feature:Avdelinger" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editAvdeling']" domainClass="bedriftshelsetjenesten::Avdeling">
+            <borderedNodeMappings name="AvdelingPostadresse" preconditionExpression="aql:container.Postadresse&lt;>null" semanticCandidatesExpression="feature:Postadresse" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editPostadresse']" domainClass="bedriftshelsetjenesten::Postadresse">
+              <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="Adresse" sizeComputationExpression="" labelPosition="node" width="10" height="5">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <forbiddenSides>SOUTH</forbiddenSides>
                 <forbiddenSides>EAST</forbiddenSides>
                 <forbiddenSides>NORTH</forbiddenSides>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </borderedNodeMappings>
-            <style xsi:type="style:SquareDescription" labelSize="14" showIcon="false" labelExpression="" sizeComputationExpression="" labelPosition="node" width="5" height="10">
+            <style xsi:type="style:SquareDescription" labelSize="14" showIcon="false" labelExpression="feature:Navn" sizeComputationExpression="" labelPosition="node" width="20" height="10">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <forbiddenSides>SOUTH</forbiddenSides>
@@ -86,7 +76,7 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
             </style>
           </borderedNodeMappings>
-          <subNodeMappings name="GodkjenningsstatusNode" semanticCandidatesExpression="feature:Godkjenningsstatus" domainClass="bedriftshelsetjenesten::Godkjenningsstatus">
+          <subNodeMappings name="GodkjenningsstatusNode" semanticCandidatesExpression="feature:Godkjenningsstatus" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='toggleGodkjenningsstatus']" domainClass="bedriftshelsetjenesten::Godkjenningsstatus">
             <style xsi:type="style:EllipseNodeDescription" labelSize="12" showIcon="false" labelExpression="feature:Status" labelPosition="node" horizontalDiameterComputationExpression="12" verticalDiameterComputationExpression="12">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelFormat>bold</labelFormat>
@@ -166,7 +156,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="feature:Navn" roundedCorner="true" widthComputationExpression="" heightComputationExpression="">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="feature:Navn" roundedCorner="true" widthComputationExpression="60" heightComputationExpression="30">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -259,7 +249,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvdeling" label="Create Avdeling" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingerNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvdeling" label="Create Avdeling" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -307,7 +297,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvdelingPostadresse" label="Set Avdeling Postadresse" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingerNode']/@borderedNodeMappings[name='AvdelingNode']/@borderedNodeMappings[name='AvdelingPostadresse']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvdelingPostadresse" label="Set Avdeling Postadresse" nodeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']/@borderedNodeMappings[name='AvdelingPostadresse']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -389,6 +379,124 @@
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="TelefonMob" valueExpression="var:0"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="toggleGodkjenningsstatus" label="Toggle Godkjenningsstatus" elementsToSelect="var:element" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@subNodeMappings[name='GodkjenningsstatusNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="aql:self.Status='Godkjent'">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Status" valueExpression="Ikke godkjent"/>
+                  </cases>
+                  <default>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Status" valueExpression="Godkjent"/>
+                  </default>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PaneBasedSelectionWizardDescription">
+            <element name="element"/>
+            <containerView name="containerView"/>
+            <container name="container"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="editPostadresse" elementsToSelect="var:element" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']/@borderedNodeMappings[name='AvdelingPostadresse'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:Let" valueExpression="var:element">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                    <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Edit Postadresse">
+                      <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                        <initialOperation/>
+                      </buttons>
+                      <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="Postadresse" valueExpression="var:instance"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </buttons>
+                      <page name="Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editPostadresse']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                      <groups name="Default Group" semanticCandidateExpression="var:self">
+                        <controls xsi:type="properties:TextDescription" name="AdresseInput" labelExpression="Adresse" valueExpression="aql:instance.Adresse">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="Adresse" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                        <controls xsi:type="properties:TextDescription" name="PostnrInput" labelExpression="Postnr" valueExpression="aql:instance.Postnr">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="Postnr" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                        <controls xsi:type="properties:TextDescription" name="PoststedInput" labelExpression="Poststed" valueExpression="aql:instance.Poststed">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="Poststed" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                      </groups>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="editAvdeling" elementsToSelect="var:element" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:Let" valueExpression="var:element">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                    <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Edit Avdeling">
+                      <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                        <initialOperation/>
+                      </buttons>
+                      <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="Postadresse" valueExpression="var:instance"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </buttons>
+                      <page name="Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editAvdeling']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                      <groups name="Default Group" semanticCandidateExpression="var:self">
+                        <controls xsi:type="properties:TextDescription" name="Navn" labelExpression="Navn" valueExpression="aql:instance.Navn">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="Navn" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                        <controls xsi:type="properties:TextDescription" name="Avdelingsleder" labelExpression="Avdelingsleder" valueExpression="aql:instance.Avdelingsleder">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="Avdelingsleder" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                        <controls xsi:type="properties:TextDescription" name="Telefon" labelExpression="Telefon" valueExpression="aql:''+instance.Telefon">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="Telefon" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                      </groups>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Fylke).kommuner->size()>0">
@@ -397,14 +505,19 @@
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size()>1">
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@style" attributeName="height" value="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size() * 5 + 1"/>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:true">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingerNode']/@style" attributeName="height" value="aql:container.Avdelinger->size() * 10 + 5"/>
-          </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Postadresse).Adresse.index(self.Adresse.last(1))>15">
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode']/@style //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode']/@style" attributeName="width" value="aql:self.Adresse.index(self.Adresse.last(1)) + 2"/>
           </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Godkjenningsstatus).Status='Godkjent'">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@subNodeMappings[name='GodkjenningsstatusNode']/@style" referenceName="color">
+              <value href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </featureCustomizations>
+          </vsmElementCustomizations>
         </customization>
       </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Postadresse diagram" titleExpression="Edit Postadresse" domainClass="bedriftshelsetjenesten::Postadresse" enablePopupBars="true">
+      <defaultLayer name="Default"/>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="org.example.bedriftshelsetjenesten.design.Services"/>
   </ownedViewpoints>
