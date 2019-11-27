@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bedriftshelsetjenesten:UoD xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten">
+  <bedriftshelsetjenester Orgnr="1" Navn="Bedriftshelsetjeneste 1">
+    <Kontaktinformasjon Telefon="00000000">
+      <Kontaktperson Navn="Per persen"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="efheihie" Avdelingsleder="fewafaew" Telefon="12345678">
+      <Postadresse Adresse="123abde1234" Postnr="1234" Poststed="213dsfa" kommune="//@fylker.1/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Avdeling 2"/>
+    <Avdelinger Navn="Avdeling 3"/>
+    <Godkjenningsstatus Status="Ikke godkjent"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="2" Navn="Bedriftshelsetjeneste 2">
+    <Kontaktinformasjon Telefon="12345678">
+      <Kontaktperson Navn="Navn Navnesen"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Avdeling 1"/>
+    <Avdelinger Navn="Avdeling 2" Avdelingsleder="Gnom Gnomesen" Telefon="66666666">
+      <Postadresse Adresse="Vardøveien 12" Postnr="3333" Poststed="Vardø" kommune="//@fylker.0/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Ikke godkjent"/>
+  </bedriftshelsetjenester>
+  <fylker Fylkenavn="Finnmark">
+    <kommuner Kommunenr="1" Kommunenavn="Øksfjord" fylke="//@fylker.0"/>
+    <kommuner Kommunenr="6" Kommunenavn="Lakselv" fylke="//@fylker.0"/>
+    <kommuner Kommunenr="7" Kommunenavn="Vadsø" fylke="//@fylker.0"/>
+    <kommuner Kommunenr="5" Kommunenavn="Vardø" fylke="//@fylker.0"/>
+    <kommuner Kommunenavn="Tana" fylke="//@fylker.0"/>
+  </fylker>
+  <fylker Fylkenr="1" Fylkenavn="Troms">
+    <kommuner Kommunenr="1" Kommunenavn="Troms kommune 1" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="2" Kommunenavn="Troms kommune 2" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="3" Kommunenavn="Troms kommune 3" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="4" Kommunenavn="Troms kommune 4" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5" Kommunenavn="Troms kommune 5" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="6" Kommunenavn="Troms kommune 6" fylke="//@fylker.1"/>
+  </fylker>
+</bedriftshelsetjenesten:UoD>
