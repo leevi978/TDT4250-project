@@ -1,0 +1,2040 @@
+<?xml version="1.0" encoding="ASCII"?>
+<bedriftshelsetjenesten:UoD xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bedriftshelsetjenesten="http://www.example.org/bedriftshelsetjenesten">
+  <bedriftshelsetjenester Orgnr="984661177" Navn="VYGRUPPEN AS">
+    <Kontaktinformasjon Telefon="23621000" EpostAdresse="ann.kristin.hjortbakk@vy.no" InternettAdresse="http://">
+      <Postadresse Adresse="Karl Johans gate 5" Postnr="0191" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Ann Kristin Hjortbakk" Rolle="Leder i BHT" TelefonDir="913 12 806         " TelefonMob="913 12 806 " Epostadresse="ann.kristin.hjortbakk@vy.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="NSB BHT Avd. Nord (Trondheim)" Avdelingsleder="Teamleder Kari Svedal Bergquist" Telefon="23621682">
+      <Postadresse Adresse="Fosenkaia 3" Postnr="7010" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="NSB BHT Avd. S&#xf8;r/Vest (Drammen/Kristiansand/Bergen)" Avdelingsleder="Teamleder Arve Fonneland" Telefon="23621000">
+      <Postadresse Adresse="Karl Johansgate 5" Postnr="0048" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-04T05:21:23.627+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="944357866" Navn="BEDRIFTSHELSEN AS">
+    <Kontaktinformasjon Telefon="33 13 75 00" EpostAdresse="firmapost@bedriftshelsen.no" InternettAdresse="http://">
+      <Postadresse Adresse="Nedre Fritz&#xf8;egate 1-3" Postnr="3264" Poststed="LARVIK" kommune="//@fylker.2/@kommuner.0"/>
+      <Kontaktperson Navn="Henning Hegdal" Rolle="Daglig leder" TelefonDir="33137500" TelefonMob="93408501" Epostadresse="henning@bedriftshelsen.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Bedriftshelsen AS, Larvik" Avdelingsleder="Henning Hegdal" Telefon="33137500">
+      <Postadresse Adresse="Nedre Fritz&#xf8;egate 1-3" Postnr="3264" Poststed="Larvik" kommune="//@fylker.2/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelsen AS, Sandefjord" Avdelingsleder="Trude Eikenes" Telefon="33137500">
+      <Postadresse Adresse="Nedre Movei 4" Postnr="3215" Poststed="Sandefjord" kommune="//@fylker.2/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelsen AS, Borgeskogen(Stokke)" Avdelingsleder="Chris Amundsen" Telefon="33137500">
+      <Postadresse Adresse="Borgeskogen 5" Postnr="3160" Poststed="Stokke" kommune="//@fylker.2/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedrifthelsen AS, Her&#xf8;ya(Porsgrunn)" Avdelingsleder="Susanne H. S&#xf8;rheim" Telefon="33137500">
+      <Postadresse Adresse="Hydroveien 91" Postnr="3936" Poststed="Porsgrunn" kommune="//@fylker.3/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelsen AS, Rafnes(Bamble)" Avdelingsleder="Susanne H. S&#xf8;rheim" Telefon="33137500">
+      <Postadresse Adresse="Rafnes" Postnr="3966" Poststed="Stathelle" kommune="//@fylker.3/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelsen AS, B&#xf8;" Avdelingsleder="Astrid Brockhus" Telefon="33137500">
+      <Postadresse Adresse="Valenvegen 2" Postnr="3802" Poststed="B&#xf8;" kommune="//@fylker.3/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelssen AS, Dalen(Telemark)" Avdelingsleder="Astrid Brockhus" Telefon="33137500">
+      <Postadresse Adresse="Kommunehuset" Postnr="3880" Poststed="Dalen" kommune="//@fylker.3/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-04T15:27:56.060+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971475560" Navn="BHT-GRUPPEN SA">
+    <Kontaktinformasjon Telefon="23 15 88 50" EpostAdresse="vigdis.engen@oslohms.no" InternettAdresse="http://www.oslohms.no">
+      <Postadresse Adresse="Storgata 32" Postnr="0184" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Vigdis Engen" Rolle="Daglig leder" TelefonDir="23158850" TelefonMob="92639759" Epostadresse="vigdis.engen@bht-gruppen.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="BHT-gruppen SA, region Oslo" Avdelingsleder="Vigdis Engen" Telefon="23158850">
+      <Postadresse Adresse="Storgata 32" Postnr="1084" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="BHT-gruppen SA, region Midt-Norge" Avdelingsleder="Bj&#xf8;rn Arve Bakken" Telefon="404 01 372">
+      <Postadresse Adresse="Sluppenveien 12 B" Postnr="7037" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-04T16:24:00.573+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974761424" Navn="DEPARTEMENTENES SIKKERHETS-">
+    <Kontaktinformasjon Telefon="22 24 90 90" EpostAdresse="postmottak@dss.dep.no" InternettAdresse="http://www.dss.dep.no">
+      <Postadresse Adresse="Akersgata 64" Postnr="0180" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Anne Kristine Willoch" Rolle="Psykolog / Leder BHT" TelefonDir="22249620" TelefonMob="41629509" Epostadresse="anne-kristine.willoch@dss.dep.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-04T17:44:05.040+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="957161200" Navn="Helse &amp; Sikkerhet SA">
+    <Kontaktinformasjon Telefon="75136220" EpostAdresse="post@hesi.no" InternettAdresse="http://www.hesi.no">
+      <Postadresse Adresse="Postboks 500" Postnr="8601" Poststed="Mo i Rana" kommune="//@fylker.4/@kommuner.0"/>
+      <Kontaktperson Navn="Tove Michalsen" Rolle="Daglig leder" TelefonMob="993 75 201 " Epostadresse="tove.michalsen@hesi.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-05T12:23:00.370+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="942116217" Navn="Hedmark fylkeskommune">
+    <Kontaktinformasjon Telefon="62 54 40 00" EpostAdresse="bht@hedmark.org" InternettAdresse="http://www.hedmark.org">
+      <Postadresse Adresse="Hedmark fylkeshus, Parkgata 64" Postnr="2325" Poststed="Hamar" kommune="//@fylker.5/@kommuner.0"/>
+      <Kontaktperson Navn="Liv Anne Ilsaas" Rolle="Leder Bedriftshelsetjenesten" TelefonDir="99516860" TelefonMob="99516860" Epostadresse="liv.ilsaas@hedmark.org"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-05T15:51:22.390+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="968191195" Navn="NIKS AS">
+    <Kontaktinformasjon Telefon="90647161" EpostAdresse="niks@niks.no" InternettAdresse="http://www.niks.no">
+      <Postadresse Adresse="Bes&#xf8;ksadresse Midtragate 14, Mo i Rana. Postadresse 134" Postnr="8613" Poststed="Mo i Rana" kommune="//@fylker.4/@kommuner.0"/>
+      <Kontaktperson Navn="Tore Bakkejord" Rolle="Daglig leder" TelefonDir="90647161" TelefonMob="90647161" Epostadresse="tba@niks.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-05T16:29:25.370+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="984195893" Navn="Bedriftshelsetjenesten Forebygg Skade AS">
+    <Kontaktinformasjon Telefon="51 63 04 00" EpostAdresse="post@forebyggskade.no" InternettAdresse="http://www.forebyggskade.no">
+      <Postadresse Adresse="Vingvegen 3" Postnr="4050" Poststed="SOLA" kommune="//@fylker.6/@kommuner.0"/>
+      <Kontaktperson Navn="Lisbeth Vestly Maier" Rolle="Daglig leder" TelefonDir="91352991" TelefonMob="91352991" Epostadresse="magnar.vestly@forebyggskade.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Fossekallen OS" Avdelingsleder="Elling Lund" Telefon="99018417">
+      <Postadresse Adresse="Borgavegen 94" Postnr="5211" Poststed="OS" kommune="//@fylker.7/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-05T19:33:36.170+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="982802881" Navn="Stavnem Helse AS">
+    <Kontaktinformasjon Telefon="51798490" EpostAdresse="stavnemhelse@gmail.com" InternettAdresse="http://">
+      <Postadresse Adresse="Postboks 129" Postnr="4367" Poststed="N&#xe6;rb&#xf8;" kommune="//@fylker.6/@kommuner.1"/>
+      <Kontaktperson Navn="Gerd Jorunn Stavnem" Rolle="lege, spesialist i arbeids- og allmennmedisin" TelefonMob="95140651" Epostadresse="stavnemhelse@gmail.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-06T15:42:41.317+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="934949145" Navn="NORCEM BHT">
+    <Kontaktinformasjon Telefon="3557 2228" EpostAdresse="conny.meijer@norcem.no">
+      <Postadresse Adresse="Postboks 38" Postnr="3991" Poststed="Brevik" kommune="//@fylker.3/@kommuner.0"/>
+      <Kontaktperson Navn="Conny Meijer" Rolle="daglig leder/ bedriftslege/ yrkeshygieniker" TelefonDir="3557 2228" TelefonMob="954 29 469" Epostadresse="conny.meijer@norcem.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Norcem BHT Brevik" Avdelingsleder="Conny Meijer" Telefon="3557 2228">
+      <Postadresse Adresse="Setreveien 2" Postnr="3950" Poststed="Brevik" kommune="//@fylker.3/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Norcem BHT Kj&#xf8;psvik" Avdelingsleder="Ellen V Pedersen" Telefon="7578 5120">
+      <Postadresse Adresse="Behrensvei 15" Postnr="8590" Poststed="Kj&#xf8;psvik" kommune="//@fylker.4/@kommuner.1"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-07T13:26:07.480+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971540273" Navn="EIKER OG MODUM">
+    <Kontaktinformasjon Telefon="32 75 52 30" EpostAdresse="post@embht.no" InternettAdresse="http://www.embht.no">
+      <Postadresse Adresse="Prestebr&#xe5;tan 21" Postnr="3300" Poststed="HOKKSUND" kommune="//@fylker.8/@kommuner.0"/>
+      <Kontaktperson Navn="Mary Syrene Engh-Johansen" Rolle="daglig leder" TelefonDir="97124694" Epostadresse="mary@embht.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Eiker og Modum Bedriftshelsetjeneste" Telefon="32755230">
+      <Postadresse Adresse="&#xd8;vre Nedmarken 22" Postnr="3370" Poststed="Vikersund" kommune="//@fylker.8/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Eiker og Modum Bedriftshelsetjeneste" Telefon="32755230">
+      <Postadresse Adresse="Eggedalsveien 257" Postnr="3358" Poststed="Nedre Eggedal" kommune="//@fylker.8/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Eiker og Modum Bedriftshelsetjeneste" Telefon="32755230">
+      <Postadresse Adresse="Kr&#xf8;raveien 5" Postnr="3535" Poststed="Kr&#xf8;deren" kommune="//@fylker.8/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-07T13:38:09.063+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971400951" Navn="ISHAVSBYEN BEDRIFTSHELSETJENESTE SA">
+    <Kontaktinformasjon Telefon="77 69 61 17" EpostAdresse="post@ibht.no" InternettAdresse="http://www.ibht.net">
+      <Postadresse Adresse="Postboks 3656" Postnr="9278" Poststed="TROMS&#xd8;" kommune="//@fylker.9/@kommuner.0"/>
+      <Kontaktperson Navn="Heidi Danielsen" Rolle="Daglig leder/bedriftslege" TelefonDir="77696117" TelefonMob="47974760" Epostadresse="heidi.danielsen@ibht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-08T11:55:28.650+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974803348" Navn="VESTLOFOTEN HELSE MILJ&#xd8; OG SIKKERHET SA">
+    <Kontaktinformasjon Telefon="76 06 41 00" EpostAdresse="post@lofothms.no" InternettAdresse="http://www.lofothms.no">
+      <Postadresse Adresse="Storgata 105" Postnr="8370" Poststed="LEKNES" kommune="//@fylker.4/@kommuner.2"/>
+      <Kontaktperson Navn="Andr&#xe9; Derksen" Rolle="Daglig leder / bedriftssykepleier" TelefonDir="76064103" TelefonMob="90739336" Epostadresse="andre@lofothms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-11T11:39:21.663+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="992980257" Navn="LUND BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="46 95 46 46" EpostAdresse="firmapost@lundbht.no" InternettAdresse="http://www.lundbht.no">
+      <Postadresse Adresse="Kj&#xf8;ita 17" Postnr="4631" Poststed="KRISTIANSAND S" kommune="//@fylker.10/@kommuner.0"/>
+      <Kontaktperson Navn="Tone Thorstensen" Rolle="Daglig leder/HMS-r&#xe5;dgiver" TelefonDir="47933808" Epostadresse="tone@lundbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-11T16:41:43.083+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="965121897" Navn="MEDICA AS">
+    <Kontaktinformasjon Telefon="40 00 64 67" EpostAdresse="ruben@medica.no" InternettAdresse="http://www.medica.no">
+      <Postadresse Adresse="&#xd8;stensj&#xf8;veien 36" Postnr="0667" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Ruben Dario Nicotra" Rolle="Daglig leder" TelefonDir="93084585" TelefonMob="93084585" Epostadresse="ruben@medica.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Medica avd. Oslo" Avdelingsleder="Sonja L&#xf8;chen" Telefon="40006467">
+      <Postadresse Adresse="&#xd8;stensj&#xf8;veien 36" Postnr="0667" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Medica avd. Sandvika" Avdelingsleder="Per Albertsen" Telefon="40001598">
+      <Postadresse Adresse="Sandviksveien 176" Postnr="1337" Poststed="Sandvika" kommune="//@fylker.11/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-11T18:33:50.140+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971482230" Navn="HMS-SENTERET &#xd8;VRE ROMERIKE SA">
+    <Kontaktinformasjon Telefon="63 95 60 30" EpostAdresse="post@hmsovreromerike.no" InternettAdresse="http://www.hmsovreromerike.no">
+      <Postadresse Adresse="Folkeparken 13A" Postnr="2072" Poststed="DAL" kommune="//@fylker.11/@kommuner.1"/>
+      <Kontaktperson Navn="Inger-Lise Gransl&#xe5;en" Rolle="Daglig leder/yrkeshygieniker" TelefonDir="63956034" TelefonMob="45024597" Epostadresse="ilg@hmsovreromerike.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-13T09:15:57.293+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971514183" Navn="ROMERIKE HMS-SENTER SA">
+    <Kontaktinformasjon Telefon="63 88 22 30" EpostAdresse="post@romerikehms.no" InternettAdresse="http://www.romerikehms.no">
+      <Postadresse Adresse="J E Ekornesvei 16" Postnr="1900" Poststed="FETSUND" kommune="//@fylker.11/@kommuner.2"/>
+      <Kontaktperson Navn="Marit Karin Skogstad" Rolle="Daglig leder" TelefonDir="92483302" TelefonMob="92483302" Epostadresse="marit.skogstad@romerikehms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-13T17:56:28.477+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983686567" Navn="AGENDA HMS SA">
+    <Kontaktinformasjon Telefon="74 07 38 60" EpostAdresse="post@agendahms.no" InternettAdresse="http://www.agendahms.no">
+      <Postadresse Adresse="Johannes Bruns gate 9" Postnr="7650" Poststed="VERDAL" kommune="//@fylker.1/@kommuner.1"/>
+      <Kontaktperson Navn="Kjersti Kleven" Rolle="Daglig leder" TelefonDir="90820417" TelefonMob="90820417" Epostadresse="kjersti@agendahms.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Verdal">
+      <Postadresse Postnr="7651" Poststed="Verdal" kommune="//@fylker.1/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Heimdal (Trondheim)">
+      <Postadresse Postnr="7093" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Steinkjer">
+      <Postadresse Postnr="7714" Poststed="Steinkjer" kommune="//@fylker.1/@kommuner.2"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-14T11:09:24.863+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974404192" Navn="HMS TJENESTEN ORKLADAL AS">
+    <Kontaktinformasjon Telefon="72 47 12 50" EpostAdresse="post@hms-tjenesten.no" InternettAdresse="http://www.hms-tjenesten.no">
+      <Postadresse Adresse="Sandenveien 5" Postnr="7300" Poststed="ORKANGER" kommune="//@fylker.1/@kommuner.3"/>
+      <Kontaktperson Navn="Jorun Elisabeth Lund" Rolle="Daglig leder" TelefonDir="91541280"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Orkanger">
+      <Postadresse Postnr="7300" Poststed="Orkanger" kommune="//@fylker.1/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Sunndal">
+      <Postadresse Postnr="6600" Poststed="Sunndal" kommune="//@fylker.12/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Oppdal">
+      <Postadresse Postnr="7340" Poststed="Oppdal" kommune="//@fylker.1/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hemne">
+      <Postadresse Postnr="7200" Poststed="Kyrks&#xe6;ter&#xf8;ra" kommune="//@fylker.1/@kommuner.5"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-18T13:10:39.763+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="915070434" Navn="SPORVEIEN OSLO AS">
+    <Kontaktinformasjon Telefon="22 08 40 00" EpostAdresse="firmapost@sporveien.com" InternettAdresse="http://sporveien.com">
+      <Postadresse Adresse="&#xd8;kernveien 9" Postnr="0653" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Kjersti Pernille Rynning &#xd8;yen" Rolle="HMS-sjef" TelefonMob="91626244" Epostadresse="kjersti.oyen@sporveien.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-18T13:10:42.357+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="980880796" Navn="ARSANA AS">
+    <Kontaktinformasjon Telefon="55 55 05 80" EpostAdresse="firmapost@arsana.no" InternettAdresse="http://www.arsana.no">
+      <Postadresse Adresse="Strandgaten 14" Postnr="5013" Poststed="BERGEN" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Tove Lang&#xf8;y" Rolle="Daglig leder" TelefonDir="91845607" TelefonMob="91845607" Epostadresse="tove.langoy@arsana.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-18T13:22:45.157+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="984959206" Navn="Agder Arbeidsmilj&#xf8; IKS">
+    <Kontaktinformasjon Telefon="370 067 80" EpostAdresse="agder.arbeidsmiljo@aa-miljo.no" InternettAdresse="http://www.agderarbeidsmiljo.com">
+      <Postadresse Adresse="Bedriftsveien 9" Postnr="4841" Poststed="Arendal" kommune="//@fylker.13/@kommuner.0"/>
+      <Kontaktperson Navn="Inger-Lise Hognerud" Rolle="Daglig leder" TelefonDir="370 067 80" TelefonMob="41232737" Epostadresse="inger.lise.hognerud@aa-miljo.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-18T13:25:01.720+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971481889" Navn="Kristiansund Felles Bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="71571530" EpostAdresse="post@kfbh.no" InternettAdresse="http://kfbh.no">
+      <Postadresse Adresse="Postboks 760" Postnr="6501" Poststed="Kristiansund" kommune="//@fylker.12/@kommuner.1"/>
+      <Kontaktperson Navn="Turid &#xd8;deg&#xe5;rd" Rolle="Daglig leder/bedriftssykepleier" TelefonDir="71571530" TelefonMob="93265049" Epostadresse="turid@kfbh.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-18T13:25:04.050+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="958186665" Navn="Bedriftshelsetjeneste AS">
+    <Kontaktinformasjon Telefon="62 48 48 50" EpostAdresse="firmapost@bht.no" InternettAdresse="http://www.bht.no">
+      <Postadresse Adresse="Kongsveien 4" Postnr="2500" Poststed="Tynset" kommune="//@fylker.5/@kommuner.1"/>
+      <Kontaktperson Navn="Ingrid Lium" Rolle="Daglig leder, fysioterapeut og verneingeni&#xf8;r" TelefonDir="62484850" TelefonMob="95165991" Epostadresse="ingrid@bht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-18T19:52:20.510+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971484845" Navn="GL&#xc5;MDAL HMS-TJENESTE KONGSVINGER">
+    <Kontaktinformasjon Telefon="62 88 85 00" EpostAdresse="post@glomdalhms.no" InternettAdresse="http://glomdalhms.no">
+      <Postadresse Adresse="G&#xe5;gata 32" Postnr="2211" Poststed="KONGSVINGER" kommune="//@fylker.5/@kommuner.2"/>
+      <Kontaktperson Navn="Per Jonny Hanssen" Rolle="Daglig leder" TelefonDir="90 74 49 33" TelefonMob="90 74 49 33" Epostadresse="per.jonny@glomdalhms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-19T16:57:37.767+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="871521042" Navn="NORD-TROMS BEDRIFTSHELSETJENESTE">
+    <Kontaktinformasjon Telefon="77 76 56 35" EpostAdresse="firmapost@ntbht.no" InternettAdresse="http://www.ntbht.no">
+      <Postadresse Adresse="Sentrum 15" Postnr="9151" Poststed="STORSLETT" kommune="//@fylker.9/@kommuner.1"/>
+      <Kontaktperson Navn="Bj&#xf8;rn Arthur Klubnes" Rolle="Daglig leder" TelefonDir="77765635" TelefonMob="92242821" Epostadresse="bjorn@ntbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-21T13:42:11.743+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="970897755" Navn="INVENI bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="99794042" EpostAdresse="post@invenihelse.no" InternettAdresse="http://www.invenihelse.no">
+      <Postadresse Adresse="Mellomvegen 50" Postnr="9007" Poststed="TROMS&#xd8;" kommune="//@fylker.9/@kommuner.0"/>
+      <Kontaktperson Navn="Audun Jan Widding" Rolle="daglig leder" TelefonDir="99794042" TelefonMob="99794042" Epostadresse="audun@invenihelse.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="INVENI bedriftshelsetjeneste, Avd Hatteng">
+      <Postadresse Adresse="Kommunehuset i Storfjord" Postnr="9046" Poststed="Hatteng" kommune="//@fylker.9/@kommuner.2"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-22T13:54:26.400+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983641512" Navn="DIN BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="95 29 28 21" EpostAdresse="havard@dinbht.no" InternettAdresse="http://www.dinbht.no">
+      <Postadresse Adresse="Fjordgata 10-12" Postnr="7010" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Geir Kaspersen" Rolle="Daglig leder" TelefonDir="95 29 28 21" TelefonMob="98 059 811" Epostadresse="geir@dinbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-25T14:50:56.180+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971035854" Navn="UNIVERSITETET I OSLO, Enhet for bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="22 85 50 50" EpostAdresse="bht-post@admin.uio.no" InternettAdresse="http://www.uio.no/om/organisasjon/los/ebht/index.html">
+      <Postadresse Adresse="pb 1043 Blindern" Postnr="0316" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Bj&#xf8;rnar Vold-Sarnes" Rolle="Leder" TelefonDir="22858895" TelefonMob="90851931" Epostadresse="bjornar.vold-sarnes@admin.uio.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-25T15:39:00.760+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="967060836" Navn="ST. JOSEPH BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="32 80 84 80" EpostAdresse="hms@st-joseph.no" InternettAdresse="http://st-joseph.no">
+      <Postadresse Adresse="J&#xf8;rgen Moes gate 4" Postnr="3016" Poststed="DRAMMEN" kommune="//@fylker.8/@kommuner.4"/>
+      <Kontaktperson Navn="Hanne Svele" Rolle="Daglig leder" TelefonDir="90 79 54 54" TelefonMob="90 79 54 54" Epostadresse="hanne@st-joseph.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-25T17:33:08.920+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971515732" Navn="YSST HMS">
+    <Kontaktinformasjon Telefon="53 42 80 80" EpostAdresse="post@ysst.no" InternettAdresse="http://www.ysst.no">
+      <Postadresse Adresse="Hollundsdalen" Postnr="5430" Poststed="BREMNES" kommune="//@fylker.7/@kommuner.2"/>
+      <Kontaktperson Navn="&#xc5;sa Eld&#xf8;y" Rolle="Dagleg leiar" TelefonDir="53428080" TelefonMob="99261371" Epostadresse="aasa@ysst.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-28T13:24:08.943+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="967253049" Navn="Narvik Bedriftshelsetjeneste SA">
+    <Kontaktinformasjon Telefon="76969090" EpostAdresse="nbht@narvikbht.no" InternettAdresse="http://www.narvikbht.no">
+      <Postadresse Adresse="Postboks 655" Postnr="8508" Poststed="Narvik" kommune="//@fylker.4/@kommuner.3"/>
+      <Kontaktperson Navn="&#xd8;ystein Flygel" Rolle="Daglig leder" TelefonDir="76969098" TelefonMob="95199032" Epostadresse="oystein@narvikbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-28T13:25:08.520+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971336293" Navn="BHT S&#xd8;R SA">
+    <Kontaktinformasjon Telefon="38 33 47 80" EpostAdresse="post@bhtsor.no" InternettAdresse="http://www.bhtsor.no">
+      <Postadresse Adresse="Stasjonsgata 5" Postnr="4580" Poststed="LYNGDAL" kommune="//@fylker.10/@kommuner.1"/>
+      <Kontaktperson Navn="John K&#xe5;re Gill" Rolle="Daglig leder" TelefonDir="41535353" TelefonMob="41535353" Epostadresse="jkg@bhtsor.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="BHT S&#xd8;R" Avdelingsleder="Lene Altermark" Telefon="97562024">
+      <Postadresse Adresse="Linnegr&#xf8;van 24" Postnr="4640" Poststed="S&#xf8;gne" kommune="//@fylker.10/@kommuner.2"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-29T16:22:22.440+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="942110464" Navn="TRONDHEIM KOMMUNE, Arbeidsmilj&#xf8;enheten">
+    <Kontaktinformasjon Telefon="72540000" EpostAdresse="arbeidsmiljo.postmottak@trondheim.kommune.no" InternettAdresse="http://www.trondheim.kommune.no/arbeidsmiljoenheten">
+      <Postadresse Adresse="Munkegaten 22" Postnr="7004" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Hans Jacob Busch" Rolle="Enhetsleder" TelefonDir="95263723" TelefonMob="95263723" Epostadresse="hans-jacob.busch@trondheim.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-29T16:22:29.660+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="995014068" Navn="HMS BEDRIFTEN SA">
+    <Kontaktinformasjon Telefon="40857214" EpostAdresse="post@hmsbedriften.no" InternettAdresse="http://www.hmsbedriften.no">
+      <Postadresse Adresse="O.H. Bangs vei 51" Postnr="1363" Poststed="H&#xd8;VIK" kommune="//@fylker.11/@kommuner.0"/>
+      <Kontaktperson Navn="Marianne Sollie" Rolle="Daglig leder" TelefonDir="40857214" TelefonMob="40857214" Epostadresse="marianne@hmsbedriften.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Systemfag Norge BHT" Avdelingsleder="Stein Sollie" Telefon="40696959">
+      <Postadresse Adresse="Torget 2" Postnr="1767" Poststed="Halden" kommune="//@fylker.14/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-29T16:22:34.113+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971577851" Navn="S&#xd8;R-TROMS HMS-TJENESTE">
+    <Kontaktinformasjon Telefon="77 01 86 80" EpostAdresse="post@hms-tjeneste.no" InternettAdresse="http://www.hms-tjeneste.no">
+      <Postadresse Adresse="Verkstedveien 1" Postnr="9406" Poststed="HARSTAD" kommune="//@fylker.9/@kommuner.3"/>
+      <Kontaktperson Navn="Ellen Elisabeth Finjord" Rolle="Daglig leder" TelefonDir="77018680" TelefonMob="41634116" Epostadresse="ellen@hms-tjeneste.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-01-29T16:48:37.077+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="981414381" Navn="Hemis as">
+    <Kontaktinformasjon Telefon="75506670" EpostAdresse="hms@hemis.no" InternettAdresse="http://www.hemis.no">
+      <Postadresse Adresse="Pb. 41" Postnr="8088" Poststed="Bod&#xf8;" kommune="//@fylker.4/@kommuner.4"/>
+      <Kontaktperson Navn="Trond L. Halvorsen" Rolle="Adm. direkt&#xf8;r" TelefonDir="75506683" TelefonMob="91518740" Epostadresse="trond.halvorsen@hemis.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Hemis as avd. Alta" Avdelingsleder="Hill Jorunn K&#xe5;berg" Telefon="78 45 59 50">
+      <Postadresse Adresse="Altaveien 95/97" Postnr="9513" Poststed="Alta" kommune="//@fylker.15/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hemis as avd. Troms&#xf8;" Avdelingsleder="Birgit Stein" Telefon="77 69 10 70">
+      <Postadresse Adresse="Strandveien 106" Postnr="9008" Poststed="Troms&#xf8;" kommune="//@fylker.9/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hemis as avd. Bod&#xf8;" Avdelingsleder="Asbj&#xf8;rn F&#xf8;rde" Telefon="75 50 66 70">
+      <Postadresse Adresse="Pb. 41" Postnr="8088" Poststed="Bod&#xf8;" kommune="//@fylker.4/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hemis as, avd. Mel&#xf8;y" Avdelingsleder="Asbj&#xf8;rn F&#xf8;rde" Telefon="75 50 66 70">
+      <Postadresse Adresse="&#xd8;rnesveien 3" Postnr="8160" Poststed="Glomfjord" kommune="//@fylker.4/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hemis as, avd. Saltdal" Avdelingsleder="Asbj&#xf8;rn F&#xf8;rde" Telefon="75 50 66 70">
+      <Postadresse Adresse="H&#xe5;ndtverkeren 8" Postnr="8250" Poststed="Rognan" kommune="//@fylker.4/@kommuner.6"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-01T13:59:34.210+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="864870732" Navn="Bedriftshelsetjenesten i Troms fylkeskommune">
+    <Kontaktinformasjon Telefon="77788000" EpostAdresse="kristin.ytreberg@tromsfylke.no" InternettAdresse="http://www.tromsfylke.no">
+      <Postadresse Adresse="Postboks 6600" Postnr="9296" Poststed="Troms&#xf8;" kommune="//@fylker.9/@kommuner.0"/>
+      <Kontaktperson Navn="Kristin Ytreberg" Rolle="Leder bedriftshelsetjenesten, HMS verneingeni&#xf8;r, HMS-sjef" TelefonDir="77788253" TelefonMob="95475292" Epostadresse="kristin.ytreberg@tromsfylke.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-02T11:31:10.560+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971483156" Navn="SAMKO SENTER FOR ARBEIDSMILJ&#xd8;">
+    <Kontaktinformasjon Telefon="51 78 83 40" EpostAdresse="klepp@samko.no" InternettAdresse="http://www.samko.no">
+      <Postadresse Adresse="Kleppelundvegen 13, Postboks 44" Postnr="4358" Poststed="KLEPPE" kommune="//@fylker.6/@kommuner.2"/>
+      <Kontaktperson Navn="Sigrun Ramsli" Rolle="daglig leder" Epostadresse="sigrun.ramsli@samko.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="SAMKO avdeling Klepp" Avdelingsleder="Bj&#xf8;rg Odland">
+      <Postadresse Adresse="Kleppelundvegen 13, postboks 44" Postnr="4358" Poststed="Kleppe" kommune="//@fylker.6/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="SAMKO avdeling Egersund" Avdelingsleder="Bj&#xf8;rg Odland">
+      <Postadresse Adresse="Elganeveien 1" Postnr="4370" Poststed="Egersund" kommune="//@fylker.6/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-03T09:58:47.893+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="992630574" Navn="HELSEHUSET BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="32732580" EpostAdresse="post@helsehuset.kongsberg.no" InternettAdresse="http://helsehuset.kongsberg.no">
+      <Postadresse Adresse="SANDSV&#xc6;RVEIEN 228" Postnr="3615" Poststed="KONGSBERG" kommune="//@fylker.8/@kommuner.5"/>
+      <Kontaktperson Navn="Svein Hagen" Rolle="Daglig leder" TelefonDir="90141640" TelefonMob="90141640" Epostadresse="svein@helsehuset.kongsberg.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-03T09:59:06.643+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="968823841" Navn="Ringvoll Bedriftshelsetjeneste AS">
+    <Kontaktinformasjon Telefon="69253106" EpostAdresse="bedriftshelsetjenesten@rhbht.nhn.no" InternettAdresse="http://www.ringvollbht.no">
+      <Postadresse Adresse="Lilleeng Helsepark, Lilleeng 8" Postnr="1523" Poststed="Moss" kommune="//@fylker.14/@kommuner.1"/>
+      <Kontaktperson Navn="Laila Margrethe Torp" Rolle="Daglig leder" TelefonDir="97728793" TelefonMob="97728793" Epostadresse="laila.torp@ringvollbht.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Avd. Gre&#xe5;ker" Avdelingsleder="Laila M Torp (daglig leder)" Telefon="69253106">
+      <Postadresse Adresse="Eikveien 22" Postnr="1718" Poststed="Gre&#xe5;ker" kommune="//@fylker.14/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Avd. Askim - &#xe5;pent etter avtale med kunder i omr&#xe5;det" Avdelingsleder="Laila M Torp (daglig leder)" Telefon="69253106">
+      <Postadresse Adresse="Eidsbergveien 8" Postnr="1830" Poststed="Askim" kommune="//@fylker.14/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-04T13:26:48.600+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="989544233" Navn="Aktiv HMS AS">
+    <Kontaktinformasjon Telefon="51709485" EpostAdresse="post@aktiv-hms.no" InternettAdresse="http://www.aktiv-hms.no">
+      <Postadresse Adresse="Luramyrveien 79" Postnr="4313" Poststed="Sandnes" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="Asle Haaland" Rolle="Daglig leder" TelefonDir="90015078" TelefonMob="90015078" Epostadresse="haaland@aktiv-hms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-08T17:08:29.197+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="992640898" Navn="Friskg&#xe5;rden HMS Robrygga AS">
+    <Kontaktinformasjon Telefon="46543977" EpostAdresse="post@rbht.no" InternettAdresse="http://">
+      <Postadresse Adresse="Sverresgate 77" Postnr="7800" Poststed="Namsos" kommune="//@fylker.1/@kommuner.6"/>
+      <Kontaktperson Navn="Liv N. Tranaas" Rolle="Daglig leder" TelefonDir="94168339" TelefonMob="94168339" Epostadresse="liv@rbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-09T12:55:41.867+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="943049467" Navn="Skanska Norge AS, bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="40006400" EpostAdresse="kristin.hovland@skanska.no" InternettAdresse="http://www.skanska.no">
+      <Postadresse Adresse="Pb 1175 Sentrum" Postnr="0107" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Kristin H Hovland" Rolle="Bedriftslege" TelefonDir="47904098" TelefonMob="47904098" Epostadresse="kristin.hovland@skanska.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-11T13:31:50.667+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="995167700" Navn="SAGA BHT AS">
+    <Kontaktinformasjon Telefon="32 17 91 70" EpostAdresse="mh@sagabht.no" InternettAdresse="http://www.sagabht.no">
+      <Postadresse Adresse="Hvervenmoveien 49" Postnr="3511" Poststed="H&#xd8;NEFOSS" kommune="//@fylker.8/@kommuner.6"/>
+      <Kontaktperson Navn="Marit Hollerud" Rolle="Daglig leder" TelefonDir="40002207" TelefonMob="91562932" Epostadresse="mh@sagabht.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Saga BHT Regnbuen" Avdelingsleder="Lise Vivi Stormo" Telefon="95807675">
+      <Postadresse Adresse="Vestre Kjennervei 2B" Postnr="3420" Poststed="Lierskogen" kommune="//@fylker.8/@kommuner.7"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-12T10:31:50.340+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="975814114" Navn="Fosen Bedriftshelsetjeneste SA">
+    <Kontaktinformasjon Telefon="74856080" EpostAdresse="vanvikan@fosenbht.no" InternettAdresse="http://www.fosenbht.no">
+      <Postadresse Adresse="Verkstedveien 4" Postnr="7120" Poststed="Vanvikan" kommune="//@fylker.1/@kommuner.7"/>
+      <Kontaktperson Navn="John Stene" Rolle="Daglig leder" TelefonDir="40467335" TelefonMob="40467335" Epostadresse="john@fosenbht.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Fosen Bedriftshelsetjeneste, avd  Brekstad">
+      <Postadresse Adresse="Meieriveien 5" Postnr="7130" Poststed="Brekstad" kommune="//@fylker.1/@kommuner.8"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-14T13:53:26.947+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="975934578" Navn="HARP HOLMESTRAND BHT">
+    <Kontaktinformasjon Telefon="99282366" EpostAdresse="Glenn.Eikeland@hydro.com" InternettAdresse="http://">
+      <Postadresse Adresse="PB 106" Postnr="3081" Poststed="HOLMESTRAND" kommune="//@fylker.2/@kommuner.2"/>
+      <Kontaktperson Navn="Glenn Eikeland" Rolle="Bedriftslege" TelefonDir="99282366" TelefonMob="99282366" Epostadresse="Glenn.Eikeland@hydro.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-15T11:32:39.440+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971485396" Navn="BRATT&#xd8;RA BEDRIFTSHELSETJENESTE">
+    <Kontaktinformasjon Telefon="73 53 20 64" EpostAdresse="torgeir@bbht.no" InternettAdresse="http://www.bbht.no">
+      <Postadresse Adresse="Pir-Senteret" Postnr="7462" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Torgeir Elvs&#xe5;s" Rolle="Daglig leder" TelefonDir="90915259" TelefonMob="90915259" Epostadresse="torgeir@bbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-15T16:35:17.513+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="942005342" Navn="SANA AS">
+    <Kontaktinformasjon Telefon="51 93 86 90" EpostAdresse="post@sana-as.no" InternettAdresse="http://">
+      <Postadresse Adresse="Nordb&#xf8;gata 6" Postnr="4006" Poststed="STAVANGER" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Jan Petter Georg Waage" Rolle="Daglig leder/Spesialist i Arbeidsmedisin" TelefonDir="51938690" TelefonMob="90915970" Epostadresse="jpw@sana-as.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-16T14:18:52.627+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="961664748" Navn="V&#xc5;GAN HMS SA">
+    <Kontaktinformasjon Telefon="76 07 19 92" EpostAdresse="idamm@vagan-hms.no" InternettAdresse="http://vagan-hms.no">
+      <Postadresse Adresse="Valgata 5" Postnr="8300" Poststed="SVOLV&#xc6;R" kommune="//@fylker.4/@kommuner.7"/>
+      <Kontaktperson Navn="Ida Maasv&#xe6;r Mellings&#xe6;ther" Rolle="Bedriftssykepleier/r&#xe5;dgiver" TelefonDir="76071992" TelefonMob="91738303" Epostadresse="idamm@vagan-hms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-16T15:33:00.687+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="992975032" Navn="Unicare Helse">
+    <Kontaktinformasjon Telefon="23292100" EpostAdresse="post@unicare.no" InternettAdresse="http://www.unicare.no">
+      <Postadresse Adresse="Pilestredet 56" Postnr="0167" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Una Aas" Rolle="Direkt&#xf8;r" TelefonDir="+4745020990" TelefonMob="+4745020990" Epostadresse="una.aas@unicare.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Region S&#xf8;r/Vest - Stavanger" Avdelingsleder="Stian Larsen" Telefon="47910740">
+      <Postadresse Adresse="Strandkaien 61" Postnr="4004" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-16T15:59:02.993+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="934146875" Navn="FRISKG&#xc5;RDEN HMS V&#xc6;RNES AS">
+    <Kontaktinformasjon Telefon="74839550" EpostAdresse="bodil@hms.stjordal.no" InternettAdresse="http://www.friskgarden.no">
+      <Postadresse Adresse="Wessels veg 95" Postnr="7502" Poststed="STJ&#xd8;RDAL" kommune="//@fylker.1/@kommuner.9"/>
+      <Kontaktperson Navn="Bodil Myhr" Rolle="Daglig leder" TelefonMob="93260002" Epostadresse="bodil@hms.stjordal.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Friskg&#xe5;rden HMS V&#xe6;rnes avd Mer&#xe5;ker" Avdelingsleder="Bodil Myhr" Telefon="93260002">
+      <Postadresse Adresse="N&#xe6;ringsbygget" Postnr="7530" Poststed="Mer&#xe5;ker" kommune="//@fylker.1/@kommuner.10"/>
+    </Avdelinger>
+    <Avdelinger Navn="Friskg&#xe5;rden HMS V&#xe6;rnes avd Selbu" Avdelingsleder="Bodil Myhr" Telefon="93260002">
+      <Postadresse Adresse="Nestansringen 17" Postnr="7580" Poststed="SElbu" kommune="//@fylker.1/@kommuner.11"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-23T10:30:20.933+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983975240" Navn="S&#xd8;RLANDET SYKEHUS HF">
+    <Kontaktinformasjon Telefon="03738" EpostAdresse="postmottak@sshf.no" InternettAdresse="http://www.sshf.no">
+      <Postadresse Adresse="Egsveien 100" Postnr="4615" Poststed="KRISTIANSAND S" kommune="//@fylker.10/@kommuner.0"/>
+      <Kontaktperson Navn="Elin M. Fjeldbraaten" Rolle="Enhetsleder, bedriftshelsetjenesten" TelefonDir="3812 5368" TelefonMob="93211883" Epostadresse="elin.margrethe.fjeldbraaten@sshf.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-23T10:30:22.213+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="871513732" Navn="S&#xf8;r-Varanger Bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="78 97 79 00" EpostAdresse="firmapost@svbht.no" InternettAdresse="http://www.svbht.no">
+      <Postadresse Adresse="Hans V&#xe6;ggersvei 20, Postboks 102" Postnr="9915" Poststed="Kirkenes" kommune="//@fylker.15/@kommuner.1"/>
+      <Kontaktperson Navn="Tove Karin Andersen" Rolle="Daglig leder / HMS-r&#xe5;dgiver" TelefonDir="78 97 79 00" TelefonMob="976 65 119" Epostadresse="tove.karin.andersen@svbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-23T10:30:23.370+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="987403829" Navn="ANT HMS &amp; Bedriftshelse AS">
+    <Kontaktinformasjon Telefon="40009030" EpostAdresse="post@ant.no" InternettAdresse="http://www.ant.no">
+      <Postadresse Adresse="Sj&#xf8;gata 2b" Postnr="7600" Poststed="Levanger" kommune="//@fylker.1/@kommuner.12"/>
+      <Kontaktperson Navn="Rune Holmlimo" Rolle="Daglig leder / HMS r&#xe5;dgiver" TelefonDir="93454545" TelefonMob="93454545" Epostadresse="rune@ant.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Levanger" Avdelingsleder="Rune Holmlimo" Telefon="93454545">
+      <Postadresse Adresse="Sj&#xf8;gata 2b" Postnr="7601" Poststed="Levanger" kommune="//@fylker.1/@kommuner.12"/>
+    </Avdelinger>
+    <Avdelinger Navn="Namsos" Avdelingsleder="Siv-Renate Karlsen" Telefon="93440303">
+      <Postadresse Adresse="Pinaveien 14" Postnr="7800" Poststed="Namsos" kommune="//@fylker.1/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Grong" Avdelingsleder="Kari Engen" Telefon="95803701">
+      <Postadresse Adresse="GV bygget" Postnr="7870" Poststed="Grong" kommune="//@fylker.1/@kommuner.13"/>
+    </Avdelinger>
+    <Avdelinger Navn="Otters&#xf8;y" Avdelingsleder="Kari Engen" Telefon="95803701">
+      <Postadresse Adresse="Petter Fj&#xe6;rsvei 1" Postnr="7940" Poststed="Otters&#xf8;y" kommune="//@fylker.1/@kommuner.14"/>
+    </Avdelinger>
+    <Avdelinger Navn="Verran" Avdelingsleder="Grete Kvam" Telefon="98244051">
+      <Postadresse Adresse="Verraparken" Postnr="7790" Poststed="Malm" kommune="//@fylker.1/@kommuner.15"/>
+    </Avdelinger>
+    <Avdelinger Navn="Steinkjer" Avdelingsleder="Jon Aune" Telefon="90147161">
+      <Postadresse Adresse="J&#xe6;ktskippergata 8" Postnr="7725" Poststed="Steinkjer" kommune="//@fylker.1/@kommuner.2"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-23T10:30:28.073+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="937718284" Navn="OSLO AKUTTEN AS">
+    <Kontaktinformasjon Telefon="22 00 81 60" EpostAdresse="post@osloakutten.no" InternettAdresse="http://www.osloakutten.no">
+      <Postadresse Adresse="Rosenkrantz gaten 9" Postnr="0159" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Siv Sorken" Rolle="Avdelingsleder" TelefonDir="22008152" TelefonMob="92605345" Epostadresse="siv-bht@osloakutten.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-23T13:33:21.550+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="923609016" Navn="EQUINOR ASA">
+    <Kontaktinformasjon Telefon="51 99 00 00" InternettAdresse="http://www.statoil.com">
+      <Postadresse Adresse="Forusbeen 50" Postnr="4035" Poststed="STAVANGER" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Eirik Bjerkeb&#xe6;k" Rolle="Manager WE, CSS SFM" TelefonDir="+47 99691704" TelefonMob="+47 99691704" Epostadresse="eirbje@statoil.com"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="DPN SSU HWE" Avdelingsleder="Atle Houg Ringheim" Telefon="+47 95854340">
+      <Postadresse Adresse="BE-SV R1 , Statoil Bergen, Sandsli  , Postboks 7200" Postnr="5020" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="MPR SSU HWE" Avdelingsleder="Marianne &#xd8;kland Borge" Telefon="+47 91618560">
+      <Postadresse Adresse="BE-SV K2 , Statoil Bergen, Sandsli  , Postboks 7200" Postnr="5020" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="GBS SSU OHC" Avdelingsleder="Hallstein Innv&#xe6;r" Telefon="+47 46919052">
+      <Postadresse Adresse="BE-SV E2 Sandslihaugen, Statoil Bergen, Sandsli  , Postboks 7200" Postnr="5020" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="GBS SSU HWE" Avdelingsleder="Margareth Johansen" Telefon="+47 97177894">
+      <Postadresse Adresse="ST-FO TSB2 055 Forus &#xd8;st - Statoil ASA, Postboks 8500 Forus" Postnr="4035" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-24T12:39:26.937+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="957423426" Navn="MEDCO BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="51 71 52 70" EpostAdresse="post@medco-bht.no" InternettAdresse="http://www.medco-bht.no">
+      <Postadresse Adresse="Risavika Havnering 14" Postnr="4056" Poststed="TANANGER" kommune="//@fylker.6/@kommuner.0"/>
+      <Kontaktperson Navn="P&#xe5;l Lilleb&#xf8;" Rolle="CEO" TelefonDir="51715278" TelefonMob="91347334" Epostadresse="pal.lillebo@medco-bht.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Medco BHT avd PSH" Avdelingsleder="Dida Hauge" Telefon="52 700 550">
+      <Postadresse Adresse="S&#xf8;rhauggaten 111" Postnr="5527" Poststed="Haugesund" kommune="//@fylker.6/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Medco BHT avd Hinna" Avdelingsleder="Rune Meldahl" Telefon="51 71 52 70">
+      <Postadresse Adresse="Laberget 44" Postnr="4020" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Medco BHT avd Ryfylke" Avdelingsleder="Trine Lise Eie Risa" Telefon="51 74 48 00">
+      <Postadresse Adresse="St&#xe5;lverksvegen 75" Postnr="4100" Poststed="J&#xf8;rpeland" kommune="//@fylker.6/@kommuner.7"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-24T13:53:57.667+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="867980962" Navn="M3 HELSE AS">
+    <Kontaktinformasjon Telefon="93073313" EpostAdresse="firmapost@m3helse.no" InternettAdresse="http://www.m3helse.no">
+      <Postadresse Adresse="Storhamargata 34" Postnr="2317" Poststed="HAMAR" kommune="//@fylker.5/@kommuner.0"/>
+      <Kontaktperson Navn="Solrun Flat&#xe5;s Risnes" Rolle="Leder M3 Helse AS Bedriftshelsetjeneste" TelefonDir="93073313" TelefonMob="91129495" Epostadresse="sfr@m3helse.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="M3 Helse AS avd Gj&#xf8;vik" Avdelingsleder="Solrun Flat&#xe5;s Risnes" Telefon="93073313">
+      <Postadresse Adresse="Jernbanesvingen 6" Postnr="2821" Poststed="Gj&#xf8;vik" kommune="//@fylker.16/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="M3 Helse AS avd Lillehammer" Avdelingsleder="Solrun Flat&#xe5;s Risnes" Telefon="93073313">
+      <Postadresse Adresse="H&#xe5;kons Hall, Nordsetervegen 45" Postnr="2618" Poststed="Lillehammer" kommune="//@fylker.16/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="M3 Helse AS avd Hamar" Avdelingsleder="Solrun Flat&#xe5;s Risnes" Telefon="93073313">
+      <Postadresse Adresse="Storhamargata 34" Postnr="2317" Poststed="Hamar" kommune="//@fylker.5/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="M3 Helse AS avd Elverum" Avdelingsleder="Solrun Flat&#xe5;s Risnes" Telefon="93073313">
+      <Postadresse Adresse="Helge V&#xe6;ringsaasens veg 14" Postnr="2408" Poststed="Elverum" kommune="//@fylker.5/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-24T15:56:27.620+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983975267" Navn="Bedriftshelsetjenesten - Sykehuset Telemark">
+    <Kontaktinformasjon Telefon="35003070" EpostAdresse="bht@sthf.no" InternettAdresse="http://www.sthf.no/bht">
+      <Postadresse Adresse="Ulefossvegen" Postnr="3710" Poststed="Skien" kommune="//@fylker.3/@kommuner.4"/>
+      <Kontaktperson Navn="Bente Grindrud" Rolle="BHT-leder/Avdelingsleder" TelefonDir="35003080" TelefonMob="95148857" Epostadresse="bente.grindrud@sthf.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Team T&#xf8;nsberg. Ikke def. som avdeling, men 6 ansatte har kontorplass i T&#xf8;nsberg" Avdelingsleder="Bente Grindrud" Telefon="95148857">
+      <Postadresse Adresse="Skiringsalsgata 9" Postnr="3117" Poststed="T&#xf8;nsberg" kommune="//@fylker.2/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-25T18:46:39.967+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="992103922" Navn="Synergi Helse">
+    <Kontaktinformasjon Telefon="31011980" EpostAdresse="post@synergihelse.no" InternettAdresse="http://www.synergihelse.no">
+      <Postadresse Adresse="B&#xf8;rsemakergata 4" Postnr="3045" Poststed="Drammen" kommune="//@fylker.8/@kommuner.4"/>
+      <Kontaktperson Navn="Roger Gj&#xf8;vaag" Rolle="Administrerende direkt&#xf8;r" TelefonDir="31101980" TelefonMob="91167468" Epostadresse="roger@synergihelse.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Synergi Helse, Oslo" Avdelingsleder="Janicke Skatvold" Telefon="31011980">
+      <Postadresse Adresse="Sognsveien 75 B" Postnr="0855" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Synergi Helse, Kongsberg" Avdelingsleder="Vibeke Wike" Telefon="31011980">
+      <Postadresse Adresse="Kirkeg&#xe5;rdsveien 45" Postnr="3616" Poststed="Kongsberg" kommune="//@fylker.8/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Synergi Helse, Lillestr&#xf8;m" Avdelingsleder="Janicke Skatvold" Telefon="31011980">
+      <Postadresse Adresse="Solheimsgata 1" Postnr="2000" Poststed="Lillestr&#xf8;m" kommune="//@fylker.11/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-02-26T13:42:09.887+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="986807233" Navn="DINHMS AS">
+    <Kontaktinformasjon Telefon="91 34 73 34" EpostAdresse="post@dinhms.no" InternettAdresse="http://www.dinhms.no">
+      <Postadresse Adresse="Dronning Eufemias gate 16" Postnr="0191" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="P&#xe5;l Lilleb&#xf8;" Rolle="Daglig leder" TelefonMob="91 34 73 34" Epostadresse="pal@dinhms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-01T22:43:44.550+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974141566" Navn="KV&#xc6;RNER STORD AS">
+    <Kontaktinformasjon Telefon="53 41 80 00" EpostAdresse="kvaerner.stord@kvaerner.com" InternettAdresse="http://www.kvaerner.com">
+      <Postadresse Adresse="Eld&#xf8;yane 59" Postnr="5411" Poststed="STORD" kommune="//@fylker.7/@kommuner.3"/>
+      <Kontaktperson Navn="Torstein Leth" Rolle="leder HMS/BHT" TelefonDir="53418384 " TelefonMob="47303527" Epostadresse="torstein.leth@kvaerner.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-03T10:27:40.423+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="980395413" Navn="HMS BEDRIFT AS">
+    <Kontaktinformasjon Telefon="96508008" EpostAdresse="post@hmsbedrift.no" InternettAdresse="http://">
+      <Postadresse Adresse="Postboks 23" Postnr="9501" Poststed="Alta" kommune="//@fylker.15/@kommuner.0"/>
+      <Kontaktperson Navn="Kjell Erling Bj&#xf8;rn&#xe6;s" Rolle="Daglig leder" TelefonDir="96508008" TelefonMob="90916488" Epostadresse="post@hmsbedrift.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-03T21:44:27.890+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="993424986" Navn="FRISK HMS AS">
+    <Kontaktinformasjon Telefon="40602050" EpostAdresse="post@friskhms.no" InternettAdresse="http://www.friskhms.no">
+      <Postadresse Adresse="Storgata 111" Postnr="2390" Poststed="MOELV" kommune="//@fylker.5/@kommuner.4"/>
+      <Kontaktperson Navn="Vidar Fjeldsven" Rolle="Daglig leder" TelefonDir="90191017" TelefonMob="90191017" Epostadresse="vidar@friskhms.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Otta" Avdelingsleder="Per Rune Stor&#xf8;deg&#xe5;rd" Telefon="40602050">
+      <Postadresse Adresse="Storgata 19" Postnr="2670" Poststed="Ottas" kommune="//@fylker.16/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Ringebu" Avdelingsleder="&#xd8;ystein Godal Torp" Telefon="40602050">
+      <Postadresse Adresse="Jernbanegata 4" Postnr="2630" Poststed="Ringebu" kommune="//@fylker.16/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Lillehammer" Avdelingsleder="&#xd8;ystein Godal Torp" Telefon="40602050">
+      <Postadresse Adresse="Faabergata 126" Postnr="2615" Poststed="Lillehammer" kommune="//@fylker.16/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Moelv" Avdelingsleder="&#xd8;ystein Godal Torp" Telefon="40602050">
+      <Postadresse Adresse="Storgata 111" Postnr="2390" Poststed="Moelv" kommune="//@fylker.5/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hamar" Avdelingsleder="Mette Obstfelder" Telefon="40602050">
+      <Postadresse Adresse="Brygga 20" Postnr="2317" Poststed="Hamar" kommune="//@fylker.5/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Gj&#xf8;vik" Avdelingsleder="&#xd8;ystein Godal Torp" Telefon="40602050">
+      <Postadresse Adresse="&#xd8;vre Torggate 3" Postnr="2815" Poststed="Gj&#xf8;vik" kommune="//@fylker.16/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Rommen" Avdelingsleder="Karl-Christian Nordby" Telefon="40602050">
+      <Postadresse Adresse="Haavard Martinsensvei 30" Postnr="0978" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Elverum" Avdelingsleder="Mette Obstfelder" Telefon="40602050">
+      <Postadresse Adresse="Terningen Arena Hamarvegen 112" Postnr="2411" Poststed="Elverum" kommune="//@fylker.5/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Oslo" Avdelingsleder="Karl-Christian Nordby" Telefon="40602050">
+      <Postadresse Adresse="Wergelandsveien 1 - 4.etg" Postnr="0167" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Follo" Avdelingsleder="Elise Vedum B&#xf8;e" Telefon="40602050">
+      <Postadresse Adresse="Johan K. Skanckes vei 1-3" Postnr="1434" Poststed="&#xc5;s" kommune="//@fylker.11/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Sarpsborg" Avdelingsleder="Ola Erik Halvorsen" Telefon="40602050">
+      <Postadresse Adresse="Pellygata 73" Postnr="1706" Poststed="Sarpsborg" kommune="//@fylker.14/@kommuner.2"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-04T22:55:54.773+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="884039312" Navn="STAMINA HELSE AS">
+    <Kontaktinformasjon Telefon="400 01 709" InternettAdresse="http://www.hjelp24.no">
+      <Postadresse Adresse="Sinsenveien 53 A" Postnr="0585" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Lise S&#xf8;rb&#xf8;" Rolle="Fagsjef/bedriftsoverlege" TelefonDir="400 01 709" TelefonMob="400 01 709" Epostadresse="lise.sorbo@staminagroup.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Stamina Helse, Ullev&#xe5;l (Regionkontor)" Avdelingsleder="Liv &#xd8;stbye" Telefon="400 01 709">
+      <Postadresse Adresse="Songsveien 75D, Ullev&#xe5;l stadion" Postnr="0855" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Bryggeklinikken (Oslo)" Avdelingsleder="Lisa Hedlund" Telefon="400 01 709">
+      <Postadresse Adresse="Munkedamsveien 45" Postnr="0250" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Sandvika" Avdelingsleder="Helga Haverstad" Telefon="400 01 709">
+      <Postadresse Adresse="Jongs&#xe5;sveien 4" Postnr="1338" Poststed="Sandvika" kommune="//@fylker.11/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Gardermoen" Telefon="400 01 709">
+      <Postadresse Adresse="Henrik Ibsens vei 1" Postnr="2060" Poststed="Gardermoen" kommune="//@fylker.11/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Lillestr&#xf8;m" Avdelingsleder="Monika Cock" Telefon="400 01 709">
+      <Postadresse Adresse="Torvet 3, Solsiden" Postnr="2000" Poststed="Lillestr&#xf8;m" kommune="//@fylker.11/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Innlandet (Brumunddal)" Avdelingsleder="Berit Melgalvis" Telefon="400 01 709">
+      <Postadresse Adresse="Brugata 16" Postnr="2380" Poststed="Brumunddal" kommune="//@fylker.5/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Fredrikstad (Regionkontor)" Avdelingsleder="Ragnhild Ekeberg Larsen" Telefon="400 01 709">
+      <Postadresse Adresse="Wilbergjordet 1, 3. etg." Postnr="1605" Poststed="Fredrikstad" kommune="//@fylker.14/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Sarpsborg" Avdelingsleder="Ragnhild Ekeberg Larsen" Telefon="400 01 709">
+      <Postadresse Adresse="St. Maries gate 71" Postnr="1706" Poststed="Sarpsborg" kommune="//@fylker.14/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Moss" Avdelingsleder="Ragnhild Ekeberg LArsen" Telefon="400 01 709">
+      <Postadresse Adresse="T&#xf8;rkoppveien 10" Postnr="1570" Poststed="Dilling" kommune="//@fylker.14/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stramina Helse, Askim" Avdelingsleder="Ragnhild Ekeberg LArsen" Telefon="400 01 709">
+      <Postadresse Adresse="Vangsveien 10" Postnr="1814" Poststed="Askim" kommune="//@fylker.14/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, T&#xf8;nsberg" Avdelingsleder="Kari Kausland" Telefon="400 01 709">
+      <Postadresse Adresse="&#xc5;slyveien 21" Postnr="3170" Poststed="Sem" kommune="//@fylker.2/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Larvik" Telefon="400 01 709">
+      <Postadresse Adresse="Stavernsveien 2" Postnr="3264" Poststed="Larvik" kommune="//@fylker.2/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Horten" Avdelingsleder="Kari Kausland" Telefon="400 01 709">
+      <Postadresse Adresse="Nedrevei 8, Karl Johansvern" Postnr="3183" Poststed="Horten" kommune="//@fylker.2/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, H&#xf8;nefoss" Avdelingsleder="Beate Treangen" Telefon="400 01 709">
+      <Postadresse Adresse="Follumveien 100" Postnr="3515" Poststed="H&#xf8;nefoss" kommune="//@fylker.8/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Drammen" Avdelingsleder="Vigdis Gulliksen H&#xf8;isen" Telefon="400 01 709">
+      <Postadresse Adresse="Skogliveien 4" Postnr="3047" Poststed="Drammen" kommune="//@fylker.8/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Porsgrunn (Regionkontor)" Avdelingsleder="Laila Berg" Telefon="400 01 709">
+      <Postadresse Adresse="Porselensveien 8" Postnr="3920" Poststed="Porsgrunn" kommune="//@fylker.3/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Kongsberg" Avdelingsleder="Marianne Elsetr&#xf8;nning" Telefon="400 01 709">
+      <Postadresse Adresse="Tiedemannsgate 2" Postnr="3616" Poststed="Kongsberg" kommune="//@fylker.8/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Rjukan" Avdelingsleder="Marianne Elsetr&#xf8;nning" Telefon="400 01 709">
+      <Postadresse Adresse="Rjukan n&#xe6;ringspark" Postnr="3660" Poststed="Rjukan" kommune="//@fylker.3/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Kristiansand" Avdelingsleder="Janne Svendsen" Telefon="400 01 709">
+      <Postadresse Adresse="Barst&#xf8;lveien 34" Postnr="4636" Poststed="Kristiansand" kommune="//@fylker.10/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Arendal" Avdelingsleder="Janne Svendsen" Telefon="400 01 709">
+      <Postadresse Adresse="Stoaveien 45 A" Postnr="4848" Poststed="Arendal" kommune="//@fylker.13/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Bergen" Avdelingsleder="Cathrine Hartveit" Telefon="400 01 709">
+      <Postadresse Adresse="Minde all&#xe8; 35" Postnr="5068" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Sandnes (Regionkontor)" Avdelingsleder="Henning Borgersen" Telefon="400 01 709">
+      <Postadresse Adresse="Luramyrveien 65" Postnr="4313" Poststed="Sandnes" kommune="//@fylker.6/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Haugesund" Avdelingsleder="Jorunn Else Hauso" Telefon="400 01 709">
+      <Postadresse Adresse="Karmsundgaten 51" Postnr="5531" Poststed="Haugesund" kommune="//@fylker.6/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, &#xc5;rdal" Avdelingsleder="Wenche Elveseter" Telefon="400 01 709">
+      <Postadresse Adresse="&#xc5;rdal treningssenter, Storevegen 26" Postnr="6884" kommune="//@fylker.17/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, F&#xf8;rde" Avdelingsleder="Wenche Elveseter" Telefon="400 01 709">
+      <Postadresse Adresse="Hafstadvegen 36" Postnr="6800" Poststed="F&#xf8;rde" kommune="//@fylker.17/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Sogndal" Avdelingsleder="Wenche Elveseter" Telefon="400 01 709">
+      <Postadresse Adresse="Fosshaugan Campus, Trolldalen 26" Postnr="6856" Poststed="Sogndal" kommune="//@fylker.17/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse &#xc5;lesund (Regionkontor)" Avdelingsleder="Jan-Inge S&#xe6;tre" Telefon="400 01 709">
+      <Postadresse Adresse="Langelandsvegen 17" Postnr="6010" Poststed="&#xc5;lesund" kommune="//@fylker.12/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Brattv&#xe5;g" Avdelingsleder="Jan-Inge S&#xe6;tre" Telefon="400 01 709">
+      <Postadresse Adresse="Standgaten 46" Postnr="6270" Poststed="Brattv&#xe5;g" kommune="//@fylker.12/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Stranda" Avdelingsleder="Jan-Inge S&#xe6;tre" Telefon="400 01 709">
+      <Postadresse Adresse="Kyrkjegaten 13" Postnr="6200" Poststed="Stranda" kommune="//@fylker.12/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, &#xd8;rsta/Volda" Avdelingsleder="Jan-Inge S&#xe6;tre" Telefon="400 01 709">
+      <Postadresse Adresse="Strandgaten 4" Postnr="6150" Poststed="&#xd8;rsta" kommune="//@fylker.12/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Ulsteinvik" Avdelingsleder="Jan-Inge S&#xe6;tre" Telefon="400 01 709">
+      <Postadresse Adresse="St&#xe5;lhaugen 5" Postnr="6050" Poststed="Ulsteinvik" kommune="//@fylker.12/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Fosnav&#xe5;g" Avdelingsleder="Jan-Inge S&#xe6;tre" Telefon="400 01 709">
+      <Postadresse Adresse="St&#xe5;lhaugen 5" Postnr="6050" Poststed="Ulsteinvik" kommune="//@fylker.12/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Molde" Avdelingsleder="Anders H&#xf8;e" Telefon="400 01 709">
+      <Postadresse Adresse="Fr&#xe6;naveien 16" Postnr="6415" Poststed="Molde" kommune="//@fylker.12/@kommuner.7"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Vestnes/Rauma (&#xc5;ndalsnes)" Avdelingsleder="Anders H&#xf8;e" Telefon="400 01 709">
+      <Postadresse Adresse="Strandgaten 8" Postnr="6300" Poststed="&#xc5;ndalsnes" kommune="//@fylker.12/@kommuner.8"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Kristiansund" Avdelingsleder="Ragnhild Nes" Telefon="400 01 709">
+      <Postadresse Adresse="Verkstedveien 13" Postnr="6517" Poststed="Kristiansund" kommune="//@fylker.12/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Aver&#xf8;y" Avdelingsleder="Ragnhild Nes" Telefon="400 01 709">
+      <Postadresse Adresse="Verkstedveien 13" Postnr="6517" Poststed="Kristiansund" kommune="//@fylker.12/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Sunndals&#xf8;ra" Avdelingsleder="Ragnhild Nes" Telefon="400 01 709">
+      <Postadresse Adresse="Romsdalsveien 4" Postnr="6600" Poststed="Sunndals&#xf8;ra" kommune="//@fylker.12/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Trondheim (Regionkontor)" Avdelingsleder="Jorunn Korsfur" Telefon="400 01 709">
+      <Postadresse Adresse="Havnegaten 9" Postnr="7462" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Steinkjer" Avdelingsleder="Jorunn Korsfur" Telefon="400 01 709">
+      <Postadresse Adresse="Fyrgaten 3" Postnr="7712" Poststed="Steinkjer" kommune="//@fylker.1/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Mo i Rana" Avdelingsleder="Trond Millerjord" Telefon="400 01 709">
+      <Postadresse Adresse="Midtre gate 17" Postnr="8601" Poststed="Mo i Rana" kommune="//@fylker.4/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Mosj&#xf8;en" Avdelingsleder="Trond Millerjord" Telefon="400 01 709">
+      <Postadresse Adresse="Havnegaten 40" Postnr="8655" Poststed="Mosj&#xf8;en" kommune="//@fylker.4/@kommuner.8"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Sandnessj&#xf8;en" Avdelingsleder="Trond Millerjord" Telefon="400 01 709">
+      <Postadresse Adresse="Skansen kj&#xf8;pesenter, 4. etg." Postnr="8800" Poststed="Sandnessj&#xf8;en" kommune="//@fylker.4/@kommuner.9"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Bod&#xf8;" Avdelingsleder="Maria Larsen" Telefon="400 01 709">
+      <Postadresse Adresse="Sj&#xf8;gaten 40/42" Postnr="8001" Poststed="Bod&#xf8;" kommune="//@fylker.4/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Fauske" Avdelingsleder="Maria Larsen" Telefon="400 01 709">
+      <Postadresse Adresse="Eliasbakken 9" Postnr="8200" Poststed="Fauske" kommune="//@fylker.4/@kommuner.10"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Harstad" Telefon="400 01 709">
+      <Postadresse Adresse="Seljestadveien 11" Postnr="9406" Poststed="Harstad" kommune="//@fylker.9/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Troms&#xf8;" Avdelingsleder="Hilde Sandvoll" Telefon="400 01 709">
+      <Postadresse Adresse="Strandgaten 5-7" Postnr="9008" Poststed="Troms&#xf8;" kommune="//@fylker.9/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Brandbu" Telefon="61113434">
+      <Postadresse Adresse="Rosendalveien 1" Postnr="2760" Poststed="Brandbu" kommune="//@fylker.16/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Dokka" Telefon="61113434">
+      <Postadresse Adresse="Storgata 37" Postnr="2890" Poststed="Dokka" kommune="//@fylker.16/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Raufoss" Telefon="61113434">
+      <Postadresse Adresse="Storgata 41" Postnr="2830" Poststed="Raufoss" kommune="//@fylker.16/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Stamina Helse, Fagernes" Telefon="61113434">
+      <Postadresse Adresse="Valdresveien 23" Postnr="2900" Poststed="Fagernes" kommune="//@fylker.16/@kommuner.7"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-05T10:14:36.080+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971470801" Navn="Lister Bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="38320560" EpostAdresse="post@bhtlister.no" InternettAdresse="http://bhtlister.no">
+      <Postadresse Adresse="Anders Beersgt 8" Postnr="4400" Poststed="Flekkefjord" kommune="//@fylker.10/@kommuner.3"/>
+      <Kontaktperson Navn="Miriam Sommerseth Grimsby" Rolle="Daglig leder / HMS-r&#xe5;dgiver" TelefonDir="38320560" TelefonMob="99152253" Epostadresse="miriam@bhtlister.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-05T15:46:18.440+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="994270982" Navn="SKB BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="55 13 20 07" EpostAdresse="skb@skb-bht.no" InternettAdresse="http://skb-bht.no">
+      <Postadresse Adresse="Postboks 16" Postnr="5859" Poststed="BERGEN" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Gerritje Klaaske Demmink" Rolle="senior HMS r&#xe5;dgiver/ Koordinator" TelefonDir="55 13 20 07" TelefonMob="920 88 966" Epostadresse="gerd@skb-bht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-08T15:06:38.730+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="991927514" Navn="VIKEN BEDRIFTSHELSETJENESTE SA">
+    <Kontaktinformasjon Telefon="33 35 71 00" EpostAdresse="post@vikenbht.no" InternettAdresse="http://www.vikenbht.no">
+      <Postadresse Adresse="Wirgenes vei 9" Postnr="3157" Poststed="BARK&#xc5;KER" kommune="//@fylker.2/@kommuner.3"/>
+      <Kontaktperson Navn="Anne Gjertrud Fugletveit" Rolle="Daglig leder" TelefonDir="33357100" TelefonMob="45968783" Epostadresse="agf@vikenbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-08T19:57:30.577+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="941455077" Navn="MEDI 3 AS">
+    <Kontaktinformasjon Telefon="70 11 70 00" EpostAdresse="bhtpost@medi3.no" InternettAdresse="http://www.medi3.no">
+      <Postadresse Adresse="Sundg 12 A" Postnr="6003" Poststed="&#xc5;LESUND" kommune="//@fylker.12/@kommuner.2"/>
+      <Kontaktperson Navn="Karen Longva Buset" Rolle="Avdelingsleder Helse" TelefonMob="99017057" Epostadresse="k.buset@medi3.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Medi 3 Molde" Avdelingsleder="Silvia Stranden" Telefon="93899127">
+      <Postadresse Adresse="Fannestrandvegen 85" Postnr="6416" Poststed="Molde" kommune="//@fylker.12/@kommuner.7"/>
+    </Avdelinger>
+    <Avdelinger Navn="Medi 3 Ulsteinvik" Avdelingsleder="Vibecke Fiskerstrand" Telefon="90472901">
+      <Postadresse Adresse="Bj&#xf8;rndalvegen 14" Postnr="6065" Poststed="Ulsteinvik" kommune="//@fylker.12/@kommuner.9"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-15T12:30:11.213+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974683520" Navn="MEDITEAM AS">
+    <Kontaktinformasjon Telefon="51856100" EpostAdresse="post@mediteam.no" InternettAdresse="http://www.mediteam.no">
+      <Postadresse Adresse="Sj&#xf8;veien 34" Postnr="4315" Poststed="SANDNES" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="John Oliver Hjelle" Rolle="Daglig leder" TelefonDir="51856111" TelefonMob="40850500" Epostadresse="john.hjelle@mediteam.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Mediteam AS" Avdelingsleder="John Oliver Hjelle" Telefon="40850500">
+      <Postadresse Adresse="Sj&#xf8;veien 34" Postnr="4315" Poststed="Sandnes" kommune="//@fylker.6/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="J&#xe6;ren Bedriftshelsetjeneste AS" Avdelingsleder="Arna Vold" Telefon="93007209">
+      <Postadresse Adresse="H&#xe5;landsvegen 24" Postnr="4344" Poststed="Bryne" kommune="//@fylker.6/@kommuner.8"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-15T12:44:30.453+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="984242557" Navn="Helsehuset SALIS">
+    <Kontaktinformasjon Telefon="40004430" EpostAdresse="reni@salis.no" InternettAdresse="http://salis.no">
+      <Postadresse Adresse="Postboks 88  Storgata 2" Postnr="4791" Poststed="Lillesand" kommune="//@fylker.13/@kommuner.1"/>
+      <Kontaktperson Navn="&#xc5;smund Nyhus" Rolle="Daglig leder" TelefonDir="90669844" TelefonMob="90669844" Epostadresse="aasmund@salis.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-17T14:45:12.830+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="985311013" Navn="COPERIOSENTERET AS">
+    <Kontaktinformasjon Telefon="73 92 92 30" EpostAdresse="monica.vp@coperio.no" InternettAdresse="http://coperio.no">
+      <Postadresse Adresse="Olav Tryggvasons gate 24" Postnr="7011" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Torben Jenssen" Rolle="Daglig Leder" TelefonDir="97154914" TelefonMob="97154914" Epostadresse="torben.jenssen@coperio.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-22T12:54:19.647+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="979444060" Navn="S&#xd8;R-HELGELAND">
+    <Kontaktinformasjon Telefon="75 00 93 60" EpostAdresse="eddy@shbht.no" InternettAdresse="http://www.shbht.no">
+      <Postadresse Adresse="Strandveien 30" Postnr="8904" Poststed="BR&#xd8;NN&#xd8;YSUND" kommune="//@fylker.4/@kommuner.11"/>
+      <Kontaktperson Navn="Eddy Reinfjord" Rolle="daglig leder" TelefonDir="75009362" TelefonMob="97 07 33 20" Epostadresse="eddy@shbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-26T14:51:17.707+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971379111" Navn="BEDRIFTSHELSA SA">
+    <Kontaktinformasjon Telefon="72 45 04 40" EpostAdresse="post@bedriftshelsa.no" InternettAdresse="http://www.bedriftshelsa.no">
+      <Postadresse Adresse="Hollaveien 2C" Postnr="7200" Poststed="KYRKS&#xc6;TER&#xd8;RA" kommune="//@fylker.1/@kommuner.5"/>
+      <Kontaktperson Navn="Anne Carin M&#xf8;rch Kirknes" Rolle="Daglig leder" TelefonDir="72450443" TelefonMob="48 24 26 15" Epostadresse="anne.carin@bedriftshelsa.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Bedriftshelsa SA avd. Fr&#xf8;ya" Avdelingsleder="May Linn Kjerringv&#xe5;g" Telefon="93090235">
+      <Postadresse Adresse="N&#xe6;ringens hus, Sistranda" Postnr="7260" Poststed="Sistranda" kommune="//@fylker.1/@kommuner.16"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-26T15:33:35.740+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="962962815" Navn="Midtnorsk HMS-senter">
+    <Kontaktinformasjon Telefon="71660326" EpostAdresse="post@mhms.no" InternettAdresse="http://www.mhms.no">
+      <Postadresse Adresse="Landbrukshuset" Postnr="6650" Poststed="Surnadal" kommune="//@fylker.12/@kommuner.10"/>
+      <Kontaktperson Navn="Monica Berg" Rolle="Daglig leder / HMS-r&#xe5;dgiver / Ergoterapeut / Yrkeshygieniker" TelefonDir="92265452" TelefonMob="92265452" Epostadresse="monica@mhms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-03-29T13:23:47.277+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="912177203" Navn="moowh HMS og bedriftshelsetjeneste AS">
+    <Kontaktinformasjon Telefon="97701356" EpostAdresse="post@moowh.no" InternettAdresse="http://www.moowh.no">
+      <Postadresse Adresse="Oasen Storsenter" Postnr="5542" Poststed="KARMSUND" kommune="//@fylker.6/@kommuner.9"/>
+      <Kontaktperson Navn="Mona Woll H&#xe5;land" Rolle="Fysioterapeut / Daglig leder" TelefonDir="97701356" TelefonMob="97701356" Epostadresse="post@moowh.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-07T18:13:06.500+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="984756712" Navn="Friskg&#xe5;rden bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="741 40402" EpostAdresse="friskgarden@friskgarden.no" InternettAdresse="http://www.frisknett.no">
+      <Postadresse Adresse="Klingveien 148" Postnr="7717" Poststed="Steinkjer" kommune="//@fylker.1/@kommuner.2"/>
+      <Kontaktperson Navn="Rune Susegg" Rolle="Daglig leder" TelefonDir="98246062" TelefonMob="98246062" Epostadresse="aud.ramberg@friskgarden.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Friskg&#xe5;rden Stj&#xf8;rdal" Avdelingsleder="Bodil Myhr" Telefon="93260002">
+      <Postadresse Adresse="Alstadvegen 224" Postnr="7510" Poststed="Skatval" kommune="//@fylker.1/@kommuner.9"/>
+    </Avdelinger>
+    <Avdelinger Navn="Friskg&#xe5;rden Stod" Avdelingsleder="Aud Ramberg" Telefon="98246062">
+      <Postadresse Adresse="Klingveien 144" Postnr="7717" Poststed="Steinkjer" kommune="//@fylker.1/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Friskg&#xe5;rden Grong" Avdelingsleder="Berit Blengsli" Telefon="93023795">
+      <Postadresse Adresse="Bergsmo" Postnr="7870" Poststed="Grong" kommune="//@fylker.1/@kommuner.13"/>
+    </Avdelinger>
+    <Avdelinger Navn="Friskg&#xe5;rden Rana" Avdelingsleder="Berit Blengsli" Telefon="93023795">
+      <Postadresse Adresse="Thora Meyers gt 23" Postnr="8622" Poststed="Mo-i-Rana" kommune="//@fylker.4/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-08T11:26:28.317+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="938626367" Navn="HORDALAND FYLKESKOMMUNE, Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="55 23 90 00" InternettAdresse="http://www.hordaland.no">
+      <Postadresse Adresse="Agnes Mowinckels gate 5" Postnr="5008" Poststed="BERGEN" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Bj&#xf8;rn Atle Mikkelsen" Rolle="Konstituert leiar" TelefonMob="404 63 362" Epostadresse="Bjorn-Atle.Mikkelsen@hfk.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-08T12:44:39.643+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971575271" Navn="DRIV HMS SA">
+    <Kontaktinformasjon Telefon="72 40 04 10" EpostAdresse="post@drivhms.no" InternettAdresse="http://www.drivhms.no">
+      <Postadresse Adresse="Russervegen 5" Postnr="7340" Poststed="OPPDAL" kommune="//@fylker.1/@kommuner.4"/>
+      <Kontaktperson Navn="Nina Morseth Lauritzen" Rolle="Daglig leder" TelefonDir="72 40 04 10" TelefonMob="934 47 710" Epostadresse="nina.m.lauritzen@drivhms.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Driv HMS avdeling St&#xf8;ren" Telefon="72434590">
+      <Postadresse Adresse="Kj&#xf8;rkvollveien 1" Postnr="7290" Poststed="St&#xf8;ren" kommune="//@fylker.1/@kommuner.17"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-19T17:15:58.650+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971475579" Navn="HALLINGDAL OG VALDRES">
+    <Kontaktinformasjon Telefon="32 08 63 80" EpostAdresse="post@hava.no" InternettAdresse="http://www.hava.no">
+      <Postadresse Adresse="Torpomoen" Postnr="3579" Poststed="TORPO" kommune="//@fylker.8/@kommuner.8"/>
+      <Kontaktperson Navn="Terje Nordal" Rolle="Daglig leder" TelefonMob="41 14 58 98" Epostadresse="terje@hava.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Hallingdal og Valdres Bedriftshelsetjeneste avd Fagernes">
+      <Postadresse Adresse="Skrautv&#xe5;lvegen 77" Postnr="2900" Poststed="Fagernes" kommune="//@fylker.16/@kommuner.7"/>
+    </Avdelinger>
+    <Avdelinger Navn="Hallingdal og Valdres Bedriftshelsetjeneste avd Torpo">
+      <Postadresse Adresse="Torpomoen" Postnr="3579" Poststed="Torpo" kommune="//@fylker.8/@kommuner.8"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-22T12:27:49.960+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="976390512" Navn="Norsk Rikskringkasting AS (NRK)">
+    <Kontaktinformasjon Telefon="23048380" EpostAdresse="marina.urnes@nrk.no" InternettAdresse="http://www.nrk.no">
+      <Postadresse Adresse="Bj&#xf8;rnstjerne Bjornssons plass 1" Postnr="0340" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Ulf Finsberg" Rolle="Bedriftslege, spes. i arb.medisin" TelefonDir="23048380" TelefonMob="91560457" Epostadresse="ulf.finsberg@nrk.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-23T19:00:06.830+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="982972906" Navn="AKTIMED NORGE AS">
+    <Kontaktinformasjon Telefon="09910" EpostAdresse="post@aktimed.no" InternettAdresse="http://www.aktimed.no">
+      <Postadresse Adresse="Sluppenvegen 25" Postnr="7037" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Rikke Dahl" Rolle="Daglig leder" TelefonDir="93858760" TelefonMob="93858760" Epostadresse="rikke@aktimed.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Aktimed Norge AS avd BHT Bergen" Avdelingsleder="Trude PAyne" Telefon="09910">
+      <Postadresse Adresse="Kokstadflaten 40" Postnr="5257" Poststed="Kokstad" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd BHT Stavanger" Avdelingsleder="Grete Hjort Berge" Telefon="09910">
+      <Postadresse Adresse="Hammaren 23" Postnr="4056" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd BHT Oslo" Avdelingsleder="Nini Hammergren" Telefon="09910">
+      <Postadresse Adresse="&#xd8;stensj&#xf8;veien 79" Postnr="0667" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd BHT Trondheim" Avdelingsleder="Liv Bjerke Rodal" Telefon="09910">
+      <Postadresse Adresse="Ringv&#xe5;lveien 5" Postnr="7080" Poststed="Heimdal" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Care Bergen" Avdelingsleder="Anne Marie Anderssen S&#xf8;reng" Telefon="404 57 271">
+      <Postadresse Adresse="Kokstadflaten 40" Postnr="5257" Poststed="Kokstad" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Care Egersund" Avdelingsleder="Wenche Gravdal" Telefon="406 16 563">
+      <Postadresse Postnr="4374" Poststed="Egersund" kommune="//@fylker.6/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Care Fornebu" Avdelingsleder="Marika Mortensen" Telefon="400 04 850">
+      <Postadresse Adresse="Snar&#xf8;yveien 20" Postnr="1360" Poststed="Fornebu" kommune="//@fylker.11/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Care Stavanger" Avdelingsleder="Eivor Merete Iversen B&#xf8;" Telefon="406 01 857">
+      <Postadresse Adresse="J&#xe5;tt&#xe5;v&#xe5;gveien 10" Postnr="4020" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Care Trondheim (ikke i Br&#xf8;nn&#xf8;ysund?)" Avdelingsleder="Anne Marie Anderssen S&#xf8;reng">
+      <Postadresse Adresse="Ranheimsvegen 10" Postnr="7044" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Sand">
+      <Postadresse Postnr="4230" Poststed="Sand" kommune="//@fylker.6/@kommuner.10"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Haugesund">
+      <Postadresse Postnr="5536" Poststed="Haugesund" kommune="//@fylker.6/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Husnes">
+      <Postadresse Postnr="5460" Poststed="Husnes" kommune="//@fylker.7/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Sauda">
+      <Postadresse Postnr="4201" Poststed="Sauda" kommune="//@fylker.6/@kommuner.11"/>
+    </Avdelinger>
+    <Avdelinger Navn="Aktimed Norge AS avd Stord">
+      <Postadresse Postnr="5411" Poststed="Stord" kommune="//@fylker.7/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-28T12:12:42.413+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="985265062" Navn="ARCA FRISKERE ARBEIDSPLASSER AS">
+    <Kontaktinformasjon Telefon="22656651" EpostAdresse="post@arca.no" InternettAdresse="http://www.arca.no">
+      <Postadresse Adresse="&#xd8;stensj&#xf8;veien 32" Postnr="0667" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Marianne Karset Bergersen" Rolle="Cand. Scient. Fysisk aktivitet og helse" TelefonDir="22656651" TelefonMob="93009355" Epostadresse="marianne@arca.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-29T15:56:24.843+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971817828" Navn="Kv&#xe6;rner Verdal BHT">
+    <Kontaktinformasjon Telefon="74 07 40 00" EpostAdresse="agot.mariann.stene@kvaerner.com" InternettAdresse="http://kvaerner.com">
+      <Postadresse Adresse="Hamnevegen 7" Postnr="7652" Poststed="VERDAL" kommune="//@fylker.1/@kommuner.1"/>
+      <Kontaktperson Navn="Arve Kleppe" Rolle="HMS-leder/ BHT-leder" TelefonMob="90 68 50 09 " Epostadresse="arve.kleppe@kvaerner.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-29T17:14:42.420+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="995446944" Navn="Veiviser&#xb4;n BHT AS">
+    <Kontaktinformasjon Telefon="91009550" EpostAdresse="post@veivisern.no" InternettAdresse="http://www.veivisern.no">
+      <Postadresse Adresse="S&#xf8;ren Thorn&#xe6;sv. 10," Postnr="7800" Poststed="Namsos" kommune="//@fylker.1/@kommuner.6"/>
+      <Kontaktperson Navn="Kjell Hestmo" Rolle="Daglig leder/HMS-r&#xe5;dgiver" TelefonDir="910 09 550" TelefonMob="910 09 550" Epostadresse="kjell@veivisern.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-30T12:19:59.793+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="965195033" Navn="BEDRIFTSHELSE1">
+    <Kontaktinformasjon Telefon="57 67 90 60" EpostAdresse="post@bedriftshelse1.no" InternettAdresse="http://www.bedriftshelse1.no">
+      <Postadresse Adresse="Fossetunet 1A" Postnr="6856" Poststed="SOGNDAL" kommune="//@fylker.17/@kommuner.2"/>
+      <Kontaktperson Navn="Randi Marie Sj&#xf8;holt" Rolle="Daglig leder/administrerende direkt&#xf8;r" TelefonDir="95235874" Epostadresse="randi.marie.sjoholt@bedriftshelse1.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Bedriftshelse1 avd. Sogn" Avdelingsleder="Randi Marie Sj&#xf8;holt" Telefon="95235874">
+      <Postadresse Adresse="Fossetunet1" Postnr="6856" Poststed="Sogndal" kommune="//@fylker.17/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelse1 avd. Sunnfjord" Avdelingsleder="Rune E. Ludvigsen" Telefon="41548576">
+      <Postadresse Adresse="Hans Blomsgate 39" Postnr="6900" Poststed="Flor&#xf8;" kommune="//@fylker.17/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelse1 avd Voss og Hardanger" Avdelingsleder="Vegard Kolve" Telefon="47468682">
+      <Postadresse Adresse="Postboks 3" Postnr="5701" Poststed="Voss" kommune="//@fylker.7/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelse1 avd Odda" Avdelingsleder="Vegard Kolve" Telefon="47468682">
+      <Postadresse Adresse="Postboks 3" Postnr="5751" Poststed="Odda" kommune="//@fylker.7/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Bedriftshelse1 avd. Nordfjord" Avdelingsleder="Tore B&#xf8;e" Telefon="91165703">
+      <Postadresse Adresse="Eidsgata 9" Postnr="6770" Poststed="Nordfjordeid" kommune="//@fylker.17/@kommuner.4"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-30T13:30:39.760+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="929514173" Navn="ALCOA NORWAY ANS, ALCOA LISTA">
+    <Kontaktinformasjon Telefon="47 38 39 94 40" EpostAdresse="dagfinn.kroslid@alcoa.com" InternettAdresse="http://alcoa.com">
+      <Postadresse Adresse="Lundev&#xe5;gen, Postboks 128" Postnr="4552" Poststed="FARSUND" kommune="//@fylker.10/@kommuner.4"/>
+      <Kontaktperson Navn="Dagfinn Kroslid" Rolle="Yrkeshygieniker / Leder BHT" TelefonDir="47 38 39 94 40" TelefonMob="47 98252438" Epostadresse="dagfinn.kroslid@alcoa.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-04-30T16:54:57.863+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971524960" Navn="Stortingets Bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="23 31 35 40" EpostAdresse="bht.postmottak@stortinget.no" InternettAdresse="http://">
+      <Postadresse Adresse="Stortinget" Postnr="0026" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Liv Urdal" Rolle="Bedriftslege, seksjonsleder" TelefonDir="23 31 35 41" TelefonMob="918 15 828" Epostadresse="liv.urdal@stortinget.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-03T16:16:41.587+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="964338531" Navn="BERGEN KOMMUNE; Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="5556 6199" EpostAdresse="postmottak.Bedriftshelsetjenesten@bergen.kommune.no" InternettAdresse="http://www.bergen.kommune.no/">
+      <Postadresse Adresse="H. Kjerulfsgate 4" Postnr="5017" Poststed="BERGEN" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Mariann Alvheim Andersen" Rolle="avd. overlege / leder BHT" TelefonDir="5556 5850" TelefonMob="97724085" Epostadresse="mariann.andersen@bergen.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-03T17:28:57.753+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="932525615" Navn="Medisinsk Senter AS">
+    <Kontaktinformasjon Telefon="67 55 00 40" EpostAdresse="Bedriftslegen.Sandvika@norconsult.com" InternettAdresse="http://medisinsk-senter.no">
+      <Postadresse Adresse="Vestfjordgt. 4" Postnr="1338" Poststed="Sandvika" kommune="//@fylker.11/@kommuner.0"/>
+      <Kontaktperson Navn="Thoralf Apenes" Rolle="Lege" TelefonMob="91142562" Epostadresse="Bedriftslegen.Sandvika@norconsult.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-03T17:51:00.447+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="929096622" Navn="UNIVI AS">
+    <Kontaktinformasjon Telefon="761 10520" EpostAdresse="post@univi.no" InternettAdresse="http://www.univi.no">
+      <Postadresse Adresse="Pb 47" Postnr="8376" Poststed="LEKNES" kommune="//@fylker.4/@kommuner.2"/>
+      <Kontaktperson Navn="Ellen Val" Rolle="Daglig leder/HMS-r&#xe5;dgiver" TelefonDir="950 57016" TelefonMob="950 57016" Epostadresse="ellen@univi.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="UNIVI Bedriftshelsetjeneste Sortland" Avdelingsleder="John Christian Bech" Telefon="76110520 ">
+      <Postadresse Adresse="Pb 525" Postnr="8401" Poststed="SORTLAND" kommune="//@fylker.4/@kommuner.12"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-04T00:51:58.673+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971333359" Navn="BEDRIFTSHELSETJENESTEN MANDAL SA">
+    <Kontaktinformasjon Telefon="38 27 90 70" EpostAdresse="post@bht-mandal.no" InternettAdresse="http://www.bht-mandal.no">
+      <Postadresse Adresse="Gismer&#xf8;yveien 89" Postnr="4515" Poststed="MANDAL" kommune="//@fylker.10/@kommuner.5"/>
+      <Kontaktperson Navn="Karoline Bauer-Nilsen" Rolle="Daglig leder" TelefonDir="45295621" TelefonMob="45295621" Epostadresse="kbn@bht-mandal.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-04T11:24:51.017+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="981472756" Navn="Rubicon bedriftshelsetjeneste as">
+    <Kontaktinformasjon Telefon="33374500" EpostAdresse="info@rubiconbht.no" InternettAdresse="http://rubiconbht.no">
+      <Postadresse Adresse="Baglergt 3" Postnr="3111" Poststed="T&#xf8;nsberg" kommune="//@fylker.2/@kommuner.3"/>
+      <Kontaktperson Navn="Jan D&#xf8;rum" Rolle="Daglig leder/bedriftslege" TelefonDir="90055435" TelefonMob="90055435" Epostadresse="jan.dorum@rubiconbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-04T13:51:03.810+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="940791901" Navn="KARM&#xd8;Y KOMMUNE">
+    <Kontaktinformasjon Telefon="52 85 75 00" EpostAdresse="postmottak@karmoy.kommune.no" InternettAdresse="http://www.karmoy.kommune.no/">
+      <Postadresse Adresse="Postboks 167" Postnr="4291" Poststed="KOPERVIK" kommune="//@fylker.6/@kommuner.9"/>
+      <Kontaktperson Navn="Janne Robertsen" Rolle="Leder BHT" TelefonDir="52 81 22 52 " TelefonMob="99 30 11 49 " Epostadresse="janne.annette.robertsen@karmoy.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-04T14:31:07.310+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971470291" Navn="ALNA HMS-SENTER SA">
+    <Kontaktinformasjon Telefon="23 24 99 00" EpostAdresse="alna.hms@alnahms.no" InternettAdresse="http://www.alnahms.no">
+      <Postadresse Adresse="Ulvenveien 87" Postnr="0581" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Gry Berge" Rolle="Daglig leder" TelefonDir="47488815" TelefonMob="47488815" Epostadresse="gryberge@alnahms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-05T10:22:09.333+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="994675273" Navn="IDRETTENS HELSESENTER AS">
+    <Kontaktinformasjon Telefon="90792061" EpostAdresse="kundesenter@idrettshelse.no" InternettAdresse="http://idrettshelse.no">
+      <Postadresse Adresse="Kongsveien 104" Postnr="1177" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Lina Ulrikke Bull" Rolle="Daglig leder" TelefonMob="468 46 612" Epostadresse="lina@idrettshelse.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-05T14:48:40.287+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971493402" Navn="A-MED Bedriftshelsetjeneste-">
+    <Kontaktinformasjon Telefon="21556410" EpostAdresse="post@a-med.no" InternettAdresse="http://www.a-med.no">
+      <Postadresse Adresse="Youngstorget 2b" Postnr="0181" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Kjersti Aksnes Skantze" Rolle="bedriftsoverlege/daglig leder" TelefonDir="21556410" TelefonMob="94010002" Epostadresse="kjersti@a-med.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-11T11:50:47.337+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="964965137" Navn="SANDNES KOMMUNE BHT">
+    <Kontaktinformasjon Telefon="51 33 57 92" EpostAdresse="gudrun.riska.thorsen@sandnes.kommune.no" InternettAdresse="http://www.sandnes.kommune.no/">
+      <Postadresse Adresse="Hoveveien 9, Postboks 284" Postnr="4303" Poststed="SANDNES" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="Unni H&#xe5;land Auster&#xe5;" Rolle="BHT fagansvarlig/fysioterapeut" TelefonDir="51 33 58 03" TelefonMob="901 42 669" Epostadresse="unni.haaland.austeraa@sandnes.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-20T11:36:06.813+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="920243223" Navn="SETESDAL BEDRIFTSHELSETJENESTE">
+    <Kontaktinformasjon Telefon="94521587" EpostAdresse="post@setesdal-bht.no" InternettAdresse="http://www.setesdal-bht.no">
+      <Postadresse Adresse="Verksvegen 4" Postnr="4735" Poststed="EVJE" kommune="//@fylker.13/@kommuner.2"/>
+      <Kontaktperson Navn="Thomas Christian Malm" Rolle="Daglig leder / HMS r&#xe5;dgiver" TelefonDir="91115779" TelefonMob="91115779" Epostadresse="thomas@setesdal-bht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-20T15:14:40.680+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="995504073" Navn="HMS-Senteret AS">
+    <Kontaktinformasjon Telefon="93265961" EpostAdresse="post@hmsmelhus.no" InternettAdresse="http://www.hmsmelhus.no">
+      <Postadresse Adresse="Jernbaneveien 11" Postnr="7224" Poststed="Melhus" kommune="//@fylker.1/@kommuner.18"/>
+      <Kontaktperson Navn="Solveig Grande Moen" Rolle="Daglig leder" TelefonDir="93265961" TelefonMob="93265961" Epostadresse="solveig.moen@hmsmelhus.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-22T01:13:56.813+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="994573438" Navn="HELSEDESIGN AS">
+    <Kontaktinformasjon Telefon="22 50 60 80" EpostAdresse="post@helsedesign.no" InternettAdresse="http://www.helsedesign.no">
+      <Postadresse Adresse="Oscars gate 27" Postnr="0352" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Kari Hanne Haaland" Rolle="Daglig leder/bedriftssykepleier" TelefonDir="22506080" TelefonMob="92815744" Epostadresse="hanne@helsedesign.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-05-26T10:59:39.430+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983974678" Navn="Helse Stavanger HF - Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="05151" EpostAdresse="anne.berte.vigrestad@sus.no" InternettAdresse="http://">
+      <Postadresse Adresse="Gerd Ragna Bloch Thorsensgate 8" Postnr="4011" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Anne Berte Vigrestad" Rolle="HMS sjef/leder BHT" TelefonDir="51518797" TelefonMob="47520004" Epostadresse="anne.berte.vigrestad@sus.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-01T12:47:06.750+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="986678522" Navn="STIFTELSEN VESTMAR">
+    <Kontaktinformasjon Telefon="35 98 25 15" EpostAdresse="roar@vestmarbht.no" InternettAdresse="http://www.vestmarbht.no">
+      <Postadresse Adresse="L&#xf8;kkebakken 12" Postnr="3770" Poststed="KRAGER&#xd8;" kommune="//@fylker.3/@kommuner.6"/>
+      <Kontaktperson Navn="Roar Aasulvsen" Rolle="daglig leder" TelefonDir="99205791" TelefonMob="99205791" Epostadresse="roar@vestmarbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-01T13:45:24.020+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="991811869" Navn="FORUSAKUTTEN AS">
+    <Kontaktinformasjon Telefon="52 69 69 69" EpostAdresse="bht@forusakuttten.no" InternettAdresse="http://www.kolibrimedical.no">
+      <Postadresse Adresse="Larsamyr&#xe5; 18" Postnr="4313" Poststed="SANDNES" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="Ida Meljordshagen Langdalen" Rolle="Avdelingsleder BHT" TelefonDir="92611790" TelefonMob="92611790" Epostadresse="ida@forusakuttenkolibri.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-04T11:16:32.217+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971481722" Navn="AGDER BEDRIFTSHELSETJENESTE SA">
+    <Kontaktinformasjon Telefon="38 12 88 50" EpostAdresse="post@agderbedriftshelsetjeneste.no" InternettAdresse="http://www.agderbedriftshelsetjeneste.no">
+      <Postadresse Adresse="&#xd8;stre Strandgate 75" Postnr="4608" Poststed="KRISTIANSAND S" kommune="//@fylker.10/@kommuner.0"/>
+      <Kontaktperson Navn="Beate Marianne Vikhals" Rolle="daglig leder" TelefonDir="90095933" TelefonMob="90095933" Epostadresse="beate@agderbedriftshelsetjeneste.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-15T17:19:39.887+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="984024290" Navn="VEIDEKKE ENTREPREN&#xd8;R AS, Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="21 05 50 00" EpostAdresse="firmapost@veidekke.no" InternettAdresse="http://www.veidekke.no">
+      <Postadresse Adresse="Postboks 506 Sk&#xf8;yen" Postnr="0214" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Kjell Aage S&#xf8;rensen" Rolle="Bedriftslege" TelefonDir="21057406" TelefonMob="95143779" Epostadresse="kjell.sorensen@veidekke.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Veidekke Entrepren&#xf8;r AS, BHT Bergen" Avdelingsleder="Merethe Ekerhovd" Telefon="95020557">
+      <Postadresse Adresse="Postboks 6005 Postterminalen" Postnr="5892" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Veidekke Entrepren&#xf8;r AS, BHT Trondheim" Avdelingsleder="Jorunn Windspoll / Linda Lilleg&#xe5;rd" Telefon="73823500">
+      <Postadresse Adresse="Vegamot 8 A" Postnr="7048" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-15T19:44:15.507+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="883974832" Navn="Arbeidsmilj&#xf8;avdelingen, St. Olavs Hospital">
+    <Kontaktinformasjon Telefon="72571313" EpostAdresse="arbeidsmiljo@stolav.no" InternettAdresse="http://">
+      <Postadresse Adresse="Postboks 3250 Sluppen" Postnr="7006" Poststed="Trondheim" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Oddny B&#xf8;e" Rolle="Avdelingssjef" TelefonDir="72571313" TelefonMob="95126880" Epostadresse="oddny.boe@stolav.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-21T13:06:08.827+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="963296746" Navn="KRISTIANSAND KOMMUNE">
+    <Kontaktinformasjon Telefon="97580940" EpostAdresse="post.bedriftshelsetjenesten@kristiansand.kommune.no" InternettAdresse="http://">
+      <Postadresse Adresse="Tollbodgaten 22, 3 ETG" Postnr="4611" Poststed="Kristiansand" kommune="//@fylker.10/@kommuner.0"/>
+      <Kontaktperson Navn="Anita Karlsen" Rolle="Fagkoordinator &amp; Yrkeshygieniker  (Faglig leder)" TelefonDir="4797580940" TelefonMob="4797581940" Epostadresse="anita.karlsen@kristiansand.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-24T16:34:19.443+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974726807" Navn="UNIVERSITETSSYKEHUSET NORD-NORGE HF">
+    <Kontaktinformasjon Telefon="79024200" EpostAdresse="john.aksel.bilicz@unn.no" InternettAdresse="http://www.unn.no/">
+      <Postadresse Adresse="Boks 314" Postnr="9071" Poststed="Longyearbyen"/>
+      <Kontaktperson Navn="John Aksel Bilicz" Rolle="avdelingsleder Longyearbyen sykehus" TelefonDir="79024202" TelefonMob="90020832" Epostadresse="john.aksel.bilicz@unn.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-25T13:05:31.220+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="916769318" Navn="Titania AS">
+    <Kontaktinformasjon Telefon="51478000" EpostAdresse="marion.sleveland@kronosww.com">
+      <Postadresse Adresse="Tellenes" Postnr="4380" Poststed="Hauge i Dalane" kommune="//@fylker.6/@kommuner.12"/>
+      <Kontaktperson Navn="Marion Sleveland" Rolle="Bedriftssykepleier" TelefonDir="51478246" TelefonMob="90961607" Epostadresse="marion.sleveland@kronosww.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-25T17:12:00.140+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="993467049" Navn="Oslo universitetssykehus, Oslo sykehusservice, Arbeidsmilj&#xf8;avdelingen">
+    <Kontaktinformasjon Telefon="02770" EpostAdresse="post.oss@ous-hf.no" InternettAdresse="http://www.oslo-universitetssykehus.no">
+      <Postadresse Adresse="Postboks 4950 Nydalen" Postnr="0424" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Jill Charlotte Jahrmann" Rolle="HMS-leder" TelefonDir="95025168" Epostadresse="jiljah@ous-hf.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-29T15:21:28.397+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="964119252" Navn="KYSTBEDRIFTENES HELSETJENESTE SA">
+    <Kontaktinformasjon Telefon="57 85 20 34" EpostAdresse="post@kbht.no" InternettAdresse="http://www.kbht.no">
+      <Postadresse Adresse="Gate 1 52" Postnr="6700" Poststed="M&#xc5;L&#xd8;Y" kommune="//@fylker.17/@kommuner.5"/>
+      <Kontaktperson Navn="Torill Merete Midtgaard Gaustad" Rolle="daglig leder" TelefonMob="95244171" Epostadresse="torill.gaustad@kbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-30T15:05:03.153+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="914829674" Navn="GE HEALTHCARE AS">
+    <Kontaktinformasjon Telefon="38 25 81 00" EpostAdresse="aslaug.oftenes-lie@ge.com" InternettAdresse="http://">
+      <Postadresse Adresse="Lindesnes Fabrikker" Postnr="4521" Poststed="LINDESNES" kommune="//@fylker.10/@kommuner.6"/>
+      <Kontaktperson Navn="Jens Jakob Kjos-Hanssen" Rolle="HMS sjef" TelefonDir="90519526" TelefonMob="90519526" Epostadresse="jens.kjos-hanssen@ge.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-06-30T17:37:57.843+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="914670705" Navn="Ringnes AS">
+    <Kontaktinformasjon Telefon="22 06 95 00" InternettAdresse="http://">
+      <Postadresse Adresse="Thorvald Meyers gate 2" Postnr="0555" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="P&#xe5;l Torvund" TelefonDir="98666856" TelefonMob="98666856" Epostadresse="Pal-Christian.Torvund@ringnes.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-02T16:50:54.707+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971481943" Navn="BEDRIFTSHELSETJENESTEN I SYKKYLVEN">
+    <Kontaktinformasjon Telefon="70 25 51 10" EpostAdresse="bht@bhtsykkylven.no" InternettAdresse="http://www.bhtsykkylven.no">
+      <Postadresse Adresse="S&#xf8;restrandvegen 709" Postnr="6222" Poststed="IKORNNES" kommune="//@fylker.12/@kommuner.11"/>
+      <Kontaktperson Navn="Lisbet Tynes Fausa" Rolle="Daglig leder og yrkeshygieniker" TelefonDir="91110582" TelefonMob="91110582" Epostadresse="lisbet@bhtsykkylven.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-05T21:05:01.987+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="971483466" Navn="FRISK I NORD SA">
+    <Kontaktinformasjon Telefon="78 40 72 60" EpostAdresse="friskinord@friskinord.no" InternettAdresse="http://www.friskinord.no">
+      <Postadresse Adresse="Strandgata 25" Postnr="9600" Poststed="HAMMERFEST" kommune="//@fylker.15/@kommuner.2"/>
+      <Kontaktperson Navn="Wenche Elisabeth Stenvoll" Rolle="daglig leder" TelefonDir="78407262" TelefonMob="97119089" Epostadresse="wenche@friskinord.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-06T16:20:29.823+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="993149713" Navn="YRKESHELSE S&#xd8;R AS">
+    <Kontaktinformasjon Telefon="37 02 10 38" EpostAdresse="post@yrkeshelse.no" InternettAdresse="http://www.yrkeshelse.no">
+      <Postadresse Adresse="Langbryggen 5" Postnr="4841" Poststed="ARENDAL" kommune="//@fylker.13/@kommuner.0"/>
+      <Kontaktperson Navn="Gudrun J&#xf8;rgensen" Rolle="Fysioterapeut, spesialist i allmenn fysioterapi, spesialist i helse- og milj&#xf8;arbeid" TelefonDir="90844184" TelefonMob="90844184" Epostadresse="giggi@yrkeshelse.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-14T14:40:53.980+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983971709" Navn="SYKEHUSET INNLANDET HF, BHT">
+    <Kontaktinformasjon Telefon="06200" EpostAdresse="postmottak@sykehuset-innlandet.no" InternettAdresse="http://www.sykehuset-innlandet.no">
+      <Postadresse Adresse="Furnesvegen 26" Postnr="2381" Poststed="BRUMUNDDAL" kommune="//@fylker.5/@kommuner.4"/>
+      <Kontaktperson Navn="Bj&#xf8;rn Egil Skar" Rolle="Avdelingssjef" TelefonDir="62333018" TelefonMob="93653081" Epostadresse="bjorn.egil.skar@sykehuset-innlandet.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-16T15:41:53.753+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="938333572" Navn="Bedriftshelsetjenesten i AF Gruppen">
+    <Kontaktinformasjon Telefon="97789321" EpostAdresse="espen.jahr@afgruppen.no" InternettAdresse="http://www.afgruppen.no">
+      <Postadresse Adresse="Innspurten 15" Postnr="0603" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Espen Jahr" Rolle="Leder av bedriftshelstejenesten i AF Gruppen" TelefonDir="22891265" TelefonMob="97789321" Epostadresse="espen.jahr@afgruppen.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-21T16:08:45.117+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="874789542" Navn="Seksjon for HMS, beredskap og BHT, Universitetet i Bergen">
+    <Kontaktinformasjon Telefon="55 58 20 54" EpostAdresse="post@hms.uib.no" InternettAdresse="http://www.uib.no/hr">
+      <Postadresse Adresse="Postboks 7800" Postnr="5020" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Roar Nese" Rolle="Seksjonssjef" TelefonDir="55588741" TelefonMob="97727767" Epostadresse="roar.nese@uib.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-21T17:29:13.623+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="986105174" Navn="Forsvarets BHT (FBHT)">
+    <Kontaktinformasjon Telefon="480 10 655" EpostAdresse="gskipenes@mil.no" InternettAdresse="http://www.mil.no">
+      <Postadresse Adresse="Ridehuset, Storhamargt 100" Postnr="2306" Poststed="Hamar" kommune="//@fylker.5/@kommuner.0"/>
+      <Kontaktperson Navn="Gunnar Skipenes" Rolle="Forsvarets bedriftsoverlege" TelefonDir="480 10 655" TelefonMob="480 10 655" Epostadresse="gskipenes@mil.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-25T21:06:26.540+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="911575787" Navn="GLENCORE NIKKELVERK AS">
+    <Kontaktinformasjon Telefon="38 10 10 10" EpostAdresse="post@glencore.no" InternettAdresse="http://www.nikkelverk.no">
+      <Postadresse Adresse="Vesterveien 31" Postnr="4613" Poststed="KRISTIANSAND S" kommune="//@fylker.10/@kommuner.0"/>
+      <Kontaktperson Navn="Steinar R. Berge" Rolle="Bedriftslege" TelefonDir="38101433" TelefonMob="48881433" Epostadresse="steinar.berge@glencore.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-07-30T18:06:34.963+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="995215160" Navn="GR&#xd8;NN JOBB BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="69 33 66 11" EpostAdresse="bht@gronnjobb.no" InternettAdresse="http://www.gronnjobb.no/bht">
+      <Postadresse Adresse="Dikeveien 48" Postnr="1661" Poststed="ROLVS&#xd8;Y" kommune="//@fylker.14/@kommuner.4"/>
+      <Kontaktperson Navn="Peter Raymond Sund" Rolle="Daglig leder" TelefonDir="92048430" TelefonMob="92048430" Epostadresse="peter@gronnjobb.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Gr&#xf8;nn Jobb bedriftshelsetjeneste avd. Moss" Avdelingsleder="Ruben Blix" Telefon="95523982">
+      <Postadresse Adresse="Carlbergveien 6A" Postnr="1526" Poststed="Moss" kommune="//@fylker.14/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Gr&#xf8;nn Jobb bedriftshelsetjeneste avd. Halden" Avdelingsleder="Hege Martinsen" Telefon="46980616">
+      <Postadresse Adresse="Walkersgate 10" Postnr="1771" Poststed="Halden" kommune="//@fylker.14/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-08-16T14:26:22.700+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="979767641" Navn="NORSK BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="52 73 11 77" EpostAdresse="post@norskbedriftshelsetjeneste.no" InternettAdresse="http://">
+      <Postadresse Adresse="Karmsundgaten 208 (postboks 363, 5501 Haugesund" Postnr="5517" Poststed="HAUGESUND" kommune="//@fylker.6/@kommuner.6"/>
+      <Kontaktperson Navn="Svein Ths. Madsen" Rolle="Daglig leder" TelefonDir="52731177" TelefonMob="908 46 417" Epostadresse="svein.ths.madsen@norskbedriftshelsetjeneste.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-08-20T10:31:13.883+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="914807077" Navn="A/S Norske Shell, Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="51 69 30 00" EpostAdresse="amanda.moller@shell.com" InternettAdresse="http://">
+      <Postadresse Adresse="Tankvegen 1" Postnr="4056" Poststed="TANANGER" kommune="//@fylker.6/@kommuner.0"/>
+      <Kontaktperson Navn="Amanda M&#xf8;ller" Rolle="leder Shell Health" Epostadresse="amanda.moller@shell.com"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Shell Health Kristiansund" Avdelingsleder="Astrid Krane" Telefon="71564381">
+      <Postadresse Adresse="pb 2244" Postnr="6503" Poststed="Kristiansund.N" kommune="//@fylker.12/@kommuner.1"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-08-26T18:01:46.917+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="911382008" Navn="ELKEM BHT-FORUM, ELKEM AS">
+    <Kontaktinformasjon Telefon="22 45 01 00" EpostAdresse="siri.helland.hansen@elkem.no" InternettAdresse="http://www.elkem.com">
+      <Postadresse Adresse="Drammensveien 169, Postboks 334 Sk&#xf8;yen" Postnr="0213" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="&#xd8;ystein Vidar Hansen" Rolle="Bedriftslege" TelefonDir="976 23 127" TelefonMob="976 23 127" Epostadresse="oystein-vidar.hansen@elkem.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Elkem BHT-Forum, Avdeling Kristiansand" Avdelingsleder="&#xd8;ystein Vidar Hansen" Telefon="976 23 127">
+      <Postadresse Adresse="Postboks 8040 V&#xe5;gsbygd" Postnr="4675" Poststed="Kristiansand" kommune="//@fylker.10/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Elkem BHT-Forum, Avdeling &#xc5;lvik" Avdelingsleder="Samarbeid mellom &#xd8;ystein Vidar Hansen (Elkem BHT-Forum) og Johannes Ravnestad (&#xc5;lvik BHT - stedlig leder)." Telefon="56 55 08 03">
+      <Postadresse Adresse="Postboks 43" Postnr="5605" Poststed="&#xc5;lvik" kommune="//@fylker.7/@kommuner.7"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-08-30T23:57:23.497+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="987378573" Navn="H&#xd8;YANGER BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="57 71 51 85" EpostAdresse="alv.bjornar.heggelund@hoyangerbht.no" InternettAdresse="http://www.hoyangerbht.no">
+      <Postadresse Adresse="Leira 2, postboks 114" Postnr="6991" Poststed="H&#xd8;YANGER" kommune="//@fylker.17/@kommuner.6"/>
+      <Kontaktperson Navn="Alv Bj&#xf8;rnar Heggelund" Rolle="Bedriftslege/daglig leder" TelefonDir="577 15185" TelefonMob="958 14307" Epostadresse="alv.bjornar.heggelund@hoyangerbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-09-14T21:56:47.057+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="914803802" Navn="ESSO NORGE AS">
+    <Kontaktinformasjon Telefon="51 60 60 60" EpostAdresse="forus-doccenter@exxonmobil.com" InternettAdresse="http://www.exxonmobil.no">
+      <Postadresse Adresse="Grenseveien 6" Postnr="4313" Poststed="SANDNES" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="Janne Myrland" Rolle="MOH Manager" TelefonDir="51606658" TelefonMob="95550581" Epostadresse="janne.s.myrland@exxonmobil.com"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Esso MOH Sk&#xf8;yen" Avdelingsleder="Janne Myrland" Telefon="22663452">
+      <Postadresse Adresse="Drammensveien 149" Postnr="0213" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Esso MOH Slagen" Avdelingsleder="Janne Myrland" Telefon="33377305">
+      <Postadresse Adresse="Essoveien 100" Postnr="3153" Poststed="Tolvsr&#xf8;d" kommune="//@fylker.2/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Esso MOH Forus" Avdelingsleder="Janne Myrland" Telefon="51606658">
+      <Postadresse Adresse="Grenseveien 6" Postnr="4313" Poststed="Sandnes" kommune="//@fylker.6/@kommuner.4"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-09-17T16:20:48.523+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983974694" Navn="HELSE FONNA HF">
+    <Kontaktinformasjon Telefon="52 73 20 00" EpostAdresse="astrid.grimstvedt@helse-fonna.no" InternettAdresse="http://www.helse-fonna.no">
+      <Postadresse Adresse="Karmsundsgaten 120" Postnr="5528" Poststed="HAUGESUND" kommune="//@fylker.6/@kommuner.6"/>
+      <Kontaktperson Navn="Astrid Grimstvedt" Rolle="Seksjonsleder HMS/BHT" TelefonMob="95754210"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-10-25T16:27:40.997+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="968158813" Navn="B&#xe5;tsfjord Bedriftshelsetjeneste AS">
+    <Kontaktinformasjon Telefon="90242446" EpostAdresse="bedriftshelsetjenesten@epost.no" InternettAdresse="http://www.b&#xe5;tsfjordbht.no">
+      <Postadresse Adresse="Hindberggata 19" Postnr="9990" Poststed="B&#xe5;tsfjord" kommune="//@fylker.15/@kommuner.3"/>
+      <Kontaktperson Navn="Maud Nesfeldt" Rolle="Daglig leder" TelefonDir="90242446" TelefonMob="90242446" Epostadresse="bedriftshelsetjenesten@epost.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-10-27T11:20:01.490+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974767880" Navn="NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET">
+    <Kontaktinformasjon Telefon="99642914" EpostAdresse="hms@ntnu.no" InternettAdresse="http://www.ntnu.no/hms">
+      <Postadresse Adresse="Sverres gate 12" Postnr="7491" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Hilde Apneseth/Ann Kristin Sjaastad" Rolle="Seksjonssjef HMS-seksjonen/faggruppeleder BHT" TelefonDir="99642914" TelefonMob="91877856" Epostadresse="hilde.apneseth@ntnu.no/ann.kristin.sjaastad@ntnu.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-10-28T19:44:00.363+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="996096092" Navn="PBL BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="75 55 37 00" EpostAdresse="bht@pbl.no" InternettAdresse="http://www.pbl.no">
+      <Postadresse Adresse="Prinsens gate 91" Postnr="8003" Poststed="BOD&#xd8;" kommune="//@fylker.4/@kommuner.4"/>
+      <Kontaktperson Navn="Ann-Heidi Pettersen" Rolle="Daglig leder" TelefonDir="755 53865" TelefonMob="91521818" Epostadresse="ann-heidi@pbl.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="PBL Bedriftshelsetjeneste avd Bergen" Avdelingsleder="Elna Amundsen Wik" Telefon="918 81 967">
+      <Postadresse Adresse="Kanalveien 108" Postnr="5068" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="PBL Bedriftshelsetjeneste avd Kolbotn" Avdelingsleder="Jannicke Traaen Tofsland" Telefon="934 97 525">
+      <Postadresse Adresse="Rosenholm Campus Konferansesenter, Rosenholmveien 25" Postnr="1414" Poststed="Troll&#xe5;sen" kommune="//@fylker.11/@kommuner.6"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-11-08T17:38:14.627+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="984015666" Navn="YARA NORGE AS">
+    <Kontaktinformasjon Telefon="75719100" EpostAdresse="yara.glomfjord@yara.com" InternettAdresse="http://yara.com">
+      <Postadresse Adresse="&#xd8;rnesveien 3; Postboks 190" Postnr="8161" Poststed="Glomfjord" kommune="//@fylker.4/@kommuner.5"/>
+      <Kontaktperson Navn="Svein Brennesvik" Rolle="bedriftssykepleier" TelefonDir="75719124" TelefonMob="48065157" Epostadresse="svein.brennesvik@yara.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-11-08T17:38:22.160+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="961398142" Navn="OSLO POLITIDISTRIKT BEDRIFTSHELSETJENESTEN">
+    <Kontaktinformasjon Telefon="22668031" EpostAdresse="liv.synstad@politiet.no" InternettAdresse="http://www.opol.no/">
+      <Postadresse Adresse="Pb 8101 Dep" Postnr="0032" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Liv Synstad" Rolle="Seksjonssjef" TelefonDir="22668031" TelefonMob="41535887" Epostadresse="liv.synstad@politiet.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-11-08T17:38:49.067+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="890351832" Navn="KLINIKK 5 TRONDHEIM AS">
+    <Kontaktinformasjon Telefon="97193410" EpostAdresse="kari@klinikk5.no" InternettAdresse="http://klinikk5.no">
+      <Postadresse Adresse="Konvallveien 17" Postnr="7011" Poststed="TRONDHEIM" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Lars B&#xf8;rke" Rolle="Daglig leder" TelefonMob="90092597" Epostadresse="lars@klinikk5.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-11-16T08:33:34.600+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="995989565" Navn="BEDICO HMS AS">
+    <Kontaktinformasjon Telefon="73185210" EpostAdresse="post@bedico.no" InternettAdresse="http://www.bedico.no">
+      <Postadresse Adresse="Sivert Thonstads vei 7" Postnr="7072" Poststed="HEIMDAL" kommune="//@fylker.1/@kommuner.0"/>
+      <Kontaktperson Navn="Thomas Gunnar Karlsen" Rolle="Daglig leder" TelefonDir="48601117" TelefonMob="48601117" Epostadresse="thomas@bedico.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-11-21T18:30:20.343+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983971636" Navn="AKERSHUS UNIVERSITETSSYKEHUS HF, AHUS BHT">
+    <Kontaktinformasjon Telefon="67 96 00 00" EpostAdresse="postmottak@ahus.no" InternettAdresse="http://www.ahus.no">
+      <Postadresse Adresse="Sykehusveien 25" Postnr="1474" Poststed="NORDBYHAGEN" kommune="//@fylker.11/@kommuner.7"/>
+      <Kontaktperson Navn="Karl Johan Seim-Wikse" Rolle="Avdelingsleder" TelefonDir="67968156" TelefonMob="92221597" Epostadresse="karl.johan.seim-wikse@ahus.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-12-13T16:09:18.080+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="938752648" Navn="NORTURA SA">
+    <Kontaktinformasjon Telefon="03070" EpostAdresse="thrine.lise.staheli@nortura.no" InternettAdresse="http://www.nortura.no">
+      <Postadresse Adresse="L&#xf8;renveien 37" Postnr="0585" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="&#xd8;ivind St&#xf8;rdal Lund" Rolle="Fagsjef HMS" TelefonDir="90630212" TelefonMob="90630212" Epostadresse="oivind-stordal.lund@nortura.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Nortura BHT Rudsh&#xf8;gda" Telefon="03070">
+      <Postadresse Adresse="Postboks 70" Postnr="2360" Poststed="RUDSH&#xd8;GDA" kommune="//@fylker.5/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Nortura BHT T&#xf8;nsberg" Telefon="03070">
+      <Postadresse Adresse="postboks 2009" Postnr="3103" Poststed="T&#xd8;NSBERG" kommune="//@fylker.2/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Nortura BHT Forus" Telefon="03070">
+      <Postadresse Adresse="Postboks 40, Forus" Postnr="4069" Poststed="STAVANGER" kommune="//@fylker.6/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Nortura BHT H&#xe6;rland" Telefon="03070">
+      <Postadresse Adresse="Sloraveien 60" Postnr="1878" Poststed="H&#xe6;rland" kommune="//@fylker.14/@kommuner.6"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-12-21T15:51:48.070+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="982791952" Navn="DIAKONHJEMMET SYKEHUS AS">
+    <Kontaktinformasjon Telefon="22 45 15 00" EpostAdresse="postmottak@diakonsyk.no" InternettAdresse="http://www.diakonsyk.no">
+      <Postadresse Adresse="Diakonveien 12" Postnr="0370" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Kari Gaarder Osnes" Rolle="Enhetsleder bedriftshelsetjenesten" TelefonDir="22454812" TelefonMob="95733447" Epostadresse="kari.g.osnes@diakonsyk.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-12-22T13:43:07.720+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="896312642" Navn="SMAALENENE BEDRIFTSHELSETJENESTE">
+    <Kontaktinformasjon Telefon="97163030" EpostAdresse="marie-louise.lund@eidsberg.kommune.no" InternettAdresse="http://www.sbht.org">
+      <Postadresse Adresse="David Blids gate 21" Postnr="1850" Poststed="MYSEN" kommune="//@fylker.14/@kommuner.6"/>
+      <Kontaktperson Navn="Monica Marie-Louise Klaxman Lund" Rolle="Bedriftssykepleier/ verneingeni&#xf8;r" TelefonDir="95976360" TelefonMob="95976360" Epostadresse="marie-louise.lund@eidsberg.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2010-12-30T14:05:09.037+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983974724" Navn="HELSE BERGEN HF">
+    <Kontaktinformasjon Telefon="55973850" EpostAdresse="trude.duelien.skorge@helse-bergen.no" InternettAdresse="http://www.helse-bergen.no/">
+      <Postadresse Adresse="Jonas Lies vei 65" Postnr="5021" Poststed="BERGEN" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Trude Duelien Skorge" Rolle="Bedriftslege" TelefonDir="90957577" TelefonMob="90957577" Epostadresse="trude.duelien.skorge@helse-bergen.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-01-28T10:41:59.963+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="989930427" Navn="FALCK HELSE AS">
+    <Kontaktinformasjon Telefon="38021700" EpostAdresse="post@falckhelse.no" InternettAdresse="http://www.falckhelse.no">
+      <Postadresse Adresse="Skib&#xe5;sen 42A" Postnr="4636" Poststed="Kristiansand" kommune="//@fylker.10/@kommuner.0"/>
+      <Kontaktperson Navn="Ole Kristian Lauvland" Rolle="Daglig leder bedriftshelsetjenesten" TelefonDir="95871659" TelefonMob="95871659" Epostadresse="ole.kristian.lauvland@falckhelse.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Falck Helse Bedriftshelsetjeneste, Oslo" Avdelingsleder="Birgitte Brynhildsen" Telefon="90885322">
+      <Postadresse Adresse="Maridalsveien 300" Postnr="0872" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Falck Helse Bedriftshelsetjeneste, S&#xf8;rlandet inkl. Vennesla og Arendal" Avdelingsleder="Daglig leder Ole Kristian Lauvland" Telefon="95871659">
+      <Postadresse Adresse="Skib&#xe5;sen 42A" Postnr="4636" Poststed="Kristiansand" kommune="//@fylker.10/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-02-09T12:25:38.207+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974644002" Navn="Bedriftshelsetjenesten i Skien kommune">
+    <Kontaktinformasjon Telefon="35581523" EpostAdresse="bht@skien.kommune.no" InternettAdresse="http://www.bhtskien.no">
+      <Postadresse Adresse="Torggt. 10. 5 etg" Postnr="3724" Poststed="Skien" kommune="//@fylker.3/@kommuner.4"/>
+      <Kontaktperson Navn="Tone Matre Roe" Rolle="Virksomhetsleder" TelefonDir="35581523" TelefonMob="48001188" Epostadresse="tone.matre.roe@skien.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-02-24T10:34:08.033+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="991442847" Navn="E2 HELSE AS">
+    <Kontaktinformasjon Telefon="47876500" EpostAdresse="helse@e2.no" InternettAdresse="http://www.e2helse.no">
+      <Postadresse Adresse="c/o Komplett Arena" Postnr="3221" Poststed="SANDEFJORD" kommune="//@fylker.2/@kommuner.1"/>
+      <Kontaktperson Navn="Andreas Bj&#xf8;rang" Rolle="Daglig Leder" TelefonDir="98831937" TelefonMob="98831937" Epostadresse="ab@e2.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-03-04T03:27:31.500+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983974732" Navn="HELSE F&#xd8;RDE HF">
+    <Kontaktinformasjon Telefon="57 83 90 00" EpostAdresse="post@helse-forde.no" InternettAdresse="http://www.helse-forde.no/">
+      <Postadresse Adresse="Svanehaugvegen 2" Postnr="6812" Poststed="F&#xd8;RDE" kommune="//@fylker.17/@kommuner.1"/>
+      <Kontaktperson Navn="Arve Varden" Rolle="administrerende direkt&#xf8;r" TelefonDir="57839020" TelefonMob="99219352" Epostadresse="kristine.skudal.senneset@helse-forde.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-03-08T10:51:10.933+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="993758175" Navn="HMS365 AS">
+    <Kontaktinformasjon Telefon="93011000" EpostAdresse="geir-arne@hms365.no" InternettAdresse="http://www.hms365.no">
+      <Postadresse Adresse="&#xc5;na-Sira veien 12" Postnr="4380" Poststed="HAUGE I DALANE" kommune="//@fylker.6/@kommuner.12"/>
+      <Kontaktperson Navn="Geir Arne Berg" Rolle="Daglig leder" TelefonDir="93011000" TelefonMob="93011000" Epostadresse="geir-arne@hms365.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-07-13T12:13:01.193+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="963052944" Navn="TECHNIP NORGE AS">
+    <Kontaktinformasjon Telefon="67202444" EpostAdresse="Morten.hinna@technip.com" InternettAdresse="http://">
+      <Postadresse Adresse="Moseidsletta 122 P.O. Box 265 Forus" Postnr="4065" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Morten Hinna" Rolle="Kontaktperson" TelefonDir="67202578" TelefonMob="48003980" Epostadresse="Morten.hinna@technip.com"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Stavanger" Avdelingsleder="Jan-Erik Olssoen" Telefon="67202452">
+      <Postadresse Adresse="Moseidsletta 122 P.O. 130 Forus" Postnr="4065" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+    </Avdelinger>
+    <Avdelinger Navn="Haugesund" Avdelingsleder="Magnus Grutle" Telefon="67202596">
+      <Postadresse Adresse="P.O. Box 1342" Postnr="5507" Poststed="Haugesund" kommune="//@fylker.6/@kommuner.6"/>
+    </Avdelinger>
+    <Avdelinger Navn="Orkanger" Avdelingsleder="Tore H&#xe5;brekke" Telefon="67588688">
+      <Postadresse Adresse="Gr&#xf8;n&#xf8;ra Industriomr&#xe5;de" Postnr="7300" Poststed="Orkanger" kommune="//@fylker.1/@kommuner.3"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-11-18T01:00:46.997+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="948138646" Navn="Health Service (HS) ConocoPhillips Norway">
+    <Kontaktinformasjon Telefon="+47 52 02 12 00 " EpostAdresse="tatjanab.bergsland@conocophillips.com" InternettAdresse="http://">
+      <Postadresse Adresse="Ekofiskveien 35" Postnr="4056" Poststed="Tananger" kommune="//@fylker.6/@kommuner.0"/>
+      <Kontaktperson Navn="Tatjana Birgitte Bergsland" Rolle="Regional Medical Director (RMD)" TelefonDir="+47 52 02 12 20" TelefonMob="+ 47 41 27 31 89" Epostadresse="tatjanab.bergsland@conocophillips.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2011-12-06T09:55:34.670+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="997005562" Navn="HELSE M&#xd8;RE OG ROMSDAL HF">
+    <Kontaktinformasjon Telefon="70 10 64 65" InternettAdresse="http://">
+      <Postadresse Adresse="&#xc5;sehaugen 1" Postnr="6017" Poststed="&#xc5;LESUND" kommune="//@fylker.12/@kommuner.2"/>
+      <Kontaktperson Navn="Thomas Ellingsen" Rolle="seksjonsleder" TelefonDir="70106465" Epostadresse="Thomas.Ellingsen@helse-mr.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2012-11-05T08:58:04.583+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="892232032" Navn="Frisk3 Bedriftshelsetjeneste">
+    <Kontaktinformasjon Telefon="75113555" EpostAdresse="bht@frisk3.no" InternettAdresse="http:///www.facebook.com/frisk3bht/">
+      <Postadresse Adresse="Chr Quales gate 19" Postnr="8657" Poststed="Mosj&#xf8;en" kommune="//@fylker.4/@kommuner.8"/>
+      <Kontaktperson Navn="Ingrid Bj&#xf8;rnli" Rolle="Leder/HMS-r&#xe5;dgiver" TelefonDir="48044835" TelefonMob="48044835" Epostadresse="ingrid@frisk3.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2012-11-14T10:33:03.360+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="998378095" Navn="OSLO BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="21456700" EpostAdresse="kundeservice@oslobht.no" InternettAdresse="http://www.oslobht.no">
+      <Postadresse Adresse="Stenersgata 1" Postnr="0050" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Patrick Wullum" Rolle="Daglig leder" TelefonDir="91558596" TelefonMob="91558596" Epostadresse="patrick@oslobht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2012-11-23T10:28:04.137+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="911556898" Navn="Bedriftshelse Nord AS">
+    <Kontaktinformasjon Telefon="77852550" EpostAdresse="post@bedriftshelsenord.no" InternettAdresse="http://bedriftshelsenord.no">
+      <Postadresse Adresse="Postboks 255" Postnr="9305" Poststed="Finnsnes" kommune="//@fylker.9/@kommuner.4"/>
+      <Kontaktperson Navn="Tor-Villy Markussen" Rolle="Daglig leder/verneingeni&#xf8;r" TelefonDir="77852550" TelefonMob="48147420" Epostadresse="tor-villy@bedriftshelsenord.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Bedriftshelse Nord AS Bardufoss" Avdelingsleder="Tor-Villy Markussen" Telefon="77830990">
+      <Postadresse Adresse="Postboks 1244" Postnr="9326" Poststed="Bardufoss" kommune="//@fylker.9/@kommuner.5"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2013-03-11T09:00:24.330+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="996671038" Navn="LEGEVAKT VEST AS">
+    <Kontaktinformasjon Telefon="23 25 11 11" EpostAdresse="grybrusevold@legevaktvest.no" InternettAdresse="http://www.legevaktvest.no">
+      <Postadresse Adresse="Silurveien 2" Postnr="0380" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Gry Brusevold" Rolle="Lege" TelefonDir="23251111" Epostadresse="grybrusevold@legevaktvest.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2013-03-14T10:25:03.853+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="983974899" Navn="Bedriftshelsetjenesten UNN HF">
+    <Kontaktinformasjon Telefon="776 27720" EpostAdresse="bedriftshelsetjenesten@unn.no" InternettAdresse="http://">
+      <Postadresse Adresse="Universitetssykehuset Nord-Norge pb. 48" Postnr="9038" Poststed="Troms&#xf8;" kommune="//@fylker.9/@kommuner.0"/>
+      <Kontaktperson Navn="Paul Martin Hansen" Rolle="Seksjonsleder BHT" TelefonDir="776 27030" TelefonMob="40021998" Epostadresse="paul.martin.hansen@unn.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2013-03-22T15:22:44.053+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="999639577" Navn="BHT Bergen AS">
+    <Kontaktinformasjon Telefon="952 00 208" EpostAdresse="kontakt@bhtbergen.no" InternettAdresse="http://bhtbergen.no">
+      <Postadresse Adresse="Laguneveien 9" Postnr="5239" Poststed="R&#xe5;dal" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="Steinar Forshei" Rolle="Daglig leder" TelefonDir="952 00 208" TelefonMob="952 00 208" Epostadresse="kontakt@bhtbergen.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2013-04-11T11:53:41.000+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974761343" Navn="Bedriftshelsetjenesten i Tolldirektoratet">
+    <Kontaktinformasjon Telefon="22860810" EpostAdresse="katrine.ekker@toll.no" InternettAdresse="http://">
+      <Postadresse Adresse="Bedriftshelsetjenesten i Tolldirektoratet, Postboks 2103, Vika" Postnr="0125" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Katrine Ekker" Rolle="Bedriftsfysioterapeut" TelefonDir="22860815" Epostadresse="katrine.ekker@toll.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2013-08-06T10:02:40.910+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="997477286" Navn="Trygg 1 AS">
+    <Kontaktinformasjon Telefon="31011980" EpostAdresse="post@trygg1.no" InternettAdresse="http://trygg1.no">
+      <Postadresse Adresse="c/o Synergi Helse Sognsveien 75 B" Postnr="0855" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Anne Marie Besseberg" Rolle="Daglig Leder" TelefonDir="31011980" TelefonMob="90724962" Epostadresse="anne.marie@synergihelse.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2014-10-23T10:50:14.037+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="911885360" Navn="VITA MEDICA BEDRIFTSHELSETJENESTE">
+    <Kontaktinformasjon Telefon="90784710" EpostAdresse="post@vitamedica.no" InternettAdresse="http://vitamedica.no">
+      <Postadresse Adresse="Bogstadveien 27B" Postnr="0355" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Jannicke Mohrsen" Rolle="Daglig leder/HMS-r&#xe5;dgiver" TelefonDir="90784710" TelefonMob="90784710" Epostadresse="jannicke.mohrsen@vitamedica.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-02-02T09:45:13.093+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="976973429" Navn="FREDRIKSTAD KOMMUNE SEKSJON FOR &#xd8;KONOMI OG ORGANISASJONSUTVIKLING - HMS-AVDELINGEN/BEDRIFTSHELSETJENESTE">
+    <Kontaktinformasjon Telefon="69 30 60 00" EpostAdresse="postmottak@fredrikstad.kommune.no" InternettAdresse="http://www.fredrikstad.kommune.no">
+      <Postadresse Adresse="Nygaardsgata 16" Postnr="1606" Poststed="FREDRIKSTAD" kommune="//@fylker.14/@kommuner.4"/>
+      <Kontaktperson Navn="Rune Imrik" Rolle="BHT-leder" TelefonDir="69306237" TelefonMob="48087292" Epostadresse="ruim@fredrikstad.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-03-20T10:25:37.010+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="992804440" Navn="MESTA AS, Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="05200" EpostAdresse="firmapost@mesta.no" InternettAdresse="http://www.mesta.no">
+      <Postadresse Adresse="Strandveien 15, Postboks 253" Postnr="1326" Poststed="LYSAKER" kommune="//@fylker.11/@kommuner.0"/>
+      <Kontaktperson Navn="Margun Dahle" Rolle="Leder BHT" TelefonDir="48024894" TelefonMob="48024894" Epostadresse="margun.dahle@mesta.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-04-30T15:29:39.527+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="964965226" Navn="STAVANGER KOMMUNE">
+    <Kontaktinformasjon Telefon="04005" EpostAdresse="bedriftshelstjeneste@stavanger.kommune.no" InternettAdresse="http://www.stavanger.kommune.no/">
+      <Postadresse Adresse="Arne Rettedalsgate 12" Postnr="4008" Poststed="STAVANGER" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Eivor Iversen B&#xf8;" Rolle="Konstituert HMS-sjef" TelefonDir="51507748" TelefonMob="47011346" Epostadresse="eivor.iversen.bo@stavanger.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-05-26T12:43:19.627+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="993787787" Navn="Repsol Norge AS">
+    <Kontaktinformasjon Telefon="52001627" EpostAdresse="ilerstoel@repsol.com" InternettAdresse="http://www.repsol.com">
+      <Postadresse Adresse="Verven 4" Postnr="4003" Poststed="Stavanger" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Ingeborg Lerst&#xf8;l" TelefonDir="52002000" Epostadresse="ilerstoel@repsol.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-09-10T10:55:54.680+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="977368448" Navn="TRANSOCEAN OFFSHORE, BHT">
+    <Kontaktinformasjon Telefon="51 50 43 00" InternettAdresse="http://transocean.com">
+      <Postadresse Adresse="Maskinveien 26" Postnr="4033" Poststed="STAVANGER" kommune="//@fylker.6/@kommuner.5"/>
+      <Kontaktperson Navn="Cato Svindland" Rolle="daglig leder" TelefonDir="51504401" TelefonMob="90836524" Epostadresse="cato.svindland@deepwater.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-11-11T09:07:03.237+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="915702007" Navn="SPIR HELSE AS">
+    <Kontaktinformasjon Telefon="48 50 88 11" EpostAdresse="post@spirhelse.no" InternettAdresse="http://www.spirhelse.no">
+      <Postadresse Adresse="Langgata 59" Postnr="4306" Poststed="SANDNES" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="Elisabeth Heigre" Rolle="Daglig leder, HMS- r&#xe5;dgiver/ fysioterapeut" TelefonDir="928 06 182" TelefonMob="928 06 182" Epostadresse="elisabeth@spirhelse.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2015-12-09T11:39:27.810+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="910747711" Navn="ORKLA ASA">
+    <Kontaktinformasjon Telefon="22 54 40 00" EpostAdresse="kristian.vetlesen@orkla.no" InternettAdresse="http://">
+      <Postadresse Adresse="Nedre Sk&#xf8;yen vei 26" Postnr="0276" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Inger Johanne Eikeland" Rolle="HMS direkt&#xf8;r" TelefonMob="91308749" Epostadresse="inger.johanne.eikeland@orkla.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2016-02-24T12:16:48.590+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="817313612" Navn="HMS Nord-Salten AS">
+    <Kontaktinformasjon Telefon="97617377" EpostAdresse="miriam.paulsen@gmail.com" InternettAdresse="http://">
+      <Postadresse Adresse="Hamnbakken" Postnr="8270" Poststed="DRAG" kommune="//@fylker.4/@kommuner.1"/>
+      <Kontaktperson Navn="Miriam Paulsen" Rolle="Daglig leder" TelefonDir="97617377" TelefonMob="97617377"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2016-08-10T10:03:10.347+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="917576645" Navn="SALUTIS HMS AS">
+    <Kontaktinformasjon Telefon="62575700" EpostAdresse="post@salutis.no" InternettAdresse="http://www.salutis.no">
+      <Postadresse Adresse="Gjerluvegen 2" Postnr="2320" Poststed="FURNES" kommune="//@fylker.5/@kommuner.4"/>
+      <Kontaktperson Navn="Trond Gr&#xf8;nvold" Rolle="Daglig leder" TelefonDir="99586717" TelefonMob="99586717" Epostadresse="trond.gronvold@salutis.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Salutis HMS AS Avd Hovedkontor" Avdelingsleder="Trond Gr&#xf8;nvold" Telefon="62575700">
+      <Postadresse Adresse="Gjerluvegen" Postnr="2320" Poststed="Furnes" kommune="//@fylker.5/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd L&#xf8;renskog" Avdelingsleder="Elsie Kristina Kindberg" Telefon="62575700">
+      <Postadresse Adresse="Solheimveien 112" Postnr="1473" Poststed="L&#xf8;renskog" kommune="//@fylker.11/@kommuner.7"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd Kongsvinger" Avdelingsleder="Trond Gr&#xf8;nvold" Telefon="62575700">
+      <Postadresse Adresse="G&#xe5;gata 5" Postnr="2211" Poststed="Kongsvinger" kommune="//@fylker.5/@kommuner.2"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd Elverum" Avdelingsleder="Trond Gr&#xf8;nvold" Telefon="62575700">
+      <Postadresse Adresse="Kirkevegen 60" Postnr="2409" Poststed="Elverum" kommune="//@fylker.5/@kommuner.3"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd Gj&#xf8;vik" Avdelingsleder="Trond Gr&#xf8;nvold" Telefon="625757">
+      <Postadresse Adresse="Strandgata 30" Postnr="2821" Poststed="Gj&#xf8;vik" kommune="//@fylker.16/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd Bergen" Avdelingsleder="Gerd Grov Skutle" Telefon="62575700">
+      <Postadresse Adresse="Sandviksbodene 65 B" Postnr="5035" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd Mongstad" Avdelingsleder="Gerd Grov Skutle" Telefon="62575700">
+      <Postadresse Adresse="Mongstad S&#xf8;r" Postnr="5954" Poststed="Mongstad" kommune="//@fylker.7/@kommuner.8"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd &#xc5;gotnes" Avdelingsleder="Gerd Grov Skutle" Telefon="62575700">
+      <Postadresse Adresse="Kystbasen i &#xc5;gotnes" Postnr="5363" Poststed="&#xc5;gotnes" kommune="//@fylker.7/@kommuner.9"/>
+    </Avdelinger>
+    <Avdelinger Navn="Salutis HMS AS Avd Oslo" Avdelingsleder="Trond Gr&#xf8;nvold" Telefon="62575700">
+      <Postadresse Adresse="Grensen 18" Postnr="0159" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2016-09-22T10:02:02.783+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974553066" Navn="B&#xe6;rum kommune Bedriftshelsetjenesten">
+    <Kontaktinformasjon Telefon="67504050" EpostAdresse="bedriftshelsetjenesten@baerum.kommune.no" InternettAdresse="http://www.baerum.kommune.no/om-barum-kommune/organisasjon/organisasjon-og-utvikling/">
+      <Postadresse Adresse="R&#xe5;dhustorget 4" Postnr="1337" Poststed="SANDVIKA" kommune="//@fylker.11/@kommuner.0"/>
+      <Kontaktperson Navn="Robert Rustad" Rolle="BHT-sjef" TelefonDir="67503464" TelefonMob="90867986" Epostadresse="robert.rustad@baerum.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2016-09-23T09:57:15.883+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="980684997" Navn="OPPTRENINGSSENTERET I FINNMARK AS">
+    <Kontaktinformasjon Telefon="97600200" EpostAdresse="post@oif.no" InternettAdresse="http://www.oif.no">
+      <Postadresse Adresse="Follumsvei 1" Postnr="9510" Poststed="ALTA" kommune="//@fylker.15/@kommuner.0"/>
+      <Kontaktperson Navn="Annie Abrahamsen Wik" Rolle="Direkt&#xf8;r" TelefonDir="95969547" TelefonMob="95969547" Epostadresse="Annie.Wik@oif.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2017-02-17T16:19:57.057+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="918708677" Navn="ARBEIDSMILJ&#xd8;HUSET">
+    <Kontaktinformasjon Telefon="95960454" EpostAdresse="post@amhuset.no" InternettAdresse="http://www.amhuset.no">
+      <Postadresse Adresse="Sognsveien 75 F" Postnr="0855" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Pernille Tandberg" Rolle="Daglig leder" TelefonDir="95960454" TelefonMob="95960454" Epostadresse="pernille@amhuset.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2017-03-17T09:26:12.343+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="912762203" Navn="FRAMO AS">
+    <Kontaktinformasjon Telefon="55559900" EpostAdresse="akj@framo.no" InternettAdresse="http://framo.com">
+      <Postadresse Adresse="Florv&#xe5;gvegen 39" Postnr="5329" Poststed="Florv&#xe5;g" kommune="//@fylker.7/@kommuner.10"/>
+      <Kontaktperson Navn="Sameer Kalra" Rolle="Managing director" TelefonDir="55999000" TelefonMob="92065420" Epostadresse="sak@framo.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2017-03-30T10:05:50.300+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="939048960" Navn="SPORTS-MEDISINSKE PRODUKTER NORGE">
+    <Kontaktinformasjon Telefon="069154633" InternettAdresse="http://sportsclubsarpsborg.no">
+      <Postadresse Adresse="St Marieg 42" Postnr="1706" Poststed="SARPSBORG" kommune="//@fylker.14/@kommuner.2"/>
+      <Kontaktperson Navn="Joachim Tangen" Rolle="daglig leder" TelefonDir="91 30 38 88" TelefonMob="91 30 38 88" Epostadresse="joachim@sportsclubsarpsborg.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2017-06-16T11:52:39.143+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="895176842" Navn="VITALISKLINIKKEN AS">
+    <Kontaktinformasjon Telefon="77030005" EpostAdresse="vitalis-bht@vitalisklinikken.no" InternettAdresse="http://vitalisklinikken.no">
+      <Postadresse Adresse="R&#xf8;dbergveien 6" Postnr="9408" Poststed="Harstad" kommune="//@fylker.9/@kommuner.3"/>
+      <Kontaktperson Navn="Merete Halseb&#xf8;" Rolle="Daglig leder" TelefonDir="41659514" TelefonMob="41659514" Epostadresse="merete@vitalisklinikken.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-01-02T09:09:17.463+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="920312306" Navn="GRENLAND BEDRIFTSHELSETJENESTE AS">
+    <Kontaktinformasjon Telefon="35551100" EpostAdresse="post@grenlandbht.no" InternettAdresse="http://">
+      <Postadresse Adresse="Gamle Breviksveg 110" Postnr="3940" Poststed="PORSGRUNN" kommune="//@fylker.3/@kommuner.0"/>
+      <Kontaktperson Navn="Kjersti Moen" Rolle="Daglig leder" TelefonDir="35551100" TelefonMob="91168668" Epostadresse="kjersti@grenlandbht.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-02-07T13:52:13.737+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="920334105" Navn="VESTER&#xc5;LEN HMS AS">
+    <Kontaktinformasjon Telefon="94085778" EpostAdresse="john@vhms.no" InternettAdresse="http://vhms.no">
+      <Postadresse Adresse="Kj&#xf8;pmannsgata 10" Postnr="8400" Poststed="SORTLAND" kommune="//@fylker.4/@kommuner.12"/>
+      <Kontaktperson Navn="John Christian Bech" Rolle="Daglig leder/r&#xe5;dgiver" TelefonDir="94085778" TelefonMob="94085778" Epostadresse="john@vhms.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-03-05T14:52:15.473+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="921070365" Navn="BRA! Astero Bedriftstjenester">
+    <Kontaktinformasjon Telefon="99690994" EpostAdresse="janne@astero.no" InternettAdresse="http://astero.no">
+      <Postadresse Adresse="Marsveien 4" Postnr="6419" Poststed="Molde" kommune="//@fylker.12/@kommuner.7"/>
+      <Kontaktperson Navn="Janne Hammer&#xf8;" Rolle="Leder BHT" TelefonDir="99690997" TelefonMob="99690997" Epostadresse="janne@braastero.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-05-04T13:40:18.230+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="974566176" Navn="Troms&#xf8; kommune, Arbeidsmilj&#xf8;tjenesten">
+    <Kontaktinformasjon Telefon="77 79 00 00" EpostAdresse="arbeidsmiljotjenesten@tromso.kommune.no" InternettAdresse="http://">
+      <Postadresse Adresse="Skippergata 1c" Postnr="9008" Poststed="TROMS&#xd8;" kommune="//@fylker.9/@kommuner.0"/>
+      <Kontaktperson Navn="Siv Grethe Jenssen" Rolle="Konstituert enhetsleder" TelefonDir="95880811" TelefonMob="95880811" Epostadresse="Siv.jenssen@tromso.kommune.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-05-09T10:39:00.473+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="991977392" Navn="A2G KOMPETANSE AS">
+    <Kontaktinformasjon Telefon="55536700" EpostAdresse="post@dinjobbhelse.no" InternettAdresse="http://dinjobbhelse.no/">
+      <Postadresse Adresse="Postboks 173" Postnr="5876" Poststed="Bergen" kommune="//@fylker.7/@kommuner.1"/>
+      <Kontaktperson Navn="&#xd8;yvind Bratshaug" Rolle="Daglig leder" TelefonDir="96917496" TelefonMob="96917496" Epostadresse="oyvind.bratshaug@a2g.no"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-05-15T11:55:36.623+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="912015106" Navn="INTERNATIONAL SOS (MEDSITE) AS">
+    <Kontaktinformasjon Telefon="004790616191" EpostAdresse="knut.grove@internationalsos.com" InternettAdresse="http://www.internationalsos.no">
+      <Postadresse Adresse="Longhammarvegen 7" Postnr="5536" Poststed="HAUGESUND" kommune="//@fylker.6/@kommuner.6"/>
+      <Kontaktperson Navn="Lars Olav Matre" Rolle="Country Manager Norway" TelefonDir="+47 905 08 502" TelefonMob="+47 905 08 502" Epostadresse="lars.matre@internationalsos.com"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="International SOS Bergen" Avdelingsleder="Lars Olav Matre" Telefon="+47 905 08 502">
+      <Postadresse Adresse="Kokstadflaten 31" Postnr="5257" Poststed="Kokstad" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="International SOS Stavanger" Avdelingsleder="Lars Olav Matre" Telefon="+47 905 08 502">
+      <Postadresse Adresse="Vassbotnen 15" Postnr="4313" Poststed="Sandnes" kommune="//@fylker.6/@kommuner.4"/>
+    </Avdelinger>
+    <Avdelinger Navn="International SOS Haugesund" Avdelingsleder="Lars Olav Matre" Telefon="+47 905 08 502">
+      <Postadresse Adresse="Longhammarvegen 7" Postnr="5536" Poststed="Haugesund" kommune="//@fylker.6/@kommuner.6"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-06-06T11:41:15.253+0200"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="982214394" Navn="VOLVAT BEDRIFT AS">
+    <Kontaktinformasjon Telefon="92042295" EpostAdresse="are@volvat.no" InternettAdresse="http://www.volvat.no">
+      <Postadresse Adresse="c/o &#xd8;k.avd Volvat Medisinske Senter" Postnr="0370" Poststed="OSLO" kommune="//@fylker.0/@kommuner.0"/>
+      <Kontaktperson Navn="Are Martin Kongest&#xf8;l" Rolle="Daglig Leder" TelefonDir="55112055" TelefonMob="92042295" Epostadresse="are@volvat.no"/>
+    </Kontaktinformasjon>
+    <Avdelinger Navn="Volvat Bedrift Bergen/ &#xc5;sane" Avdelingsleder="Are Martin Kongest&#xf8;l" Telefon="92042295">
+      <Postadresse Adresse="Laguneveien 9" Postnr="5239" Poststed="R&#xe5;dal" kommune="//@fylker.7/@kommuner.1"/>
+    </Avdelinger>
+    <Avdelinger Navn="Volvat Bedrift Oslo" Avdelingsleder="Are Martin Kongest&#xf8;l" Telefon="92042295">
+      <Postadresse Adresse="Borgenveien 2A" Postnr="0370" Poststed="Oslo" kommune="//@fylker.0/@kommuner.0"/>
+    </Avdelinger>
+    <Avdelinger Navn="Volvat Bedrift Fredrikstad" Avdelingsleder="Are Martin Kongest&#xf8;l" Telefon="92042295">
+      <Postadresse Adresse="Jens Wilhelmsens gate 1" Postnr="1671" Poststed="Kr&#xe5;ker&#xf8;y" kommune="//@fylker.14/@kommuner.4"/>
+    </Avdelinger>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2018-12-12T09:53:51.807+0100"/>
+  </bedriftshelsetjenester>
+  <bedriftshelsetjenester Orgnr="922837155" Navn="MOSAIC MEDICAL AS">
+    <Kontaktinformasjon Telefon="52055228" InternettAdresse="http://mosaicmedical.no">
+      <Postadresse Adresse="Vestre Svanholmen 14" Postnr="4313" Poststed="SANDNES" kommune="//@fylker.6/@kommuner.4"/>
+      <Kontaktperson Navn="Gunnar Lea" Rolle="Medisinsk ansvarlig" TelefonDir="90887962" TelefonMob="90887962" Epostadresse="gunnar.lea@gmail.com"/>
+    </Kontaktinformasjon>
+    <Godkjenningsstatus Status="Godkjent" Soeknadsdato="2019-08-06T14:29:47.803+0200"/>
+  </bedriftshelsetjenester>
+  <fylker Fylkenr="3" Fylkenavn="Oslo">
+    <kommuner Kommunenr="301" Kommunenavn="Oslo" fylke="//@fylker.0"/>
+  </fylker>
+  <fylker Fylkenr="50" Fylkenavn="Tr&#xf8;ndelag">
+    <kommuner Kommunenr="5001" Kommunenavn="Trondheim" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5038" Kommunenavn="Verdal" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5004" Kommunenavn="Steinkjer" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5024" Kommunenavn="Orkdal" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5021" Kommunenavn="Oppdal" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5011" Kommunenavn="Hemne" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5005" Kommunenavn="Namsos" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5054" Kommunenavn="Indre fosen" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5015" Kommunenavn="&#xd8;rland" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5035" Kommunenavn="Stj&#xf8;rdal" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5034" Kommunenavn="Mer&#xe5;ker" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5032" Kommunenavn="Selbu" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5037" Kommunenavn="Levanger" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5045" Kommunenavn="Grong" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5051" Kommunenavn="N&#xe6;r&#xf8;y" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5039" Kommunenavn="Verran" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5014" Kommunenavn="Fr&#xf8;ya" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5027" Kommunenavn="Midtre gauldal" fylke="//@fylker.1"/>
+    <kommuner Kommunenr="5028" Kommunenavn="Melhus" fylke="//@fylker.1"/>
+  </fylker>
+  <fylker Fylkenr="7" Fylkenavn="Vestfold">
+    <kommuner Kommunenr="712" Kommunenavn="Larvik" fylke="//@fylker.2"/>
+    <kommuner Kommunenr="710" Kommunenavn="Sandefjord" fylke="//@fylker.2"/>
+    <kommuner Kommunenr="715" Kommunenavn="Holmestrand" fylke="//@fylker.2"/>
+    <kommuner Kommunenr="704" Kommunenavn="T&#xf8;nsberg" fylke="//@fylker.2"/>
+    <kommuner Kommunenr="701" Kommunenavn="Horten" fylke="//@fylker.2"/>
+  </fylker>
+  <fylker Fylkenr="8" Fylkenavn="Telemark">
+    <kommuner Kommunenr="805" Kommunenavn="Porsgrunn" fylke="//@fylker.3"/>
+    <kommuner Kommunenr="814" Kommunenavn="Bamble" fylke="//@fylker.3"/>
+    <kommuner Kommunenr="821" Kommunenavn="B&#xf8; (telemark)" fylke="//@fylker.3"/>
+    <kommuner Kommunenr="833" Kommunenavn="Tokke" fylke="//@fylker.3"/>
+    <kommuner Kommunenr="806" Kommunenavn="Skien" fylke="//@fylker.3"/>
+    <kommuner Kommunenr="826" Kommunenavn="Tinn" fylke="//@fylker.3"/>
+    <kommuner Kommunenr="815" Kommunenavn="Krager&#xf8;" fylke="//@fylker.3"/>
+  </fylker>
+  <fylker Fylkenr="18" Fylkenavn="Nordland">
+    <kommuner Kommunenr="1833" Kommunenavn="Rana" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1850" Kommunenavn="Tysfjord" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1860" Kommunenavn="Vestv&#xe5;g&#xf8;y" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1805" Kommunenavn="Narvik" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1804" Kommunenavn="Bod&#xf8;" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1837" Kommunenavn="Mel&#xf8;y" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1840" Kommunenavn="Saltdal" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1865" Kommunenavn="V&#xe5;gan" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1824" Kommunenavn="Vefsn" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1820" Kommunenavn="Alstahaug" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1841" Kommunenavn="Fauske" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1813" Kommunenavn="Br&#xf8;nn&#xf8;y" fylke="//@fylker.4"/>
+    <kommuner Kommunenr="1870" Kommunenavn="Sortland" fylke="//@fylker.4"/>
+  </fylker>
+  <fylker Fylkenr="4" Fylkenavn="Hedmark">
+    <kommuner Kommunenr="403" Kommunenavn="Hamar" fylke="//@fylker.5"/>
+    <kommuner Kommunenr="437" Kommunenavn="Tynset" fylke="//@fylker.5"/>
+    <kommuner Kommunenr="402" Kommunenavn="Kongsvinger" fylke="//@fylker.5"/>
+    <kommuner Kommunenr="427" Kommunenavn="Elverum" fylke="//@fylker.5"/>
+    <kommuner Kommunenr="412" Kommunenavn="Ringsaker" fylke="//@fylker.5"/>
+  </fylker>
+  <fylker Fylkenr="11" Fylkenavn="Rogaland">
+    <kommuner Kommunenr="1124" Kommunenavn="Sola" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1119" Kommunenavn="H&#xe5;" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1120" Kommunenavn="Klepp" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1101" Kommunenavn="Eigersund" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1102" Kommunenavn="Sandnes" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1103" Kommunenavn="Stavanger" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1106" Kommunenavn="Haugesund" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1130" Kommunenavn="Strand" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1121" Kommunenavn="Time" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1149" Kommunenavn="Karm&#xf8;y" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1134" Kommunenavn="Suldal" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1135" Kommunenavn="Sauda" fylke="//@fylker.6"/>
+    <kommuner Kommunenr="1111" Kommunenavn="Sokndal" fylke="//@fylker.6"/>
+  </fylker>
+  <fylker Fylkenr="12" Fylkenavn="Hordaland">
+    <kommuner Kommunenr="1243" Kommunenavn="Os (hordaland)" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1201" Kommunenavn="Bergen" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1219" Kommunenavn="B&#xf8;mlo" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1221" Kommunenavn="Stord" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1224" Kommunenavn="Kvinnherad" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1235" Kommunenavn="Voss" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1228" Kommunenavn="Odda" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1238" Kommunenavn="Kvam" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1263" Kommunenavn="Lind&#xe5;s" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1246" Kommunenavn="Fjell" fylke="//@fylker.7"/>
+    <kommuner Kommunenr="1247" Kommunenavn="Ask&#xf8;y" fylke="//@fylker.7"/>
+  </fylker>
+  <fylker Fylkenr="6" Fylkenavn="Buskerud">
+    <kommuner Kommunenr="624" Kommunenavn="&#xd8;vre eiker" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="623" Kommunenavn="Modum" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="621" Kommunenavn="Sigdal" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="622" Kommunenavn="Kr&#xf8;dsherad" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="602" Kommunenavn="Drammen" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="604" Kommunenavn="Kongsberg" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="605" Kommunenavn="Ringerike" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="626" Kommunenavn="Lier" fylke="//@fylker.8"/>
+    <kommuner Kommunenr="619" Kommunenavn="&#xc5;l" fylke="//@fylker.8"/>
+  </fylker>
+  <fylker Fylkenr="19" Fylkenavn="Troms">
+    <kommuner Kommunenr="1902" Kommunenavn="Troms&#xf8;" fylke="//@fylker.9"/>
+    <kommuner Kommunenr="1942" Kommunenavn="Nordreisa" fylke="//@fylker.9"/>
+    <kommuner Kommunenr="1939" Kommunenavn="Storfjord" fylke="//@fylker.9"/>
+    <kommuner Kommunenr="1903" Kommunenavn="Harstad" fylke="//@fylker.9"/>
+    <kommuner Kommunenr="1931" Kommunenavn="Lenvik" fylke="//@fylker.9"/>
+    <kommuner Kommunenr="1924" Kommunenavn="M&#xe5;lselv" fylke="//@fylker.9"/>
+  </fylker>
+  <fylker Fylkenr="10" Fylkenavn="Vest-Agder">
+    <kommuner Kommunenr="1001" Kommunenavn="Kristiansand" fylke="//@fylker.10"/>
+    <kommuner Kommunenr="1032" Kommunenavn="Lyngdal" fylke="//@fylker.10"/>
+    <kommuner Kommunenr="1018" Kommunenavn="S&#xf8;gne" fylke="//@fylker.10"/>
+    <kommuner Kommunenr="1004" Kommunenavn="Flekkefjord" fylke="//@fylker.10"/>
+    <kommuner Kommunenr="1003" Kommunenavn="Farsund" fylke="//@fylker.10"/>
+    <kommuner Kommunenr="1002" Kommunenavn="Mandal" fylke="//@fylker.10"/>
+    <kommuner Kommunenr="1029" Kommunenavn="Lindesnes" fylke="//@fylker.10"/>
+  </fylker>
+  <fylker Fylkenr="2" Fylkenavn="Akershus">
+    <kommuner Kommunenr="219" Kommunenavn="B&#xe6;rum" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="237" Kommunenavn="Eidsvoll" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="227" Kommunenavn="Fet" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="231" Kommunenavn="Skedsmo" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="214" Kommunenavn="&#xc5;s" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="235" Kommunenavn="Ullensaker" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="217" Kommunenavn="Oppeg&#xe5;rd" fylke="//@fylker.11"/>
+    <kommuner Kommunenr="230" Kommunenavn="L&#xf8;renskog" fylke="//@fylker.11"/>
+  </fylker>
+  <fylker Fylkenr="15" Fylkenavn="M&#xf8;re og Romsdal">
+    <kommuner Kommunenr="1563" Kommunenavn="Sunndal" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1505" Kommunenavn="Kristiansund" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1504" Kommunenavn="&#xc5;lesund" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1534" Kommunenavn="Haram" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1525" Kommunenavn="Stranda" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1520" Kommunenavn="&#xd8;rsta" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1532" Kommunenavn="Giske" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1502" Kommunenavn="Molde" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1539" Kommunenavn="Rauma" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1516" Kommunenavn="Ulstein" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1566" Kommunenavn="Surnadal" fylke="//@fylker.12"/>
+    <kommuner Kommunenr="1528" Kommunenavn="Sykkylven" fylke="//@fylker.12"/>
+  </fylker>
+  <fylker Fylkenr="9" Fylkenavn="Aust-Agder">
+    <kommuner Kommunenr="906" Kommunenavn="Arendal" fylke="//@fylker.13"/>
+    <kommuner Kommunenr="926" Kommunenavn="Lillesand" fylke="//@fylker.13"/>
+    <kommuner Kommunenr="937" Kommunenavn="Evje og hornnes" fylke="//@fylker.13"/>
+  </fylker>
+  <fylker Fylkenr="1" Fylkenavn="&#xd8;stfold">
+    <kommuner Kommunenr="101" Kommunenavn="Halden" fylke="//@fylker.14"/>
+    <kommuner Kommunenr="104" Kommunenavn="Moss" fylke="//@fylker.14"/>
+    <kommuner Kommunenr="105" Kommunenavn="Sarpsborg" fylke="//@fylker.14"/>
+    <kommuner Kommunenr="124" Kommunenavn="Askim" fylke="//@fylker.14"/>
+    <kommuner Kommunenr="106" Kommunenavn="Fredrikstad" fylke="//@fylker.14"/>
+    <kommuner Kommunenr="136" Kommunenavn="Rygge" fylke="//@fylker.14"/>
+    <kommuner Kommunenr="125" Kommunenavn="Eidsberg" fylke="//@fylker.14"/>
+  </fylker>
+  <fylker Fylkenr="20" Fylkenavn="Finnmark">
+    <kommuner Kommunenr="2012" Kommunenavn="Alta" fylke="//@fylker.15"/>
+    <kommuner Kommunenr="2030" Kommunenavn="S&#xf8;r-varanger" fylke="//@fylker.15"/>
+    <kommuner Kommunenr="2004" Kommunenavn="Hammerfest" fylke="//@fylker.15"/>
+    <kommuner Kommunenr="2028" Kommunenavn="B&#xe5;tsfjord" fylke="//@fylker.15"/>
+  </fylker>
+  <fylker Fylkenr="5" Fylkenavn="Oppland">
+    <kommuner Kommunenr="502" Kommunenavn="Gj&#xf8;vik" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="501" Kommunenavn="Lillehammer" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="517" Kommunenavn="Sel" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="520" Kommunenavn="Ringebu" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="534" Kommunenavn="Gran" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="541" Kommunenavn="Etnedal" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="529" Kommunenavn="Vestre toten" fylke="//@fylker.16"/>
+    <kommuner Kommunenr="542" Kommunenavn="Nord-aurdal" fylke="//@fylker.16"/>
+  </fylker>
+  <fylker Fylkenr="14" Fylkenavn="Sogn og Fjordane">
+    <kommuner Kommunenr="1424" Kommunenavn="&#xc5;rdal" fylke="//@fylker.17"/>
+    <kommuner Kommunenr="1432" Kommunenavn="F&#xf8;rde" fylke="//@fylker.17"/>
+    <kommuner Kommunenr="1420" Kommunenavn="Sogndal" fylke="//@fylker.17"/>
+    <kommuner Kommunenr="1401" Kommunenavn="Flora" fylke="//@fylker.17"/>
+    <kommuner Kommunenr="1443" Kommunenavn="Eid" fylke="//@fylker.17"/>
+    <kommuner Kommunenr="1439" Kommunenavn="V&#xe5;gs&#xf8;y" fylke="//@fylker.17"/>
+    <kommuner Kommunenr="1416" Kommunenavn="H&#xf8;yanger" fylke="//@fylker.17"/>
+  </fylker>
+</bedriftshelsetjenesten:UoD>

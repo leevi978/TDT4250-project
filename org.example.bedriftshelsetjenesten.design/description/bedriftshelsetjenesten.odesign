@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="bedriftshelsetjenesten" version="12.0.0.2017041100">
-  <ownedViewpoints name="UoD" modelFileExtension="bht2">
+  <ownedViewpoints name="UoD" modelFileExtension="bht">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="UoD diagram" domainClass="bedriftshelsetjenesten::UoD" enablePopupBars="true">
       <metamodel href="http://www.example.org/bedriftshelsetjenesten#/"/>
+      <layout xsi:type="description_1:OrderedTreeLayout"/>
       <defaultLayer name="Default">
         <nodeMappings name="FylkeNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteFylke']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editFylkenavn']" domainClass="bedriftshelsetjenesten::Fylke" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='kommuneFylke']">
           <borderedNodeMappings name="KommuneNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteKommune']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editKommunenavn']" semanticCandidatesExpression="feature:kommuner" domainClass="bedriftshelsetjenesten::Kommune" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='adresseKommune']">
@@ -39,22 +40,6 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="PostadresseKommuneEdge" preconditionExpression="aql:false" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']" targetFinderExpression="feature:kommune">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="AvdelingPostadresseEdge" sourceMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@borderedNodeMappings[name='AvdelingNode']/@borderedNodeMappings[name='AvdelingPostadresse'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']/@subContainerMappings[name='KontaktinformasjonContainer']/@borderedNodeMappings[name='KontaktinfoPostadresseNode']" targetMapping="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode'] //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode']" targetFinderExpression="aql:self">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
         <containerMappings name="BedriftshelsetjenesteContainer" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteBedriftshelsetjeneste']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editNavn']" domainClass="bedriftshelsetjenesten::Bedriftshelsetjeneste">
           <borderedNodeMappings name="AvdelingNode" semanticCandidatesExpression="feature:Avdelinger" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editAvdeling']" domainClass="bedriftshelsetjenesten::Avdeling">
             <borderedNodeMappings name="AvdelingPostadresse" preconditionExpression="aql:container.Postadresse&lt;>null" semanticCandidatesExpression="feature:Postadresse" doubleClickDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editPostadresse']" domainClass="bedriftshelsetjenesten::Postadresse">
@@ -320,7 +305,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setPostadresseKommune" edgeMappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@edgeMappings[name='PostadresseKommuneEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setPostadresseKommune">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -511,13 +496,13 @@
           </ownedTools>
         </toolSections>
         <customization>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Fylke).kommuner->size()>0">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@style" attributeName="height" value="aql:(self.kommuner->size() * 5) + (self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.fylke.Fylkenr = self.Fylkenr)->size() * 5) + 2"/>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@style" attributeName="height" value="aql:(self.kommuner->size()*2) + (self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.fylke.Fylkenr = self.Fylkenr)->size() * 5) + 2"/>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size()>1">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@style" attributeName="height" value="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size() * 5 + 1"/>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@style" attributeName="height" value="aql:self.eResource().getContents().eAllContents(bedriftshelsetjenesten::Postadresse)->select(p|p.kommune.Kommunenr = self.Kommunenr)->size() * 5+2"/>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Postadresse).Adresse.index(self.Adresse.last(1))>15">
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Postadresse).Adresse.index(self.Adresse.last(1))>1">
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']/@borderedNodeMappings[name='KommuneNode']/@borderedNodeMappings[name='PostadresseNode']/@style //@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='PostadresseWithoutKommuneNode']/@style" attributeName="width" value="aql:self.Adresse.index(self.Adresse.last(1)) + 2"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(bedriftshelsetjenesten::Godkjenningsstatus).Status='Godkjent'">
