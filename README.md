@@ -18,12 +18,14 @@ TODO: more stuff
     * bht
     * org.example.bedrifthelsetjenesten.design
     * org.example.bedrifthelsetjenesten.sample
-5. Navigate into bht -> src-gen -> main. Right-click MainProgram.java, 'Run As', 'Java Application' *
+5. Navigate into bht -> src-gen -> main. Right-click MainProgram.java, 'Run As', 'Java Application' [1]
 6. Click the 'org.example.bedrifthelsetjenesten.sample' folder and press F5 to refresh
-7. Right click 'My.bht', 'new', 'other...', 'Representations File'. Select 'Initalization from a semantic resource' and 'Finish'. Check the 'UoD' box and press 'OK'
+7. Right click 'My.bht', 'new', 'other...', 'Representations File'. Select 'Initalization from a semantic resource' and 'Finish'. Check the 'UoD' box and press 'OK' [2]
 8. Open my.aird, right-click 'UoD' under the 'Models' tab, 'New representation', 'new UoD diagram'
 
-#### * Unrecognized field
+### Troubleshooting
+
+#### [1] Unrecognized field
 If you get an error like 
 ```
 Unrecognized field "Søknadsdato"
@@ -34,3 +36,6 @@ If you open bht -> src-gen -> xmlparser -> Godkjenningstatus.java, on line 11 it
 @JsonProperty("Søknadsdato")
 ``` 
 which is what it says [on github](https://github.com/leevi978/TDT4250-project/blob/master/bht/src-gen/xmlparser/Godkjenningsstatus.java#L11), so if it does not say that when you open the file in Eclipse, just change the text to say "Søknadsdato" and it should work.
+
+#### [2] "New representation file" wizard does not complete properly
+If the wizard for adding a new representation file doesn't fully complete and doesn't open the window where you can check the 'UoD' box, you might have to install the 'Ecore Diagram Editor (SDK)' package. Click Help -> Install new software... select --All Available Sites-- and search for the package, select it and click finish and follow the instructions. You might have to delete the incomplete represenations file (default name 'My.aird'), which will give you some warnings, but you can safely ignore them and delete the file.
