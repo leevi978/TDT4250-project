@@ -20,32 +20,22 @@ public class MainProgram {
 		XmlMapper xmlMapper = new XmlMapper();
 		BedriftshelsetjenesteGodkjenningsregister b = xmlMapper.readValue(MainProgram.class.getResource("bht.xml"),BedriftshelsetjenesteGodkjenningsregister.class);
 		b.getBedriftshelsetjeneste();
-		System.out.println(b.getBedriftshelsetjeneste().get(0).getNavn());
 		UoD uod = XmlModelToEcoreModelConverter.convertToEcore(b);
-		uod.getFylker();
-		
+
 		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
-        Map<String, Object> m = reg.getExtensionToFactoryMap();
-        m.put("bht", new XMIResourceFactoryImpl());
+		Map<String, Object> m = reg.getExtensionToFactoryMap();
+		m.put("bht", new XMIResourceFactoryImpl());
 
-        // Obtain a new resource set
-        ResourceSet resSet = new ResourceSetImpl();
+		ResourceSet resSet = new ResourceSetImpl();
 
+		Resource resource = resSet.createResource(URI
+			.createURI("../org.example.bedriftshelsetjenesten.sample/My.bht"));
 
-        // create a resource
-        Resource resource = resSet.createResource(URI
-                .createURI("../org.example.bedriftshelsetjenesten.sample/My.bht"));
-        
-        XMLResource xmlr = (XMLResource)resource;
-        xmlr.setEncoding("utf-8");
-        
-        // Get the first model element and cast it to the right type, in my
-        // example everything is hierarchical included in this first node
-        xmlr.getContents().add(uod);
-
-        // now save the content.
-        xmlr.save(Collections.EMPTY_MAP);
-        
+		XMLResource xmlr = (XMLResource)resource;
+		xmlr.setEncoding("utf-8");
+		xmlr.getContents().add(uod);
+		xmlr.save(Collections.EMPTY_MAP);
+		System.out.println("File 'org.example.bedriftshelsetjenesten.sample/My.bht' created/updated");
 	}
 	
 	
