@@ -64,17 +64,9 @@ public abstract class XmlModelToEcoreModelConverter {
 							});
 					kommune.setFylke(fylke);
 					fylke.getKommuner().add(kommune);
-					System.out.println(fylke.getKommuner());
 					return kommune;
 				})
 				.collect(Collectors.toList());
-
-		/*fylker.forEach(f->f.getKommuner()
-				.addAll(kommuner.stream()
-						.filter(k->k.getFylke().equals(f))
-						.collect(Collectors.toList())
-						)
-				);*/
 		uod.getFylker().addAll(fylker);
 		uod.getFylker();
 	}
@@ -149,25 +141,6 @@ public abstract class XmlModelToEcoreModelConverter {
 			}else {
 				p.setKommune(factory.createKommune());
 			}
-			
-			
-			/*p.setKommune(uod.getFylker()
-					.stream()
-					.flatMap(f->f.getKommuner().stream())
-					.filter(
-							k->postadresse.getKommune()
-								.dataEquals(
-									k.getKommunenavn(),
-									k.getKommunenr(), 
-									k.getFylke().getFylkenavn(), 
-									k.getFylke().getFylkenr()
-									)
-							)
-					.findFirst()
-					.orElseGet(()->{
-						Kommune k = factory.createKommune();
-						return k;
-					}));*/
 		}
 		return p;
 	}
