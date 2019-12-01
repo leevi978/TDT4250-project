@@ -21,7 +21,6 @@ We added filters for each of the Fylke objects, so you can see just the data fro
 ![Vest-Agder view](https://imgur.com/U4CjQ3H.png)
 
 ## How to use
----
 1. Clone the repository using: git clone https://github.com/leevi978/TDT4250-project.git
 2. Create a blank workspace in eclipse
 3. Click 'file', 'Open projects from File System...', 'Import source:', 'Directory...'
