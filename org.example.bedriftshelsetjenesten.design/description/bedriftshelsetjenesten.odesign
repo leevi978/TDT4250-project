@@ -1,8 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="bedriftshelsetjenesten" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="bedriftshelsetjenesten" version="12.0.0.2017041100">
   <ownedViewpoints name="UoD" modelFileExtension="bht">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="UoD diagram" domainClass="bedriftshelsetjenesten::UoD" enablePopupBars="true">
       <metamodel href="http://www.example.org/bedriftshelsetjenesten#/"/>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Oslo">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Oslo'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Oslo'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Trøndelag">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Trøndelag'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Trøndelag'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Vestfold">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Vestfold'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Vestfold'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Telemark">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Telemark'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Telemark'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Nordland">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Nordland'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Nordland'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Hedmark">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Hedmark'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Hedmark'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Rogaland">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Rogaland'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Rogaland'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Hordaland">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Hordaland'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Hordaland'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Buskerud">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Buskerud'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Buskerud'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Troms">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Troms'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Troms'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Vest-Agder">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Vest-Agder'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Vest-Agder'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Akershus">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Akershus'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Akershus'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Møre og Romsdal">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Møre og Romsdal'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Møre og Romsdal'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Aust-Agder">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Aust-Agder'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Aust-Agder'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Østfold">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Østfold'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Østfold'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Finnmark">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Finnmark'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Finnmark'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Oppland">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Oppland'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Oppland'"/>
+      </filters>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Sogn og Fjordane">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@nodeMappings[name='FylkeNode']" semanticConditionExpression="aql:self.Fylkenavn='Sogn og Fjordane'"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@containerMappings[name='BedriftshelsetjenesteContainer']" semanticConditionExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke.Fylkenavn='Sogn og Fjordane'"/>
+      </filters>
       <layout xsi:type="description_1:OrderedTreeLayout"/>
       <defaultLayer name="Default">
         <nodeMappings name="FylkeNode" deletionDescription="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteFylke']" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editFylkenavn']" domainClass="bedriftshelsetjenesten::Fylke" dropDescriptions="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='kommuneFylke']">
@@ -109,7 +181,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings name="KontaktperosnContainer" semanticCandidatesExpression="aql:self.Kontaktinformasjon.Kontaktperson" domainClass="bedriftshelsetjenesten::Kontaktperson" childrenPresentation="List">
+          <subContainerMappings name="KontaktperosnContainer" semanticCandidatesExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke=" domainClass="bedriftshelsetjenesten::Kontaktperson" childrenPresentation="List">
             <subNodeMappings name="KontaktpersonNavn" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editNavn']" semanticCandidatesExpression="var:self" domainClass="bedriftshelsetjenesten::Kontaktperson">
               <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:Navn" labelAlignment="LEFT" labelPosition="node">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
