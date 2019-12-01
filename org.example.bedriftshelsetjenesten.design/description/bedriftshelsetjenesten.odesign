@@ -181,7 +181,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings name="KontaktperosnContainer" semanticCandidatesExpression="aql:self.Kontaktinformasjon.Postadresse.kommune.fylke=" domainClass="bedriftshelsetjenesten::Kontaktperson" childrenPresentation="List">
+          <subContainerMappings name="KontaktperosnContainer" semanticCandidatesExpression="aql:self.Kontaktinformasjon.Kontaktperson" domainClass="bedriftshelsetjenesten::Kontaktperson" childrenPresentation="List">
             <subNodeMappings name="KontaktpersonNavn" labelDirectEdit="//@ownedViewpoints[name='UoD']/@ownedRepresentations[name='UoD%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editNavn']" semanticCandidatesExpression="var:self" domainClass="bedriftshelsetjenesten::Kontaktperson">
               <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:Navn" labelAlignment="LEFT" labelPosition="node">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
